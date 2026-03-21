@@ -17,7 +17,7 @@ export default function History() {
                 <section>
                     <h2 className="text-2xl font-bold  mb-4">Our Beginning</h2>
                     <p className=" leading-relaxed">
-                        SRIYOG Consulting Pvt. Ltd. began its journey with a mission to bring advanced digital
+                        Cleaning Sewa Pvt. Ltd. began its journey with a mission to bring advanced digital
                         transformation to industries that needed it the most. What started as a small initiative
                         has now grown into a trusted technology partner for organizations across healthcare,
                         employment, and tourism.
@@ -133,7 +133,7 @@ export default function History() {
                 <section className="pb-12">
                     <h2 className="text-2xl font-bold  mb-4">Our Journey Continues</h2>
                     <p className=" leading-relaxed">
-                        With each passing year, SRIYOG Consulting grows stronger and more dedicated to delivering
+                        With each passing year, Cleaning Sewa grows stronger and more dedicated to delivering
                         high-quality digital experiences. Our history reflects our commitment to innovation,
                         service excellence, and building solutions that make a real difference.
                     </p>

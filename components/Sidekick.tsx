@@ -9,28 +9,24 @@ const Sidekick = () => {
         {show && 
         <div className='relative cursor-pointer hover:scale-[1.01] transition-all duration-200'>
             <div onClick={()=>{setShow(false);setMenu(true)}} className="hidden sm:flex flex-col justify-center items-center gap-2 rounded-tl-xl rounded-bl-xl sidekick px-3 py-3">
-            <div onClick={()=>window.open("https://sriyog.com", "_blank")} className='flex flex-col items-center justify-center gap-1'>
+            <div onClick={()=>window.open("https://cleaningsewa.com", "_blank")} className='flex flex-col items-center justify-center gap-1'>
               <img src="/icons/whatsapp.svg"  alt="" height="26px" width="26px" className=' hover:scale-[1.15] transition-all duration-200'/>
               <p className='text-[9px] font-bold text-[#888888]'>Whatsapp</p>
             </div >
             <img src="/icons/line.svg" className='h-1 w-[52px]' alt="" />
-            <div onClick={()=>window.open("https://sriyog.com", "_blank")} className='flex flex-col items-center justify-center gap-1'>
+            <div onClick={()=>window.open("https://cleaningsewa.com", "_blank")} className='flex flex-col items-center justify-center gap-1'>
               <img src="/icons/messenger.svg" alt="" height="26px" width="26px" className=' hover:scale-[1.15] transition-all duration-200'/>
               <p className='text-[9px] font-bold text-[#888888]'>Messenger</p>              
             </div>
+  
             <img src="/icons/line.svg" className='h-1 w-[52px]' alt="" />
-            <div onClick={()=>window.open("https://sriyog.com", "_blank")} className='flex flex-col items-center justify-center gap-1'>
-              <img onClick={()=>window.open("https://sriyog.com", "_blank")} src="/icons/signal.svg" alt="" height="26px" width="26px" className=' hover:scale-[1.15] transition-all duration-200'/>
-              <p className='text-[9px] font-bold pr-1 text-[#888888]'>Signal</p>                            
-            </div>
-            <img src="/icons/line.svg" className='h-1 w-[52px]' alt="" />
-            <div onClick={()=>window.open("https://sriyog.com", "_blank")} className='flex flex-col items-center justify-center gap-1'>
-              <img onClick={()=>window.open("https://sriyog.com", "_blank")} src="/icons/discord.svg" alt="" height="26px" width="26px" className=' hover:scale-[1.15] transition-all duration-200'/>
+            <div onClick={()=>window.open("https://cleaningsewa.com", "_blank")} className='flex flex-col items-center justify-center gap-1'>
+              <img onClick={()=>window.open("https://cleaningsewa.com", "_blank")} src="/icons/discord.svg" alt="" height="26px" width="26px" className=' hover:scale-[1.15] transition-all duration-200'/>
               <p className='text-[9px] font-bold text-[#888888]'>Discord</p>                            
             </div>
             <img src="/icons/line.svg" className='h-1 w-[52px]' alt="" />
-            <div onClick={()=>window.open("https://sriyog.com", "_blank")} className='flex flex-col items-center justify-center gap-1'>
-              <img onClick={()=>window.open("https://sriyog.com", "_blank")} src="/icons/phone.svg" alt="" height="26px" width="26px" className=' hover:scale-[1.15] transition-all duration-200'/>
+            <div onClick={()=>window.open("https://cleaningsewa.com", "_blank")} className='flex flex-col items-center justify-center gap-1'>
+              <img onClick={()=>window.open("https://cleaningsewa.com", "_blank")} src="/icons/phone.svg" alt="" height="26px" width="26px" className=' hover:scale-[1.15] transition-all duration-200'/>
               <p className='text-[9px] font-bold text-[#888888]'>Phone</p>                                        
             </div>
          </div>
@@ -51,23 +47,23 @@ const Sidekick = () => {
                     <p className='text-[#888888] font-semibold'>Quick Contact</p>
                   </div>
                   <div className='my-3 bg-[#888888] w-[225px] h-[1.5px]'></div>
-                  <div onClick={()=>window.open("https://sriyog.com", "_blank")} className='flex items-center gap-3'>
+                  <div onClick={()=>window.open("https://cleaningsewa.com", "_blank")} className='flex items-center gap-3'>
                     <img  src="/icons/phone.svg" alt="" className='cursor-pointer w-[30px] h-[30px] hover:scale-[1.1] transition-all duration-200' />
                     <p  className='text-[#888888] py-2 font-semibold cursor-pointer'>Hotline Number</p>
                   </div>
-                  <p onClick={()=>window.open("https://sriyog.com", "_blank")} className='font-semibold text-[#888888] text-center'>+977-01-4548068</p>
-                  <div onClick={()=>window.open("https://sriyog.com", "_blank")} className='cursor-pointer flex items-center w-fit justify-center gap-3 p-1 my-2 rounded-md border-[1.5px] border-[#B3ADAD]'>
+                  <p onClick={()=>window.open("https://cleaningsewa.com", "_blank")} className='font-semibold text-[#888888] text-center'>+977-01-4548068</p>
+                  <div onClick={()=>window.open("https://cleaningsewa.com", "_blank")} className='cursor-pointer flex items-center w-fit justify-center gap-3 p-1 my-2 rounded-md border-[1.5px] border-[#B3ADAD]'>
                       <img  src="/icons/email2.svg" alt="" className='h-5 w-5' />
                       <p className='text-xs text-[#888888] pt-1'>info@thecompanyname.com</p>
                   </div>
                   <div className='flex items-center justify-center gap-4 py-2'>
-                      <div onClick={()=>window.open("https://sriyog.com", "_blank")} className='flex flex-col justify-center items-center'>
+                      <div onClick={()=>window.open("https://cleaningsewa.com", "_blank")} className='flex flex-col justify-center items-center'>
                           <img src="/icons/messenger.svg" alt="" className='cursor-pointer w-7 h-7 hover:scale-[1.1] transition-all duration-200' />
                           <p className='text-[10px] font-semibold text-[#888888]'>Messenger</p>
                       </div>
                       <div className='flex items-center w-fit justify-center gap-3 p-1 my-2 rounded-md border-[1.5px] border-[#B3ADAD] cursor-pointer'>
-                          <img onClick={()=>window.open("https://sriyog.com", "_blank")} src="/icons/whatsapp.svg" alt="" className='w-4 h-4' />
-                          <p onClick={()=>window.open("https://sriyog.com", "_blank")} className='text-xs text-[#888888] pt'>+977 98520-24-365</p>
+                          <img onClick={()=>window.open("https://cleaningsewa.com", "_blank")} src="/icons/whatsapp.svg" alt="" className='w-4 h-4' />
+                          <p onClick={()=>window.open("https://cleaningsewa.com", "_blank")} className='text-xs text-[#888888] pt'>+977 98520-24-365</p>
                       </div>
                   </div>
               </div>

@@ -7,34 +7,34 @@ export default function Faq() {
  const faqs = [
   {
     id: 1,
-    question: "When was SRIYOG Consulting Pvt. Ltd. established?",
+    question: "When was Cleaning Sewa Pvt. Ltd. established?",
     answer: "The company was established on June 14, 2018.",
   },
   {
     id: 2,
-    question: "Where is SRIYOG Consulting based?",
+    question: "Where is Cleaning Sewa based?",
     answer: "It is headquartered in Kamalpokhari, Kathmandu, Nepal.",
   },
   {
     id: 3,
-    question: "Is SRIYOG App have a new homepage?",
-    answer: "Yes, SRIYOG App is now an independent company.",
+    question: "Is Cleaning Sewa App have a new homepage?",
+    answer: "Yes, Cleaning Sewa App is now an independent company.",
   },
   {
     id: 4,
-    question: "What industries does SRIYOG Consulting serve?",
+    question: "What industries does Cleaning Sewa serve?",
     answer:
-      "SRIYOG Consulting serves a broad range of industries, including healthcare, employment and tourism.",
+      "Cleaning Sewa serves a broad range of industries, including healthcare, employment and tourism.",
   },
   {
     id: 5,
-    question: "Who is the CTO of SRIYOG Consulting?",
+    question: "Who is the CTO of Cleaning Sewa?",
     answer:
-      "Prakash Upreti, also known as PRACAS, is the Chief Technology Officer of SRIYOG Consulting.",
+      "Prakash Upreti, also known as PRACAS, is the Chief Technology Officer of Cleaning Sewa.",
   },
   {
     id: 6,
-    question: "What makes SRIYOG Consulting unique?",
+    question: "What makes Cleaning Sewa unique?",
     answer:
       "The company offers custom-tailored, secure, and scalable IT solutions with end-to-end digital transformation services.",
   },
@@ -64,19 +64,19 @@ export default function Faq() {
   },
   {
     id: 11,
-    question: "What kind of websites does SRIYOG Consulting develop?",
+    question: "What kind of websites does Cleaning Sewa develop?",
     answer:
       "We build custom, user-friendly websites including e-commerce, CMS, and SaaS applications.",
   },
   {
     id: 12,
-    question: "What technologies does SRIYOG Consulting use?",
+    question: "What technologies does Cleaning Sewa use?",
     answer:
-      "SRIYOG Consulting uses a mix of modern web and data technologies, including web and software development tools, UI/UX design with Figma, databases with SQL, data analytics tools etc.",
+      "Cleaning Sewa uses a mix of modern web and data technologies, including web and software development tools, UI/UX design with Figma, databases with SQL, data analytics tools etc.",
   },
   {
     id: 13,
-    question: "Does SRIYOG Consulting provides cloud hosting services?",
+    question: "Does Cleaning Sewa provides cloud hosting services?",
     answer: "Yes, we provide secured cloud hosting services.",
   },
   {
@@ -98,31 +98,31 @@ export default function Faq() {
   },
   {
     id: 17,
-    question: "What are some of SRIYOG's notable clients?",
+    question: "What are some of Cleaning Sewa's notable clients?",
     answer:
       "Clients include Magic Footwear, Trans Nepal, PUSOM, Neuro Hospital, CVDS Nepal, and more.",
   },
   {
     id: 18,
-    question: "What is the mission of SRIYOG Consulting?",
+    question: "What is the mission of Cleaning Sewa?",
     answer:
       "To empower businesses with reliable IT solutions that streamline operations and drive growth.",
   },
   {
     id: 19,
-    question: "What is the vision of SRIYOG Consulting?",
+    question: "What is the vision of Cleaning Sewa?",
     answer:
       "To be a leading IT consulting firm in Nepal and globally through innovation and strategic partnerships.",
   },
   {
     id: 20,
-    question: "Why should businesses choose SRIYOG Consulting?",
+    question: "Why should businesses choose Cleaning Sewa?",
     answer:
       "For their industry expertise, customized solutions, scalability, security, and full-spectrum digital services.",
   },
   {
     id: 21,
-    question: "Is SRIYOG Consulting offering Internship opportunity?",
+    question: "Is Cleaning Sewa offering Internship opportunity?",
     answer:
       "Yes, we do. The intakes are on June-August, September-November, December-February, March-May.",
   },

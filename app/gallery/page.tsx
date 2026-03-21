@@ -6,7 +6,7 @@ import Image from 'next/image';
 function Gallery() {
     // Using existing placeholder images from public folder
     const galleryItems = [
-        { id: 1, image: '/images/gallery/1.jpg', title: 'Digital Solutions Launch', date: 'Jun 14, 2018', place: 'Kathmandu Durbar Square', count: 10, description: 'Marking the beginning of SRIYOG Consulting Pvt. Ltd., empowering organizations with innovative IT solutions.' },
+        { id: 1, image: '/images/gallery/1.jpg', title: 'Digital Solutions Launch', date: 'Jun 14, 2018', place: 'Kathmandu Durbar Square', count: 10, description: 'Marking the beginning of Cleaning Sewa Pvt. Ltd., empowering organizations with innovative IT solutions.' },
         { id: 2, image: '/images/gallery/2.jpg', title: 'Healthcare Digitization', date: 'Mar 05, 2019', place: 'Pokhara Lakeside', count: 15, description: 'Implemented advanced digital infrastructure to streamline healthcare operations and improve patient experiences.' },
         { id: 3, image: '/images/gallery/3.jpg', title: 'Employment Platform ', date: 'Aug 12, 2019', place: 'Lumbini', count: 12, description: 'Developed robust and scalable job-matching platforms connecting employers and job seekers effectively.' },
         { id: 4, image: '/images/gallery/4.jpg', title: 'Tourism Management System', date: 'Feb 20, 2020', place: 'Chitwan National Park', count: 8, description: 'Optimized tourism services with user-friendly digital solutions for enhanced visitor engagement.' },

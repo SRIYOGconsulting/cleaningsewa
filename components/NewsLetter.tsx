@@ -8,26 +8,13 @@ const NewsLetter = () => {
         
         {/* Heading */}
         <h2 className="text-white font-semibold italic text-3xl sm:text-4xl text-left md:pl-8">
-          Join our Newsletter
+          Cleaning Sewa is Hiring. Join our Team
         </h2>
 
         {/* Input + Button */}
         <div className="flex flex-col sm:flex-row items-center gap-4 w-full md:w-auto">
 
-          <input
-            type="email"
-            placeholder="enter your eMail"
-            className="
-              w-full sm:w-[360px] lg:w-[460px]
-              py-3 px-5
-              bg-transparent
-              border border-white
-              rounded-xl
-              text-lg sm:text-xl
-              font-semibold
-              focus:outline-none
-            "
-          />
+          
 
           <button
             className="
@@ -42,7 +29,7 @@ const NewsLetter = () => {
               cursor-pointer
             "
           >
-            Subscribe
+            Apply Now
           </button>
         </div>
 

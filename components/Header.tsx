@@ -58,11 +58,11 @@ const Header = () => {
         <div className="flex items-center space-x-2">
           <Link href="/">
             <Image
-              src="/images/Logo/sriyoglogo.svg"
-              alt="Sriyog Logo"
-              width={800}
-              height={600}
-              className="w-[130px] md:w-[170px] h-auto"
+              src="/logo/cleaningsewa.svg"
+              alt="Cleaning Sewa Logo"
+              width={400}
+              height={300}
+              className="w-[65px] md:w-[65px] h-auto"
             />
           </Link>
         </div>
@@ -80,12 +80,10 @@ const Header = () => {
           <Link href="/services" className="text-[16px] hover:text-teal-700">
             Services
           </Link>
-          <Link href="/feedback" className="text-[16px] hover:text-teal-700">
-            Feedback
+          <Link href="/projects" className="text-[16px] hover:text-teal-700">
+            Projects
           </Link>
-          <Link href="/team" className="text-[16px] hover:text-teal-700">
-            Team
-          </Link>
+         
           <Link href="/contact" className="text-[16px] hover:text-teal-700">
             Contact
           </Link>
@@ -96,9 +94,9 @@ const Header = () => {
             </button>
           </Link>
 
-          <Link href="/notice">
+          <Link href="/book">
             <button className="bg-teal-900 cursor-pointer text-[16px] border border-teal-900 text-white px-4 py-1 rounded hover:bg-teal-800">
-              Notice
+              Book Now
             </button>
           </Link>
           </div>
@@ -106,9 +104,9 @@ const Header = () => {
           
           {/* Mobile Notice button*/}
           <div>
-            <Link href="/notice">
+            <Link href="/book">
               <button className="bg-[#ebebeb] cursor-pointer sm:hidden border-[1.5px]  border-teal-800 text-black px-4 py-1 rounded hover:bg-teal-800">
-                Notice
+                Book Now
               </button>
             </Link>
           </div>

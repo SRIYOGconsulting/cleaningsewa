@@ -42,7 +42,7 @@ export default function About() {
         <h2 className="text-3xl font-bold mb-6 text-center">Message from the Director</h2>
         <div className="flex flex-col md:flex-row items-center md:items-start gap-6">
           <img
-            src="/director.jpg"
+            src="/about/director.png"
             alt="Director"
             className="w-40 h-40 rounded-full object-cover border-2 border-blue-700"
           />

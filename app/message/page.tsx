@@ -51,7 +51,7 @@ const Message = () => {
             <div className="w-full md:w-3/5 space-y-6 text-justify leading-relaxed">
               <p>
                 Technology is transforming industries globally, creating
-                opportunities for innovation and growth. At Sriyog, we harness
+                opportunities for innovation and growth. At Cleaning Sewa, we harness
                 these advancements to support businesses and individuals in
                 achieving their highest potential.
               </p>
@@ -68,7 +68,7 @@ const Message = () => {
                 <p className=" text-sm mb-2">
                   Chief Technology Officer
                 </p>
-                <p className=" font-medium mb-4">p@sriyog.com</p>
+                <p className=" font-medium mb-4">p@cleaningsewa.com</p>
 
                 {/* Social Icons */}
                 <div className="flex gap-4 mt-3">

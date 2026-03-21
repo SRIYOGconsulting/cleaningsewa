@@ -1,83 +1,59 @@
-'use client'
-import ClapFunction from '../../components/ClappingFunction';
-import Ribbon from '../../components/Ribbon';
-import Image from 'next/image';
+"use client";
 
-const About = ()=> {
+import React from "react";
 
-    return (
-        <div className='about font-size'>
-            {/* Full-width Ribbon Header */}
-            <Ribbon name="About" showfont={true}/>
-           
-            <div className="max-w-7xl mx-auto px-4 md:px-8 pb-8">
+export default function About() {
+  return (
+    <main className="min-h-screen bg-gray-50 text-gray-800">
+      {/* Hero Section */}
+      <section className="bg-blue-700 text-white py-24 px-6 text-center">
+        <h1 className="text-4xl md:text-5xl font-bold mb-4">
+          About Cleaning Sewa
+        </h1>
+        <p className="text-lg md:text-xl max-w-2xl mx-auto">
+          Providing professional, eco-friendly, and reliable home cleaning services across Nepal.
+        </p>
+      </section>
 
-                <div className="flex flex-col md:flex-row gap-6 md:gap-8">
-                     {/* Image on mobile - inserted here for better reading flow */}
-                        <div className="md:hidden overflow-hidden px-5 sm:px-0">
-                            <Image
-                              src="/images/about/1.png"
-                              alt="Logo"
-                              width={800}        // any number, not the final size
-                              height={600}       // any number
-                              className="w-full h-auto object-cover"
-                            />
-                        </div>
-                    {/* Left side - Text content */}
-                    <div className="md:w-2/3 space-y-4 md:space-y-6 leading-relaxed ">
-                        <p className="content-text ">
-                            Established on June 14, 2018, SRIYOG Consulting Pvt. Ltd., based in Kamalpokhari,
-                            Kathmandu, Nepal, is a leading provider of digital solutions dedicated to driving
-                            digital transformation in the healthcare, employment, and tourism sectors. Our mission
-                            is to empower organizations in these vital industries with innovative, scalable, technology-driven
-                            services that enhance operational efficiency and support long-term growth.
-                        </p>
+      {/* Company Introduction */}
+      <section className="py-16 px-6 max-w-4xl mx-auto">
+        <h2 className="text-3xl font-bold mb-6 text-center">Who We Are</h2>
+        <p className="text-gray-700 mb-4">
+          Cleaning Sewa is a trusted cleaning service provider dedicated to making homes and offices spotless, hygienic, and welcoming. Our team of trained professionals uses modern equipment and eco-friendly products to deliver the highest standard of cleaning services.
+        </p>
+        <p className="text-gray-700 mb-4">
+          From deep home cleaning to carpet and sofa care, AC cleaning, and post-construction cleanup, we ensure every corner of your space is maintained with care and precision.
+        </p>
+      </section>
 
-                        <p className="content-text ">
-                            At SRIYOG Consulting, we believe that smart technology is key to addressing sector-specific challenges.
-                            Our diverse IT services include data processing, software and web application development, digital
-                            marketing, database management, business process automation, and expert IT consultancy—each tailored
-                            to the unique needs of agriculture, employment platforms, and tourism operations.
-                        </p>
+      {/* Mission / Values */}
+      <section className="py-16 px-6 bg-gray-100 max-w-4xl mx-auto">
+        <h2 className="text-3xl font-bold mb-6 text-center">Our Mission</h2>
+        <p className="text-gray-700 mb-4 text-center">
+          To provide top-quality, reliable, and eco-friendly cleaning solutions that make homes and offices cleaner, safer, and healthier for everyone.
+        </p>
+        <p className="text-gray-700 text-center">
+          ✔ Professional & Trained Staff &nbsp; | &nbsp; ✔ Eco-Friendly Products &nbsp; | &nbsp; ✔ 100% Customer Satisfaction
+        </p>
+      </section>
 
-                       
-
-                        <p className="content-text">
-                            By optimizing digital infrastructure, we help our clients streamline services, engage users effectively,
-                            and scale sustainably. We specialize in crafting robust, user-friendly web solutions with a focus on
-                            modern UI/UX design, full-stack development, and industry-specific platforms—whether for agritech,
-                            job-matching portals, or tourism management systems.
-                        </p>
-
-                        <p className="content-text ">
-                            Our offerings include e-commerce platforms, CMS, SaaS-based solutions, and Progressive Web Applications
-                            (PWAs) designed for mobile-first experiences with offline functionality.
-                        </p>
-
-                        <p className="content-text ">
-                            Our comprehensive IT services are tailored to the unique demands of healthcare, employment platforms,
-                            and tourism operations.
-                        </p>
-                    </div>
-
-                    {/* Right side - Images (Desktop only) */}
-                    <div className="hidden md:block md:w-1/3 space-y-6">
-                        <div className="overflow-hidden">
-                            <img
-                                src="/images/about/1.png"
-                                alt="About SRIYOG 1"
-                                className="w-full h-auto object-cover"
-                            />
-                        </div>
-                    </div>
-                </div>
-                
-                {/* Clap Button with better mobile spacing - aligned left */}
-                <div className="mt-6 md:mt-8 flex justify-start">
-                    <ClapFunction/>
-                </div>
-            </div>
+      {/* Message from Director */}
+      <section className="py-16 px-6 max-w-4xl mx-auto">
+        <h2 className="text-3xl font-bold mb-6 text-center">Message from the Director</h2>
+        <div className="flex flex-col md:flex-row items-center md:items-start gap-6">
+          <img
+            src="/director.jpg"
+            alt="Director"
+            className="w-40 h-40 rounded-full object-cover border-2 border-blue-700"
+          />
+          <div className="flex-1">
+            <p className="text-gray-700 mb-4">
+              "At Cleaning Sewa, our vision is to create cleaner, healthier living and working spaces for every client. Our team is committed to excellence, and we continually invest in training and modern equipment to ensure you receive the best service possible. Your satisfaction is our top priority."
+            </p>
+            <p className="font-semibold text-gray-800">– Ramesh Koirala, Director</p>
+          </div>
         </div>
-    );
+      </section>
+    </main>
+  );
 }
-export default About

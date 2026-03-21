@@ -22,15 +22,15 @@ const Footer = () => {
               onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             >
               <img
-                src="/images/Logo/sriyoglogo.svg"
-                alt="Sriyog Logo"
-                className="w-[200px] h-auto"
+                src="/logo/cleaningsewa.svg"
+                alt="Cleaning Sewa Logo"
+                className="w-[100px] h-auto"
               />
             </Link>
           </div>
 
           <p className="text-[15px] leading-relaxed  mb-4">
-            Established on June 14, 2018, SRIYOG Consulting Pvt. Ltd., based in
+            Established on June 14, 2018, Cleaning Sewa Pvt. Ltd., based in
             Kamalpokhari, Kathmandu, Nepal, is a leading provider of digital
             solutions dedicated href driving digital transformation in the
             healthcare, employment, and tourism sectors.
@@ -60,11 +60,9 @@ const Footer = () => {
                 <Link href="/why" className="hover:text-green-700">Why Us</Link>
               </li>
               <li className={`py-1 cursor-pointer `}>
-                <Link href="/certificates" className="hover:text-green-700">Certificates</Link>
-              </li>
-              <li className={`py-1 cursor-pointer `}>
                 <Link href="/timeline" className="hover:text-green-700">Timeline</Link>
               </li>
+              
             </ul>
           </div>
 
@@ -76,10 +74,7 @@ const Footer = () => {
                 <Link href="/gallery" className="hover:text-green-700">Gallery</Link>
               </li>
               <li className={`py-1 cursor-pointer `}>
-                <Link href="/career" className="hover:text-green-700">Career</Link>
-              </li>
-              <li className={`py-1 cursor-pointer `}>
-                <Link href="/qr" className="hover:text-green-700">QR Code</Link>
+                <Link href="/qr" className="hover:text-green-700">QR</Link>
               </li>
               <li className={`py-1 cursor-pointer `}>
                 <Link href="/glossary" className="hover:text-green-700">Glossary</Link>
@@ -87,6 +82,7 @@ const Footer = () => {
               <li className={`py-1 cursor-pointer `}>
                 <Link href="/message" className="hover:text-green-700">Message</Link>
               </li>
+              
             </ul>
           </div>
 
@@ -101,14 +97,12 @@ const Footer = () => {
                 <Link href="/faq" className="hover:text-green-700">FAQ</Link>
               </li>
               <li className={`py-1 cursor-pointer `}>
-                <Link href="/payment" className="hover:text-green-700">Payment</Link>
+                <Link href="/testimonials" className="hover:text-green-700">Testimonials</Link>
               </li>
               <li className={`py-1 cursor-pointer `}>
-                <Link href="/internship" className="hover:text-green-700">Internship</Link>
+                <Link href="/video" className="hover:text-green-700">Video</Link>
               </li>
-              <li className={`py-1 cursor-pointer `}>
-                <Link href="/download" className="hover:text-green-700">Download</Link>
-              </li>
+              
             </ul>
           </div>
 
@@ -117,20 +111,18 @@ const Footer = () => {
             <h3 className="font-semibold mb-3 text-[16px]">Explore</h3>
             <ul className="space-y-2 text-[15px] leading-[1.6] pl-0">
               <li className={`py-1 cursor-pointer `}>
-                <Link href="/video" className="hover:text-green-700">Videos</Link>
-              </li>
-              <li className={`py-1 cursor-pointer `}>
-                <a href="https://trello.com" target="_blank" className="hover:text-green-700">Trello Board</a>
-              </li>
-              <li className={`py-1 cursor-pointer `}>
-                <Link href="/location" className="hover:text-green-700">Location</Link>
-              </li>
-              <li className={`py-1 cursor-pointer `}>
                 <Link href="/refund" className="hover:text-green-700">Refund Policy</Link>
               </li>
               <li className={`py-1 cursor-pointer `}>
-                <Link href="/cookie" className="hover:text-green-700">Cookie Policy</Link>
+                <Link href="/feedback" className="hover:text-green-700">Feedback</Link>
               </li>
+              <li className={`py-1 cursor-pointer `}>
+                <Link href="/blog" className="hover:text-green-700">Blog</Link>
+              </li>
+              <li className={`py-1 cursor-pointer `}>
+                <Link href="/team" className="hover:text-green-700">Team Policy</Link>
+              </li>
+              
             </ul>
           </div>
         </div>
@@ -144,8 +136,8 @@ const Footer = () => {
             <a  href="#" className="flex items-center hover:opacity-60 transition hover:scale-110">
               <img src={`/icons/x.svg`} className="h-5 w-5 sm:h-6 sm:w-6 cursor-pointer" />
             </a>
-            <a  href="#" className="flex items-center hover:opacity-60 transition hover:scale-110">
-              <img src={`/icons/linkedin.svg`}  className="h-5 w-5 sm:h-6 sm:w-6 cursor-pointer" />
+            <a  href="https://biratinfo.com/author/cleaningsewa" className="flex items-center hover:opacity-60 transition hover:scale-110">
+              <img src={`/icons/biratinfo.svg`}  className="h-5 w-5 sm:h-6 sm:w-6 cursor-pointer" />
             </a>
             <a  href="#" className="flex items-center hover:opacity-60 transition hover:scale-110 ">
               <img src={`/icons/youtube.svg`}  className="h-5 w-5 sm:h-6 sm:w-6 cursor-pointer" />
@@ -153,9 +145,7 @@ const Footer = () => {
             <a  href="#" className="flex items-center hover:opacity-60 transition hover:scale-110">
               <img src={`/icons/trello.svg`}  className="h-5 w-5 sm:h-6 sm:w-6 cursor-pointer" />
             </a>
-            <a  href="#" className="flex items-center hover:opacity-60 transition hover:scale-110">
-              <img src={`/icons/signal.svg`}  className="h-[22px] w-[22px] sm:h-[26px] sm:w-[26px] cursor-pointer" />
-            </a>
+            
             <a  href="#" className="flex items-center hover:opacity-60 transition hover:scale-110">
               <img src={`/icons/discord.svg`}  className="h-5 w-5 sm:h-6 sm:w-6 cursor-pointer" />
             </a>
@@ -168,9 +158,9 @@ const Footer = () => {
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
 
           {/* EMAIL + PHONE */}
-            <a href="mailto:info@sriyog.com" className={`flex items-center gap-2 border-2 rounded-lg px-7 py-3 w-full sm:w-auto `}>
+            <a href="mailto:info@cleaningsewa.com" className={`flex items-center gap-2 border-2 rounded-lg px-7 py-3 w-full sm:w-auto `}>
               <img src="/icons/email.svg" alt="email" className="h-6 w-6" />
-              <span className="text-sm">info@sriyog.com</span>
+              <span className="text-sm">info@cleaningsewa.com</span>
             </a>
 
 
@@ -198,7 +188,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-6 lg:mt-12 flex flex-col lg:flex-row justify-center items-center lg:justify-between text-[13px]  gap-3 text-center md:text-left font-semibold">
         <p className="flex flex-col md:flex-row gap-4 md:gap-1 items-center">
           <span>All Rights Reserved. © 2018-{currentYear}</span>
-          <span>SRIYOG Consulting Pvt. Ltd.</span>
+          <span>Cleaning Sewa</span>
           <span>Built with : <a href="https://broadpress.org" target="_blank" className="hover:border-b hover:border-black text-gray-500">BroadPress</a></span>
         </p>
             

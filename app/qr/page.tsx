@@ -13,7 +13,7 @@ const cardData = [
     id: 2,
     title: "Facebook",
     image: "/images/qr/facebook.jpg",
-    link: "https://www.facebook.com/sriyogconsulting",
+    link: "https://www.facebook.com/cleaningsewaconsulting",
     description: "Follow our latest updates and technology solutions.",
   },
   {
@@ -27,21 +27,21 @@ const cardData = [
     id: 4,
     title: "Appointment",
     image: "/images/qr/appointment.jpg",
-    link: "mailto:info@sriyogconsulting.com",
+    link: "mailto:info@cleaningsewaconsulting.com",
     description: "Reach out via email for inquiries and project discussions.",
   },
   {
     id: 5,
     title: "Instagram",
     image: "/images/qr/instagram.jpg",
-    link: "https://dashboard.sriyogconsulting.com",
+    link: "https://dashboard.cleaningsewaconsulting.com",
     description: "Access your personalized dashboard for project updates.",
   },
   {
     id: 6,
     title: "Location",
     image: "/images/qr/location.jpg",
-    link: "https://www.google.com/maps/place/Sriyog+Consulting/",
+    link: "https://www.google.com/maps/place/Cleaning Sewa+Consulting/",
     description: "Find our office location on Google Maps for visits.",
   },
 ];

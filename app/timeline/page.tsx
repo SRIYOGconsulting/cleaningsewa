@@ -7,7 +7,7 @@ export default function Timeline() {
         {
             year: "2018",
             title: "Company Founded",
-            description: "SRIYOG Consulting Pvt. Ltd. was established to provide smart digital solutions.",
+            description: "Cleaning Sewa Pvt. Ltd. was established to provide smart digital solutions.",
         },
         {
             year: "2019",

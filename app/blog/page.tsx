@@ -1,66 +1,225 @@
-'use client'
-import Image from "next/image";
+"use client";
 
-export default function Home() {
+import React from "react";
+
+type BlogPost = {
+  title: string;
+  description: string;
+  image: string;
+  link: string;
+};
+
+const blogs: BlogPost[] = [
+  {
+    title: "Expert Bathroom Cleaning Services in Nepal",
+    description:
+      "Bathrooms are one of the most frequently used areas in any home. Cleaning Sewa specializes in professional bathroom cleaning services across Nepal, ensuring sparkling, sanitized spaces every time. Our deep cleaning removes soap scum, grime, and harmful bacteria, even in difficult areas like behind toilets and tile grout. Eco-friendly products and trained professionals make your bathroom hygienic and fresh.",
+    image: "/blog/bathroom-cleaning.jpg",
+    link: "/blog/bathroom-cleaning",
+  },
+  {
+    title: "Professional Kitchen Cleaning Services in Nepal",
+    description:
+      "A clean kitchen is essential for a healthy home. Cleaning Sewa offers expert kitchen cleaning, including countertops, sinks, stovetops, ovens, and floors. Our professionals sanitize surfaces, remove grease and stubborn stains, and prevent food contamination. With efficient services across Kathmandu, Pokhara, and Lalitpur, we make your kitchen safe, hygienic, and spotless.",
+    image: "/blog/kitchen-cleaning.jpg",
+    link: "/blog/kitchen-cleaning",
+  },
+  {
+    title: "Reliable Home Cleaning Services in Nepal",
+    description:
+      "Maintaining a clean home can be challenging. Cleaning Sewa provides complete home cleaning services across Nepal, covering bedrooms, living areas, kitchens, bathrooms, floors, windows, and furniture. With trained professionals and eco-friendly solutions, we ensure a hygienic, fresh, and comfortable home every time.",
+    image: "/blog/home-cleaning.jpg",
+    link: "/blog/home-cleaning",
+  },
+  {
+    title: "Top Carpet Cleaning Services in Nepal",
+    description:
+      "Carpets can harbor dust, dirt, and allergens. Cleaning Sewa offers professional carpet cleaning in Nepal using vacuuming, stain treatment, steam cleaning, and quick drying methods. Our services remove allergens, extend carpet life, and keep your home healthy and fresh.",
+    image: "/blog/carpet-cleaning.jpg",
+    link: "/blog/carpet-cleaning",
+  },
+  {
+    title: "Professional Sofa & Upholstery Cleaning",
+    description:
+      "Your sofas and upholstered furniture accumulate dust, stains, and odors. Cleaning Sewa provides professional sofa and upholstery cleaning in Nepal using deep steam cleaning and fabric-safe solutions. Restore furniture hygiene, protect its lifespan, and maintain a fresh home environment.",
+    image: "/blog/sofa-cleaning.jpg",
+    link: "/blog/sofa-cleaning",
+  },
+  {
+    title: "Move-In & Move-Out Cleaning Services in Nepal",
+    description:
+      "Moving can be stressful. Cleaning Sewa ensures every corner of your home is spotless with move-in and move-out cleaning services across Nepal. Deep cleaning, bathroom/kitchen sanitization, and debris removal make relocation seamless and hygienic.",
+    image: "/blog/move-cleaning.jpg",
+    link: "/blog/move-cleaning",
+  },
+  {
+    title: "Trusted Disinfection and Sanitization Services",
+    description:
+      "Maintain a germ-free environment with Cleaning Sewa’s professional disinfection services. Surface disinfection, high-touch area sanitization, and eco-friendly disinfectants keep homes, offices, and commercial spaces healthier and safer.",
+    image: "/blog/sanitization.jpg",
+    link: "/blog/sanitization",
+  },
+  {
+    title: "Air Conditioner Cleaning Services in Nepal",
+    description:
+      "Dirty AC units circulate dust and reduce efficiency. Cleaning Sewa provides AC cleaning services in Nepal to remove dust, allergens, and bacteria, improving air quality and cooling efficiency for your home or office.",
+    image: "/blog/ac-cleaning.jpg",
+    link: "/blog/ac-cleaning",
+  },
+  {
+    title: "Laptop Cleaning Services in Nepal",
+    description:
+      "Protect your devices with Cleaning Sewa’s professional laptop cleaning services. We remove dust from vents, clean screens, and safely sanitize internal components to prevent overheating and hardware issues.",
+    image: "/blog/laptop-cleaning.jpg",
+    link: "/blog/laptop-cleaning",
+  },
+  {
+    title: "Professional Desktop Cleaning Services in Nepal",
+    description:
+      "Clean workstations improve productivity and hygiene. Cleaning Sewa provides desktop cleaning services across Nepal for offices, co-working spaces, and home workstations, including dusting, sanitizing, and organizing cables.",
+    image: "/blog/desktop-cleaning.jpg",
+    link: "/blog/desktop-cleaning",
+  },
+  {
+    title: "Aeroplane & Helicopter Cleaning Services in Nepal",
+    description:
+      "Aircraft interiors require professional cleaning for hygiene and passenger comfort. Cleaning Sewa provides thorough aeroplane and helicopter cleaning services across Nepal, including cabin sanitization and upholstery care.",
+    image: "/blog/aircraft-cleaning.jpg",
+    link: "/blog/aircraft-cleaning",
+  },
+  {
+    title: "Safe Reserve Tank Cleaning Services in Nepal",
+    description:
+      "Water storage tanks can accumulate dirt and bacteria. Cleaning Sewa provides professional reserve tank cleaning services across Nepal to ensure safe, clean water for homes and offices through scrubbing, sediment removal, and sanitization.",
+    image: "/blog/reserve-tank.jpg",
+    link: "/blog/reserve-tank",
+  },
+  {
+    title: "Marble & Tile Cleaning Services in Nepal",
+    description:
+      "Marble and tiles enhance a home’s beauty but require regular maintenance. Cleaning Sewa offers professional cleaning services for sparkling floors, stain removal, grout cleaning, and polishing using eco-friendly products.",
+    image: "/blog/marble-tile.jpg",
+    link: "/blog/marble-tile",
+  },
+  {
+    title: "Post-Construction Cleaning Services in Nepal",
+    description:
+      "After construction or renovation, spaces are left dusty and messy. Cleaning Sewa provides post-construction cleaning, including floor cleaning, surface wiping, and bathroom/kitchen sanitization, ensuring your property is ready for use.",
+    image: "/blog/post-construction.jpg",
+    link: "/blog/post-construction",
+  },
+  {
+    title: "Garden Cleaning Services in Nepal",
+    description:
+      "A well-maintained garden enhances your home’s appeal. Cleaning Sewa offers expert garden cleaning services including trimming, sweeping, leaf removal, and pathway sanitization, ensuring neat and beautiful outdoor spaces.",
+    image: "/blog/garden-cleaning.jpg",
+    link: "/blog/garden-cleaning",
+  },
+  {
+    title: "Garage Cleaning Services in Nepal",
+    description:
+      "Garages can quickly become cluttered. Cleaning Sewa organizes, sweeps, washes floors, and removes oil stains and debris, keeping your garage clean, safe, and efficient for storage or vehicle use.",
+    image: "/blog/garage-cleaning.jpg",
+    link: "/blog/garage-cleaning",
+  },
+  {
+    title: "Air Duct & Vent Cleaning Services in Nepal",
+    description:
+      "Air ducts and vents collect dust and allergens over time. Cleaning Sewa improves indoor air quality with professional cleaning, sanitization, and HVAC inspection services, keeping homes and offices healthy.",
+    image: "/blog/air-duct.jpg",
+    link: "/blog/air-duct",
+  },
+  {
+    title: "Event Cleaning Services in Nepal",
+    description:
+      "Cleaning Sewa ensures stress-free post-event cleanup across Nepal, including trash removal, surface cleaning, and restroom sanitization, leaving your event venue spotless and ready for the next use.",
+    image: "/blog/event-cleaning.jpg",
+    link: "/blog/event-cleaning",
+  },
+  {
+    title: "Professional Car Cleaning Services in Nepal",
+    description:
+      "A clean car enhances both appearance and hygiene. Cleaning Sewa provides exterior washing, polishing, interior vacuuming, and upholstery cleaning services across Nepal to keep your vehicle gleaming.",
+    image: "/blog/car-cleaning.jpg",
+    link: "/blog/car-cleaning",
+  },
+  {
+    title: "Facade Cleaning Services in Nepal",
+    description:
+      "Building facades are exposed to dust and pollution. Cleaning Sewa offers professional facade cleaning across Nepal using pressure washing, window cleaning, and exterior polishing to maintain your property’s aesthetics.",
+    image: "/blog/facade-cleaning.jpg",
+    link: "/blog/facade-cleaning",
+  },
+  {
+    title: "Parquet & Chair Cleaning Services in Nepal",
+    description:
+      "Wooden floors and chairs require regular care. Cleaning Sewa provides parquet and chair cleaning services using deep cleaning, polishing, and eco-friendly products to restore shine and hygiene.",
+    image: "/blog/parquet-chair.jpg",
+    link: "/blog/parquet-chair",
+  },
+  {
+    title: "Drainage & Septic Tank Cleaning Services in Nepal",
+    description:
+      "Clogged drains and dirty septic tanks pose health hazards. Cleaning Sewa provides professional drainage and septic tank cleaning services including unclogging, sanitization, and preventive maintenance tips.",
+    image: "/blog/septic-cleaning.jpg",
+    link: "/blog/septic-cleaning",
+  },
+  {
+    title: "Lift & Elevator Cleaning Services in Nepal",
+    description:
+      "Elevators are high-touch areas. Cleaning Sewa ensures safe and sanitized rides with professional lift cleaning, handrail sanitization, and regular maintenance services across Nepal.",
+    image: "/blog/lift-cleaning.jpg",
+    link: "/blog/lift-cleaning",
+  },
+  {
+    title: "Corporate & Monthly Cleaning Services in Nepal",
+    description:
+      "Maintaining clean corporate spaces is vital. Cleaning Sewa offers regular office cleaning, common area sanitization, and monthly deep cleaning packages to keep offices and commercial spaces spotless and professional.",
+    image: "/blog/corporate-cleaning.jpg",
+    link: "/blog/corporate-cleaning",
+  },
+];
+
+export default function BlogPage() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+    <main className="min-h-screen bg-gray-50 text-gray-800 py-16 px-6">
+      {/* Hero Section */}
+      <section className="text-center mb-16">
+        <h1 className="text-4xl md:text-5xl font-bold mb-4">
+          Cleaning Sewa Blog
+        </h1>
+        <p className="text-lg md:text-xl max-w-2xl mx-auto">
+          Stay updated with expert cleaning tips, professional services, and home & office hygiene advice from Cleaning Sewa.
+        </p>
+      </section>
+
+      {/* Blog Cards Grid */}
+      <section className="max-w-7xl mx-auto">
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {blogs.map((blog, index) => (
+            <div
+              key={index}
+              className="bg-white shadow-md rounded-xl overflow-hidden hover:shadow-lg transition"
             >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+              <img
+                src={blog.image}
+                alt={blog.title}
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-6 flex flex-col justify-between h-full">
+                <h3 className="text-xl font-semibold mb-3">{blog.title}</h3>
+                <p className="text-gray-600 mb-4">{blog.description}</p>
+                <a
+                  href={blog.link}
+                  className="text-blue-700 font-semibold hover:underline mt-auto"
+                >
+                  Read More →
+                </a>
+              </div>
+            </div>
+          ))}
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/8 px-5 transition-colors hover:border-transparent hover:bg-black/4 dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+      </section>
+    </main>
   );
 }

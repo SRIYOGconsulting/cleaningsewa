@@ -13,26 +13,26 @@ import { Suspense } from 'react';
 import ExitPopup from '@/components/ExitPopup';
 
 export const metadata = {
-  title: "SRIYOG Consulting | IT Consulting in Kathmandu, Nepal",
-  description: "Welcome to SRIYOG Consulting, your partner in IT solutions.",
-  keywords: "SRIYOG Consulting, IT Consulting, IT Solutions, Kathmandu, Nepal",
-  authors: [{ name: "SRIYOG Consulting" }],
+  title: "Cleaning Sewa | Professional cleaning services in Kathmandu",
+  description: "Welcome to Cleaning Sewa, your trusted partner in professional cleaning services.",
+  keywords: "Cleaning Sewa, Professional Cleaning, Kathmandu, Nepal",
+  authors: [{ name: "Cleaning Sewa" }],
   openGraph: {
-    title: "SRIYOG Consulting | IT Consulting in Kathmandu, Nepal",
-    description: "Welcome to SRIYOG Consulting, your partner in IT solutions.",
-    url: "https://sriyog.com",
+    title: "Cleaning Sewa | Professional Cleaning Services in Kathmandu, Nepal",
+    description: "Welcome to Cleaning Sewa, your trusted partner in professional cleaning services.",
+    url: "https://cleaningsewa.com",
     images: [
       {
-        url: "https://sriyog.com/images/og/default.jpg",
+        url: "https://cleaningsewa.com/og/default.jpg",
       },
     ],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "SRIYOG Consulting | IT Consulting in Kathmandu, Nepal",
-    description: "Welcome to SRIYOG Consulting, your partner in IT solutions.",
-    images: ["https://sriyog.com/images/og/default.jpg"],
+    title: "Cleaning Sewa | Professional Cleaning Services in Kathmandu, Nepal",
+    description: "Welcome to Cleaning Sewa, your trusted partner in professional cleaning services.",
+    images: ["https://cleaningsewa.com/og/default.jpg"],
   },
 };
 

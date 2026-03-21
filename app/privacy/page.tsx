@@ -18,15 +18,15 @@ const PrivacyPolicy = () => {
           </p>
 
           <p className="about leading-relaxed">
-            SRIYOG Consulting Pvt. Ltd. (also referred to as "SRIYOG", 
-            "SRIYOG Consulting", "us", "we" or "our") operates the 
-            www.SRIYOG.com website and mobile application (the “Service”). 
+            Cleaning Sewa Pvt. Ltd. (also referred to as "Cleaning Sewa", 
+            "Cleaning Sewa", "us", "we" or "our") operates the 
+            www.Cleaning Sewa.com website and mobile application (the “Service”). 
             This Privacy Policy explains how we collect, use, and disclose 
             personal data when you use our Service.
           </p>
 
           <p className="about leading-relaxed">
-            By using SRIYOG Consulting, you agree to the collection and use 
+            By using Cleaning Sewa, you agree to the collection and use 
             of information in accordance with this Privacy Policy. Any terms 
             used here have the same meaning as in our Terms & Conditions unless 
             specified otherwise.
@@ -124,7 +124,7 @@ const PrivacyPolicy = () => {
             <p className="about leading-relaxed">We may disclose your data in good faith to:</p>
             <ul className="list-disc list-inside about space-y-1">
               <li>Comply with legal obligations</li>
-              <li>Protect SRIYOG’s rights or property</li>
+              <li>Protect Cleaning Sewa’s rights or property</li>
               <li>Investigate wrongdoing</li>
               <li>Protect user safety</li>
               <li>Prevent legal liability</li>
@@ -192,10 +192,10 @@ const PrivacyPolicy = () => {
               Contact Us
             </h2>
             <p className="about leading-relaxed mb-1">
-              Email: privacy@sriyog.com
+              Email: privacy@cleaningsewa.com
             </p>
             <p className="about leading-relaxed">
-              Address: SRIYOG Consulting Pvt. Ltd., Kathmandu, Nepal
+              Address: Cleaning Sewa Pvt. Ltd., Kathmandu, Nepal
             </p>
           </div>
 

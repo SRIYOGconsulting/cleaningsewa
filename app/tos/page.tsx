@@ -18,9 +18,9 @@ const TermsofServices = () => {
           </p>
 
           <p className="about leading-relaxed">
-            Welcome to SRIYOG Consulting. Please read these Terms and Conditions (“Terms”, 
+            Welcome to Cleaning Sewa. Please read these Terms and Conditions (“Terms”, 
             “Terms and Conditions”) carefully before using the website, mobile application, 
-            or social media platforms (the “Service”) operated by SRIYOG Consulting Pvt. Ltd. 
+            or social media platforms (the “Service”) operated by Cleaning Sewa Pvt. Ltd. 
             (“us”, “we”, or “our”).
           </p>
 
@@ -33,7 +33,7 @@ const TermsofServices = () => {
           <div>
             <h2 className="text-2xl font-semibold text-teal-800 mb-2">Eligibility / Age</h2>
             <p className="about leading-relaxed">
-              Anyone under the age of 18 is not authorized to provide or receive services on SRIYOG Consulting.
+              Anyone under the age of 18 is not authorized to provide or receive services on Cleaning Sewa.
             </p>
           </div>
 
@@ -54,7 +54,7 @@ const TermsofServices = () => {
           <div>
             <h2 className="text-2xl font-semibold text-teal-800 mb-2">Understanding of Our Platform</h2>
             <p className="about leading-relaxed">
-              Established on June 14, 2018, SRIYOG Consulting Pvt. Ltd. is a premier Managed IT Services provider 
+              Established on June 14, 2018, Cleaning Sewa Pvt. Ltd. is a premier Managed IT Services provider 
               based in Kathmandu, Nepal. We specialize in innovative IT solutions but do not endorse or guarantee 
               the services provided by users.
             </p>
@@ -77,7 +77,7 @@ const TermsofServices = () => {
           <div>
             <h2 className="text-2xl font-semibold text-teal-800 mb-2">Delivery / Payment</h2>
             <p className="about leading-relaxed">
-              SRIYOG Consulting does not deliver services or accept fees on behalf of users. Providers and service seekers 
+              Cleaning Sewa does not deliver services or accept fees on behalf of users. Providers and service seekers 
               are responsible for their own agreements, payments, and documents.
             </p>
           </div>
@@ -112,7 +112,7 @@ const TermsofServices = () => {
           <div>
             <h2 className="text-2xl font-semibold text-teal-800 mb-2">Amendments</h2>
             <p className="about leading-relaxed">
-              SRIYOG Consulting reserves the right to amend Terms at its discretion. Changes will be notified at least 15 days 
+              Cleaning Sewa reserves the right to amend Terms at its discretion. Changes will be notified at least 15 days 
               in advance. Continued use constitutes acceptance of revised Terms.
             </p>
           </div>

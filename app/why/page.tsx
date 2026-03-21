@@ -19,7 +19,7 @@ export default function WhyUs () {
                         We Make Finding Skilled Professionals Simple
                     </h1>
                     <p className="">
-                        At SRIYOG, we’ve built a platform that connects clients with real, trusted professionals — from plumbers, electricians and carpenters to tutors, beauticians, and more. No more calling around or searching through unreliable ads — everything you need is in one place.
+                        At Cleaning Sewa, we’ve built a platform that connects clients with real, trusted professionals — from plumbers, electricians and carpenters to tutors, beauticians, and more. No more calling around or searching through unreliable ads — everything you need is in one place.
                     </p>
                     </div>
 
@@ -55,7 +55,7 @@ export default function WhyUs () {
                         Easy to Use — Anytime, Anywhere
                     </h1>
                     <p className=" ">
-                        SRIYOG is built to be user-friendly and accessible. With our web platform and mobile app, you can find, contact, and hire professionals from the comfort of your home — saving time and effort.
+                        Cleaning Sewa is built to be user-friendly and accessible. With our web platform and mobile app, you can find, contact, and hire professionals from the comfort of your home — saving time and effort.
                     </p>
                     </div>
 
@@ -73,7 +73,7 @@ export default function WhyUs () {
                         Growing, Reliable, Evolving Platform
                     </h1>
                     <p className=" ">
-                        Since 2016, SRIYOG has steadily grown and improved based on user needs. We continuously refine our platform to offer secure, reliable service — giving you peace of mind with every booking.
+                        Since 2016, Cleaning Sewa has steadily grown and improved based on user needs. We continuously refine our platform to offer secure, reliable service — giving you peace of mind with every booking.
                     </p>
                     </div>
 

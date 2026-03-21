@@ -16,14 +16,14 @@ const Disclaimer = () => {
           </p>
 
           <p className="about leading-relaxed">
-            SRIYOG Consulting Pvt. Ltd. (also referred to as “us”, “we” or “our”) operates the 
-            www.sriyog.com website and mobile application (the “Service”). This Privacy Policy 
+            Cleaning Sewa Pvt. Ltd. (also referred to as “us”, “we” or “our”) operates the 
+            www.cleaningsewa.com website and mobile application (the “Service”). This Privacy Policy 
             describes our policies regarding the collection, use, and disclosure of personal data 
             while using the Service.
           </p>
 
           <p className="about leading-relaxed">
-            By using Sriyog.com, you agree to the collection and use of information as described 
+            By using Cleaning Sewa.com, you agree to the collection and use of information as described 
             in this Privacy Policy. Terms defined here have the same meaning as in our Terms & 
             Conditions unless otherwise redefined.
           </p>
@@ -99,10 +99,10 @@ const Disclaimer = () => {
           {/* Section: Disclosure of Data */}
           <div>
             <h2 className="text-2xl font-semibold text-teal-800 mb-2">Disclosure of Data</h2>
-            <p className="about leading-relaxed">SRIYOG Consulting may disclose your data in good faith to:</p>
+            <p className="about leading-relaxed">Cleaning Sewa may disclose your data in good faith to:</p>
             <ul className="list-disc list-inside about space-y-1">
               <li>Comply with legal obligations</li>
-              <li>Protect and defend the rights or property of SRIYOG Consulting</li>
+              <li>Protect and defend the rights or property of Cleaning Sewa</li>
               <li>Prevent or investigate possible wrongdoing in connection with the Service</li>
               <li>Protect the personal safety of users or the public</li>
               <li>Protect against legal liability</li>
@@ -153,7 +153,7 @@ const Disclaimer = () => {
           <div>
             <h2 className="text-2xl font-semibold text-teal-800 mb-2">Contact Us</h2>
             <p className="about leading-relaxed">
-              Email: privacy@sriyog.com
+              Email: privacy@cleaningsewa.com
             </p>
           </div>
 

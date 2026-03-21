@@ -1,52 +1,218 @@
+'use client';
 import React from "react";
-
 
 const Home = () => {
   return (
-    <div className="w-full">
-      {/* HERO SECTION */}
-      <section className="w-full sm:bg-[url('/images/home/1.jpg')] bg-cover bg-center bg-no-repeat min-h-[600px] flex flex-col sm:flex-row justify-between items-start sm:items-center md:p-0 md:pt-0 relative overflow-hidden">
-        {/*   header width and alignment */}
-        <div className="max-w-[1200px] mx-auto w-full flex flex-col sm:flex-row justify-between items-start sm:items-center sm:px-6">
-          
-          <div className="block sm:hidden w-full h-[300px] bg-[url('/images/home/1.jpg')] bg-center bg-cover bg-no-repeat">
-          </div>
+    <div className="w-full font-sans text-gray-800">
 
-          {/* Text Content  Aligned directly below logo column */}
-          <div className="flex flex-col text2 justify-start sm:justify-center text-left  z-10 w-full sm:w-1/2 mt-4 px-6 sm:mt-0">
-            <div className="text-[23px] md:text-2xl lg:text-3xl font-semibold mb-3 leading-tight opacity-90">
+      {/* HERO SECTION */}
+      <section className="w-full sm:bg-[url('/home/slider/2.jpg')] bg-cover bg-center bg-no-repeat min-h-[600px] flex flex-col sm:flex-row justify-between items-start sm:items-center relative overflow-hidden">
+        <div className="max-w-[1200px] mx-auto w-full flex flex-col sm:flex-row justify-between items-start sm:items-center sm:px-6">
+
+          <div className="block sm:hidden w-full h-[300px] bg-[url('/home/slider/1.jpg')] bg-center bg-cover"></div>
+
+          <div className="flex flex-col justify-start text-left z-10 w-full sm:w-1/2 mt-4 px-6 sm:mt-0">
+            <div className="text-[23px] md:text-2xl font-semibold mb-3 opacity-90">
               Welcome to
             </div>
-            <div className="font-bold text-3xl md:text-4xl lg:text-5xl mb-6 leading-tight text-shadow-sm">
-              SRIYOG Consulting
+
+            <div className="font-bold text-3xl md:text-5xl mb-6">
+              Cleaning Sewa
             </div>
-            <div className="mt-2 sm:mt-4 text-[18px] md:text-[18px] lg:text-[20px] max-w-[600px] leading-relaxed opacity-95 line-height-loose">
-              Empower organizations in these vital industries with innovative, scalable,
-              technology-driven services that enhance operational efficiency and support
-              long-term growth.
-            </div>
-            <div className="mt-8 mb-8 sm:mb-0 md:mt-10 flex flex-row  gap-4 md:gap-6">
-              <button className="cursor-pointer border-2 border-[#0D5D59] py-2 md:py-3 px-4 md:px-8 rounded-md text-[#0D5D59] font-semibold hover:bg-[#0D5D59] hover:text-white transition-all duration-300 ease-in-out min-w-[130px] shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+
+            <p className="text-[18px] max-w-[600px] leading-relaxed opacity-95">
+              Professional, reliable and affordable cleaning services for homes
+              and businesses. We make your space shine.
+            </p>
+
+            <div className="mt-8 flex gap-4">
+              <button className="border-2 border-[#0D5D59] py-2 px-6 rounded-md text-[#0D5D59] font-semibold hover:bg-[#0D5D59] hover:text-white transition">
                 About
               </button>
-              <button className="cursor-pointer bg-[#0D5D59] text-white px-4 md:px-10 py-3 rounded-md font-semibold hover:bg-opacity-90 transition-all duration-300 ease-in-out min-w-[150px] shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
-                Book Meeting
+
+              <button className="bg-[#0D5D59] text-white px-6 py-2 rounded-md font-semibold hover:bg-opacity-90 transition">
+                Book Service
               </button>
             </div>
           </div>
+        </div>
+      </section>
 
-          {/* Spacer for mobile to push image below */}
-          <div className="w-full md:hidden h-px"> </div>
+      {/* LOGO SCROLL */}
+      <section className="py-10 bg-gray-50 overflow-hidden">
+      <div className="flex gap-12 animate-scroll whitespace-nowrap">
+        {Array.from({ length: 14 }, (_, i) => (
+          <img
+            key={i}
+            src={`/partners/${i + 1}.png`}
+            alt={`partner ${i + 1}`}
+            className="h-12 opacity-70"
+          />
+        ))}
+      </div>
+    </section>
 
+      {/* SERVICES */}
+      <section className="py-16 max-w-[1200px] mx-auto px-6">
+      <h2 className="text-3xl font-bold text-center mb-12">
+        Our Top Services
+      </h2>
 
+      <div className="grid md:grid-cols-3 gap-6">
+
+        {/* Service 1 */}
+        <div className="p-6 bg-white rounded-lg shadow-sm flex flex-col items-center text-center">
+          <img
+            src="/services/home-cleaning.jpg"
+            alt="Home Cleaning"
+            className="w-full h-48 object-cover rounded-md mb-4"
+          />
+          <h3 className="text-xl font-semibold mb-2">Home Cleaning</h3>
+          <p className="text-gray-600">
+            Deep cleaning for apartments and houses, making every corner spotless.
+          </p>
         </div>
 
-        {/* <div className="absolute inset-0 bg-gradient-to-r from-[#D0D0D0]/50 to-transparent md:from-transparent"></div> */}
-      </section>
-    </div>
-    
-  );
+        {/* Service 2 */}
+        <div className="p-6 bg-white rounded-lg shadow-sm flex flex-col items-center text-center">
+          <img
+            src="/services/facade-cleaning.jpg"
+            alt="Facade Cleaning"
+            className="w-full h-48 object-cover rounded-md mb-4"
+          />
+          <h3 className="text-xl font-semibold mb-2">Facade Cleaning</h3>
+          <p className="text-gray-600">
+            Professional workspace cleaning solutions to keep your building.
+          </p>
+        </div>
 
+        {/* Service 3 */}
+        <div className="p-6 bg-white rounded-lg shadow-sm flex flex-col items-center text-center">
+          <img
+            src="/services/post-construction-cleaning.jpg"
+            alt="Post Construction Cleaning"
+            className="w-full h-48 object-cover rounded-md mb-4"
+          />
+          <h3 className="text-xl font-semibold mb-2">Post Construction</h3>
+          <p className="text-gray-600">
+            Complete cleanup after renovation or construction projects.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+      {/* TESTIMONIALS */}
+      <section className="bg-gray-50 py-16">
+  
+  <div className="max-w-[1000px] mx-auto px-6 text-center">
+    <h2 className="text-3xl font-bold mb-10">What Our Clients Say</h2>
+
+    <div className="grid md:grid-cols-3 gap-6 items-center">
+
+      {/* Testimonial 1 */}
+      <div className="p-6 bg-white rounded-lg shadow-sm flex flex-col items-center text-left">
+        <img
+          src="/testimonials/1.png"
+          alt="Customer 1"
+          className="w-[100px] h-[100px] rounded-full mb-4 object-cover"
+        />
+        <p className="text-gray-600 mb-2">
+          "Amazing service! The team is punctual, professional, and pays attention to every detail. Highly recommend."
+        </p>
+        <div className="font-semibold mt-auto">Rajesh Gurung</div>
+      </div>
+
+      {/* Testimonial 2 */}
+      <div className="p-6 bg-white rounded-lg shadow-sm flex flex-col items-center text-left">
+        <img
+          src="/testimonials/2.png"
+          alt="Customer 2"
+          className="w-[100px] h-[100px] rounded-full mb-4 object-cover"
+        />
+        <p className="text-gray-600 mb-2">
+          "Our office has never been cleaner. Consistent, thorough, and friendly staff. Very satisfied!"
+        </p>
+        <div className="font-semibold mt-auto">Sumnitra Shrestha</div>
+      </div>
+
+      {/* Testimonial 3 */}
+      <div className="p-6 bg-white rounded-lg shadow-sm flex flex-col items-center text-left">
+        <img
+          src="/testimonials/3.png"
+          alt="Customer 3"
+          className="w-[100px] h-[100px] rounded-full mb-4 object-cover"
+        />
+        <p className="text-gray-600 mb-2">
+          "Post-renovation cleanup was perfect. Efficient and detail-oriented team. Definitely recommend!"
+        </p>
+        <div className="font-semibold mt-auto">Vikas Adhikari</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+      {/* BLOG SECTION */}
+      <section className="py-16 max-w-[1200px] mx-auto px-6">
+      <h2 className="text-3xl font-bold text-center mb-12">
+        Latest Blogs
+      </h2>
+
+      <div className="grid md:grid-cols-3 gap-8">
+
+        {/* Blog 1 */}
+        <div className="border rounded-lg overflow-hidden hover:shadow-md transition">
+          <img src="/blog/ac-cleaning.jpg" alt="AC Cleaning Tips" className="w-full h-48 object-cover"/>
+          <div className="p-5">
+            <h3 className="font-semibold text-lg mb-2">AC Cleaning Tips</h3>
+            <p className="text-gray-600 text-sm">
+              Simple tricks to keep your air conditioner clean and efficient.
+            </p>
+          </div>
+        </div>
+
+        {/* Blog 2 */}
+        <div className="border rounded-lg overflow-hidden hover:shadow-md transition">
+          <img src="/blog/bathroom-cleaning.jpg" alt="Bathroom Cleaning Tips" className="w-full h-48 object-cover"/>
+          <div className="p-5">
+            <h3 className="font-semibold text-lg mb-2">Bathroom Cleaning Tips</h3>
+            <p className="text-gray-600 text-sm">
+              Easy ways to make your floors sparkle and last longer.
+            </p>
+          </div>
+        </div>
+
+        {/* Blog 3 */}
+        <div className="border rounded-lg overflow-hidden hover:shadow-md transition">
+          <img src="/blog/garden-cleaning.jpg" alt="Garden Cleaning Tips" className="w-full h-48 object-cover"/>
+          <div className="p-5">
+            <h3 className="font-semibold text-lg mb-2">Garden Cleaning Tips</h3>
+            <p className="text-gray-600 text-sm">
+              Tips for keeping your garden clean and well-maintained.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+      {/* SCROLL ANIMATION STYLE */}
+      <style jsx>{`
+        .animate-scroll {
+          display: flex;
+          width: max-content;
+          animation: scroll 20s linear infinite;
+        }
+
+        @keyframes scroll {
+          from { transform: translateX(0); }
+          to { transform: translateX(-50%); }
+        }
+      `}</style>
+
+    </div>
+  );
 };
 
 export default Home;
