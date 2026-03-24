@@ -31,9 +31,9 @@ const HomeCleaning = () => {
     },
     {
       id: 4,
-      question: "Do you cover post-construction cleaning?",
+      question: "Do you cover Sofa cleaning?",
       answer:
-        "Absolutely! We specialize in post-construction cleaning to remove dust, debris, and ensure your home is ready to move in.",
+        "Absolutely! We specialize in sofa cleaning to remove dust, debris, and ensure your ready to enjoy.",
     },
     {
       id: 5,
@@ -86,7 +86,7 @@ const HomeCleaning = () => {
       {/* Description Section */}
       <div className="mx-auto px-5 py-10 max-w-7xl text-center">
         <h2 className="text-3xl font-bold text-blue-800 mb-5">
-          Comprehensive Home Cleaning Services
+          Scope of Works
         </h2>
         <p className="text-gray-700 leading-relaxed mb-6">
           Our home cleaning services in Nepal ensure every corner of your house is spotless. We use trained professionals, modern equipment, and eco-friendly products for deep cleaning, carpet cleaning, sofa cleaning, AC cleaning, and post-construction cleanup.
@@ -105,7 +105,7 @@ const HomeCleaning = () => {
           {/* Service 1 */}
           <div className="bg-white rounded-xl shadow-md p-5 flex flex-col items-center text-center">
             <img
-              src="/services/home-cleaning.jpg"
+              src="/services/home-cleaning/1.jpg"
               alt="Deep Home Cleaning"
               className="w-full h-48 object-cover rounded-lg mb-4"
             />
@@ -118,7 +118,7 @@ const HomeCleaning = () => {
           {/* Service 2 */}
           <div className="bg-white rounded-xl shadow-md p-5 flex flex-col items-center text-center">
             <img
-              src="/services/carpet-cleaning.jpg"
+              src="/services/home-cleaning/2.jpg"
               alt="Carpet & Sofa Cleaning"
               className="w-full h-48 object-cover rounded-lg mb-4"
             />
@@ -131,11 +131,11 @@ const HomeCleaning = () => {
           {/* Service 3 */}
           <div className="bg-white rounded-xl shadow-md p-5 flex flex-col items-center text-center">
             <img
-              src="/services/post-construction-cleaning.jpg"
-              alt="Post-Construction Cleaning"
+              src="/services/home-cleaning/3.jpg"
+              alt="Bedroom Cleaning"
               className="w-full h-48 object-cover rounded-lg mb-4"
             />
-            <h3 className="text-xl font-semibold mb-2">Post-Construction Cleaning</h3>
+            <h3 className="text-xl font-semibold mb-2">Bedroom Cleaning</h3>
             <p className="text-gray-600">
               Remove dust and debris after renovations or construction projects.
             </p>
@@ -145,31 +145,28 @@ const HomeCleaning = () => {
 
       {/* FAQ Section */}
       <div className="w-[70%] mx-auto flex-col items-center justify-center">
-  <h2 className="text-center text-3xl font-bold text-teal-800 mb-10">
-    Frequently Asked Questions
-  </h2>
-  <div className="space-y-3">
-    {faqs.map((faq) => (
-      <div key={faq.id} className="bg-white border border-gray-200 rounded-lg overflow-hidden">
-        <button
-          onClick={() => toggleFAQ(faq.id)}
-          className="w-full px-5 py-4 text-left text-gray-800 font-semibold hover:bg-gray-50 flex justify-between items-center"
-        >
-          <span>{faq.question}</span>
-          <span className="text-gray-500">{openFAQ === faq.id ? "–" : "+"}</span>
-        </button>
-        {openFAQ === faq.id && (
-          <div className="p-5 text-gray-700 border-t border-gray-200">
-            {faq.answer}
-          </div>
-        )}
+        <h2 className="text-center text-3xl font-bold text-teal-800 mb-10">
+          Frequently Asked Questions
+        </h2>
+        <div className="space-y-3">
+          {faqs.map((faq) => (
+            <div key={faq.id} className="bg-white border border-gray-200 rounded-lg overflow-hidden">
+              <button
+                onClick={() => toggleFAQ(faq.id)}
+                className="w-full px-5 py-4 text-left text-gray-800 font-semibold hover:bg-gray-50 flex justify-between items-center"
+              >
+                <span>{faq.question}</span>
+                <span className="text-gray-500">{openFAQ === faq.id ? "–" : "+"}</span>
+              </button>
+              {openFAQ === faq.id && (
+                <div className="p-5 text-gray-700 border-t border-gray-200">
+                  {faq.answer}
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
       </div>
-    ))}
-  </div>
-</div>
-
-
-      
     </div>
   );
 };

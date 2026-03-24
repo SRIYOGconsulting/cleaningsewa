@@ -1,244 +1,290 @@
 "use client";
 
-import { useState } from "react";
-
-type Service = {
-  title: string;
-  short: string;
-  full: string;
-  image: string;
-};
-
-const services: Service[] = [
-  {
-    title: "Bathroom Cleaning",
-    short: "Deep cleaning for hygienic bathrooms.",
-    full: "We remove stains, mold, and bacteria to make your bathroom spotless and safe.",
-    image: "services/bathroom-cleaning.jpg",
-  },
-  {
-    title: "Kitchen Cleaning",
-    short: "Sanitized and grease-free kitchen.",
-    full: "Complete kitchen sanitization including cabinets, tiles, and appliances.",
-    image: "services/kitchen-cleaning.jpg",
-  },
-  {
-    title: "Home Cleaning",
-    short: "Complete house cleaning service.",
-    full: "Professional home cleaning services across Nepal for a fresh and healthy space.",
-    image: "services/home-cleaning.jpg",
-  },
-  {
-    title: "Carpet Cleaning",
-    short: "Remove stains and dust.",
-    full: "Deep carpet cleaning to eliminate allergens, dirt, and tough stains.",
-    image: "services/carpet-cleaning.jpg",
-  },
-  {
-    title: "Sofa / Upholstery Cleaning",
-    short: "Fresh and clean furniture.",
-    full: "We clean and sanitize sofas and upholstery to remove dust and bacteria.",
-    image: "services/sofa-upholstery-cleaning.jpg",
-  },
-  {
-    title: "Move-In / Move-Out Cleaning",
-    short: "Perfect for relocation.",
-    full: "Thorough cleaning before moving in or after moving out.",
-    image: "services/move-in-move-out-cleaning.jpg",
-  },
-  {
-    title: "Disinfection / Sanitization Services",
-    short: "Kill germs and viruses.",
-    full: "Advanced disinfection services for homes, offices, and commercial spaces.",
-    image: "services/disinfection-sanitization-services.jpg",
-  },
-  {
-    title: "A/C Cleaning",
-    short: "Improve air quality.",
-    full: "Professional AC cleaning to ensure better cooling and healthy air.",
-    image: "services/ac-cleaning.jpg",
-  },
-  {
-    title: "Laptop Cleaning",
-    short: "Safe device cleaning.",
-    full: "Internal and external cleaning for laptops to improve performance.",
-    image: "services/laptop-cleaning.jpg",
-  },
-  {
-    title: "Desktop Cleaning",
-    short: "Dust-free setup.",
-    full: "Complete desktop cleaning including CPU, monitor, and accessories.",
-    image: "services/desktop-cleaning.jpg",
-  },
-  {
-    title: "Aeroplane Cleaning",
-    short: "Aircraft cleaning service.",
-    full: "Professional cleaning solutions for airplanes and aviation interiors.",
-    image: "services/aeroplane-cleaning.jpg",
-  },
-  {
-    title: "Helicopter Cleaning",
-    short: "Specialized cleaning.",
-    full: "Detailed cleaning services for helicopters with care and precision.",
-    image: "services/helicopter-cleaning.jpg",
-  },
-  {
-    title: "Reserve Tank Cleaning",
-    short: "Clean water storage.",
-    full: "We clean and disinfect water tanks for safe usage.",
-    image: "services/reserve-tank-cleaning.jpg",
-  },
-  {
-    title: "Marble/ Tile Cleaning",
-    short: "Restore shine.",
-    full: "Professional polishing and cleaning for marble and tile surfaces.",
-    image: "services/marble-tile-cleaning.jpg",
-  },
-  {
-    title: "Post-Construction Cleaning",
-    short: "After construction cleanup.",
-    full: "Remove dust, debris, and residue after construction or renovation.",
-    image: "services/post-construction-cleaning.jpg",
-  },
-  {
-    title: "Garden Cleaning",
-    short: "Clean outdoor spaces.",
-    full: "Maintain neat and clean gardens with our expert services.",
-    image: "services/garden-cleaning.jpg",
-  },
-  {
-    title: "Garage Cleaning",
-    short: "Declutter and clean.",
-    full: "Deep cleaning for garages to remove dust, oil, and clutter.",
-    image: "services/garage-cleaning.jpg",
-  },
-  {
-    title: "Air Duct & Vent Cleaning",
-    short: "Better airflow.",
-    full: "Clean air ducts and vents for improved indoor air quality.",
-    image: "services/air-duct-vent-cleaning.jpg",
-  },
-  {
-    title: "Post Event Cleaning",
-    short: "Pre & post event cleaning.",
-    full: "Cleaning services before and after events for a tidy venue.",
-    image: "services/post-event-cleaning.jpg",
-  },
-  {
-    title: "Car Interior Cleaning",
-    short: "Interior Deep Cleaning.",
-    full: "Complete car cleaning services for a fresh and shiny vehicle.",
-    image: "services/car-interior-cleaning.jpg",
-  },
-  {
-    title: "Facade Cleaning",
-    short: "Exterior building cleaning.",
-    full: "Professional facade cleaning to enhance building appearance.",
-    image: "services/facade-cleaning.jpg",
-  },
-  {
-    title: "Parquet Cleaning",
-    short: "Wood floor care.",
-    full: "Special cleaning for parquet floors to maintain durability and shine.",
-    image: "services/parquet-cleaning.jpg",
-  },
-  {
-    title: "Chair Cleaning",
-    short: "Clean seating surfaces.",
-    full: "Deep cleaning for chairs used in homes, offices, and events.",
-    image: "services/chair-cleaning.jpg",
-  },
-  {
-    title: "Drainage Cleaning",
-    short: "Clear blocked drains.",
-    full: "Efficient drainage cleaning services to prevent clogging.",
-    image: "services/drainage-cleaning.jpg",
-  },
-  {
-    title: "Septic Tank Cleaning",
-    short: "Safe waste management.",
-    full: "Professional septic tank cleaning for hygiene and safety.",
-    image: "services/septic-tank-cleaning.jpg",
-  },
-  {
-    title: "Lift/ Elevator Cleaning",
-    short: "Clean elevators.",
-    full: "Maintain hygiene in elevators with regular cleaning.",
-    image: "services/lift-elevator-cleaning.jpg",
-  },
-  {
-    title: "Corporate House Cleaning",
-    short: "Office cleaning solutions.",
-    full: "Professional cleaning for offices and corporate buildings.",
-    image: "services/corporate-house-cleaning.jpg",
-  },
-
-  {
-    title: "Medical Facility Cleaning",
-    short: "Medical Facility Cleaning.",
-    full: "Professional cleaning for Medical Facility.",
-    image: "services/medical-facility-cleaning.jpg",
-  },
-
-
-  {
-    title: "Monthly Cleaning",
-    short: "Regular cleaning plans.",
-    full: "Scheduled monthly cleaning services for homes and offices.",
-    image: "services/monthly-cleaning.jpg",
-  },
-  {
-    title: "Dead Animal Removal",
-    short: "Safe removal service.",
-    full: "Professional and hygienic removal with full sanitization.",
-    image: "services/dead-animal-removal.jpg",
-  },
-];
+import Link from "next/link";
 
 export default function ServicesPage() {
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
-
-  const toggle = (index: number) => {
-    setOpenIndex(openIndex === index ? null : index);
-  };
-
   return (
     <main className="min-h-screen bg-gray-50 px-6 py-16">
       <h1 className="text-3xl font-bold text-center mb-12">
-        Our Cleaning Services in Nepal
+        Professional Cleaning Services in Nepal
       </h1>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-7xl mx-auto">
-        {services.map((service, index) => (
-          <div
-            key={index}
-            className="bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-md transition"
-          >
-            <img
-              src={service.image}
-              alt={service.title}
-              className="w-full h-70 object-cover"
-            />
 
-            <div className="p-5">
-              <h2 className="text-lg font-semibold mb-2">{service.title}</h2>
-              <p className="text-sm text-gray-600 mb-3">{service.short}</p>
+        {/* Bathroom Cleaning */}
+        <Card
+          title="Bathroom Cleaning"
+          img="bathroom-cleaning"
+          link="bathroom-cleaning"
+          desc="Professional bathroom cleaning in Nepal. We deep clean tiles, sinks, toilets, showers, mirrors, and remove mold, soap scum, hard water stains, and bacteria. Using eco-friendly cleaning solutions and advanced equipment, we ensure a fresh, hygienic, and safe bathroom environment."
+        />
 
-              {openIndex === index && (
-                <p className="text-sm text-gray-700 mb-3">{service.full}</p>
-              )}
+        {/* Kitchen Cleaning */}
+        <Card
+          title="Kitchen Cleaning"
+          img="kitchen-cleaning"
+          link="kitchen-cleaning"
+          desc="Expert kitchen cleaning service in Nepal. We sanitize countertops, cabinets, sinks, stovetops, and appliances, removing grease, grime, and bacteria. Our professional team ensures a hygienic and safe cooking environment for your home or office."
+        />
 
-              <button
-            onClick={() => toggle(index)}
-            className={`mt-2 px-4 py-2 rounded-md text-white font-medium transition 
-                        ${openIndex === index ? "bg-red-500 hover:bg-red-600" : "bg-blue-600 hover:bg-blue-700"}`}
-            >
-            {openIndex === index ? "Show Less ↑" : "Book a Service →"}
-            </button>
-            </div>
-          </div>
-        ))}
+        {/* Home Cleaning */}
+        <Card
+          title="Home Cleaning"
+          img="home-cleaning"
+          link="home-cleaning"
+          desc="Comprehensive home cleaning services in Nepal, covering living rooms, bedrooms, kitchens, and bathrooms. We remove dust, dirt, stains, and allergens to maintain a spotless, fresh, and healthy home environment."
+        />
+
+        {/* Carpet Cleaning */}
+        <Card
+          title="Carpet Cleaning"
+          img="carpet-cleaning"
+          link="carpet-cleaning"
+          desc="Professional carpet cleaning in Nepal to remove dirt, dust, allergens, and stubborn stains. We restore your carpets to a clean, fresh, and hygienic state, improving indoor air quality and prolonging carpet life."
+        />
+
+        {/* Sofa / Upholstery Cleaning */}
+        <Card
+          title="Sofa / Upholstery Cleaning"
+          img="sofa-upholstery-cleaning"
+          link="sofa-upholstery-cleaning"
+          desc="Professional sofa and upholstery cleaning service in Nepal. We deep clean all types of furniture, including fabric, leather, and microfiber sofas, recliners, chairs, and cushions."
+        />
+
+        {/* Move In / Move Out Cleaning */}
+        <Card
+          title="Move-In / Move-Out Cleaning"
+          img="move-in-move-out-cleaning"
+          link="move-in-move-out-cleaning"
+          desc="Specialized move-in and move-out cleaning service in Nepal. We clean every corner of your property including floors, walls, kitchens, bathrooms, and furniture, ensuring a spotless space ready for new occupants."
+        />
+
+        {/* Disinfection / Sanitization */}
+        <Card
+          title="Disinfection / Sanitization"
+          img="disinfection-sanitization-services"
+          link="disinfection-sanitization-services"
+          desc="Professional disinfection and sanitization for homes, offices, and commercial spaces in Nepal. We eliminate germs, bacteria, and viruses using safe and effective cleaning solutions, providing a healthy and hygienic environment."
+        />
+
+        {/* A/C Cleaning */}
+        <Card
+          title="A/C Cleaning"
+          img="ac-cleaning"
+          link="ac-cleaning"
+          desc="Air conditioner cleaning service in Nepal to improve indoor air quality and system efficiency. We remove dust, allergens, and mold from filters, ducts, and coils, ensuring clean and healthy air circulation."
+        />
+
+        {/* Laptop Cleaning */}
+        <Card
+          title="Laptop Cleaning"
+          img="laptop-cleaning"
+          link="laptop-cleaning"
+          desc="Professional laptop cleaning service in Nepal. We safely remove dust, dirt, and bacteria from keyboards, screens, vents, and ports, enhancing device hygiene and preventing overheating."
+        />
+
+        {/* Desktop Cleaning */}
+        <Card
+          title="Desktop Cleaning"
+          img="desktop-cleaning"
+          link="desktop-cleaning"
+          desc="Professional desktop and workstation cleaning in Nepal. We remove dust, dirt, and debris from computers, monitors, keyboards, and office surfaces, maintaining a clean and healthy workspace."
+        />
+
+        {/* Aeroplane Cleaning */}
+        <Card
+          title="Aeroplane Cleaning"
+          img="aeroplane-cleaning"
+          link="aeroplane-cleaning"
+          desc="Aircraft cleaning services in Nepal, including cabin seats, storage areas, and interiors. We ensure a hygienic, sanitized, and comfortable environment for passengers and crew."
+        />
+
+        {/* Helicopter Cleaning */}
+        <Card
+          title="Helicopter Cleaning"
+          img="helicopter-cleaning"
+          link="helicopter-cleaning"
+          desc="Specialized helicopter cleaning service in Nepal. We sanitize and clean interior surfaces, seating, and equipment while adhering to strict safety standards."
+        />
+
+        {/* Reserve Tank Cleaning */}
+        <Card
+          title="Reserve Tank Cleaning"
+          img="reserve-tank-cleaning"
+          link="reserve-tank-cleaning"
+          desc="Professional cleaning of water storage tanks in Nepal. We remove sludge, debris, and contaminants to ensure safe and clean water supply for homes and businesses."
+        />
+
+        {/* Marble / Tile Cleaning */}
+        <Card
+          title="Marble / Tile Cleaning"
+          img="marble-tile-cleaning"
+          link="marble-tile-cleaning"
+          desc="Marble and tile cleaning service in Nepal. We remove dirt, stains, and grout discoloration, restoring shine and maintaining the beauty of floors, walls, and surfaces."
+        />
+
+        {/* Post-Construction Cleaning */}
+        <Card
+          title="Post-Construction Cleaning"
+          img="post-construction-cleaning"
+          link="post-construction-cleaning"
+          desc="Thorough post-construction cleaning in Nepal. We remove dust, debris, and residue from newly built or renovated properties to make them move-in ready and spotless."
+        />
+
+        {/* Garden Cleaning */}
+        <Card
+          title="Garden Cleaning"
+          img="garden-cleaning"
+          link="garden-cleaning"
+          desc="Professional garden cleaning in Nepal. We remove leaves, debris, trash, and unwanted items to maintain a neat, healthy, and visually appealing outdoor space."
+        />
+
+        {/* Garage Cleaning */}
+        <Card
+          title="Garage Cleaning"
+          img="garage-cleaning"
+          link="garage-cleaning"
+          desc="Garage cleaning services in Nepal. We remove dirt, oil stains, and clutter to create a clean, organized, and safe space."
+        />
+
+        {/* Air Duct & Vent Cleaning */}
+        <Card
+          title="Air Duct & Vent Cleaning"
+          img="air-duct-vent-cleaning"
+          link="air-duct-vent-cleaning"
+          desc="Professional air duct and vent cleaning in Nepal to improve airflow, reduce dust accumulation, and maintain healthy indoor air quality."
+        />
+
+        {/* Post Event Cleaning */}
+        <Card
+          title="Post Event Cleaning"
+          img="post-event-cleaning"
+          link="post-event-cleaning"
+          desc="Efficient post-event cleaning in Nepal. We remove trash, spills, and restore spaces to their original condition after parties, events, or gatherings."
+        />
+
+        {/* Car Interior Cleaning */}
+        <Card
+          title="Car Interior Cleaning"
+          img="car-interior-cleaning"
+          link="car-interior-cleaning"
+          desc="Comprehensive car interior cleaning in Nepal. We clean seats, carpets, mats, and surfaces to remove dirt, stains, and odors, keeping your vehicle fresh and hygienic."
+        />
+
+        {/* Facade Cleaning */}
+        <Card
+          title="Facade Cleaning"
+          img="facade-cleaning"
+          link="facade-cleaning"
+          desc="Exterior building cleaning service in Nepal. We remove dirt, grime, and pollution from facades to enhance aesthetics and maintain property value."
+        />
+
+        {/* Parquet Cleaning */}
+        <Card
+          title="Parquet Cleaning"
+          img="parquet-cleaning"
+          link="parquet-cleaning"
+          desc="Professional parquet and wooden floor cleaning in Nepal. We remove dust, stains, and polish surfaces to maintain shine, quality, and longevity."
+        />
+
+        {/* Chair Cleaning */}
+        <Card
+          title="Chair Cleaning"
+          img="chair-cleaning"
+          link="chair-cleaning"
+          desc="Deep cleaning for office and home chairs in Nepal. Removes dirt, stains, and odors while maintaining fabric or leather quality for a hygienic seating experience."
+        />
+
+        {/* Drainage Cleaning */}
+        <Card
+          title="Drainage Cleaning"
+          img="drainage-cleaning"
+          link="drainage-cleaning"
+          desc="Professional drain and pipe cleaning in Nepal. We remove blockages and ensure smooth water flow while preventing unpleasant odors and water damage."
+        />
+
+        {/* Septic Tank Cleaning */}
+        <Card
+          title="Septic Tank Cleaning"
+          img="septic-tank-cleaning"
+          link="septic-tank-cleaning"
+          desc="Safe septic tank cleaning and maintenance in Nepal. We prevent overflows, remove sludge, and maintain proper sanitation for residential and commercial properties."
+        />
+
+        {/* Lift / Elevator Cleaning */}
+        <Card
+          title="Lift / Elevator Cleaning"
+          img="lift-elevator-cleaning"
+          link="lift-elevator-cleaning"
+          desc="Professional cleaning of lifts and elevators in Nepal, focusing on floors, walls, buttons, and handrails to ensure hygiene and safety for all users."
+        />
+
+        {/* Corporate House Cleaning */}
+        <Card
+          title="Corporate House Cleaning"
+          img="corporate-house-cleaning"
+          link="corporate-house-cleaning"
+          desc="Commercial and office cleaning services in Nepal. We maintain clean workspaces, sanitizing offices and communal areas for a professional and healthy environment."
+        />
+
+        {/* Medical Facility Cleaning */}
+        <Card
+          title="Medical Facility Cleaning"
+          img="medical-facility-cleaning"
+          link="medical-facility-cleaning"
+          desc="Medical-grade cleaning for hospitals, clinics, and laboratories in Nepal. Ensures sanitization, infection control, and a safe environment for patients and staff."
+        />
+
+        {/* Monthly Cleaning */}
+        <Card
+          title="Monthly Cleaning"
+          img="monthly-cleaning"
+          link="monthly-cleaning"
+          desc="Scheduled monthly cleaning services in Nepal for homes and offices. Maintains consistent hygiene, freshness, and cleanliness on a recurring basis."
+        />
+
+        {/* Dead Animal Removal */}
+        <Card
+          title="Dead Animal Removal"
+          img="dead-animal-removal"
+          link="dead-animal-removal"
+          desc="Safe dead animal removal service in Nepal. We dispose of deceased animals hygienically, preventing odors, contamination, and health hazards."
+        />
+
       </div>
     </main>
+  );
+}
+
+function Card({
+  title,
+  img,
+  link,
+  desc,
+}: {
+  title: string;
+  img: string;
+  link: string;
+  desc: string;
+}) {
+  return (
+    <div className="bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-md transition">
+      <img
+        src={`/services/${img}.jpg`}
+        alt={title}
+        className="w-full h-64 object-cover"
+      />
+
+      <div className="p-5">
+        <h2 className="text-lg font-semibold mb-2">{title}</h2>
+        <p className="text-sm text-gray-600 mb-4">{desc}</p>
+
+        <Link href={`/services/${link}`}>
+          <button className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700">
+            Browse More
+          </button>
+        </Link>
+      </div>
+    </div>
   );
 }

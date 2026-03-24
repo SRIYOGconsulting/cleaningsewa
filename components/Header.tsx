@@ -58,11 +58,11 @@ const Header = () => {
         <div className="flex items-center space-x-2">
           <Link href="/">
             <Image
-              src="/logo/cleaningsewa.svg"
+              src="/logo/cleaning-sewa-logo-wordmark.svg"
               alt="Cleaning Sewa Logo"
               width={400}
               height={300}
-              className="w-[65px] md:w-[65px] h-auto"
+              className="w-[250px] md:w-[250px] h-auto"
             />
           </Link>
         </div>
