@@ -9,7 +9,7 @@ export default function App() {
       {/* SEO */}
       <Head>
         <meta name="keywords" content="gardening services Nepal, GardenSewa" />
-        <meta property="og:title" content="Book Gardening Service" />
+        <meta property="og:title" content="GardenSewa | Partnership" />
       </Head>
 
       {/* Header */}
@@ -32,21 +32,21 @@ export default function App() {
         </div>
 
         <h1 className="text-xl sm:text-2xl font-bold text-gray-900">
-          Vacancy in Gardening Service
+          Become a Partner | Partnership Opportunity
         </h1>
       </div>
 
       {/* Airtable */}
       <div className="w-full flex justify-center py-6">
-        <div className="w-full max-w-4xl">
+        <div className="w-full max-w-4xl rounded-lg overflow-hidden shadow-md">
           <iframe
-            src="https://airtable.com/embed/appleRo8p3WECYrSW/pagsQUmriTA6BL8PB/form"
+            src="https://airtable.com/embed/appleRo8p3WECYrSW/pag40VXRMes62pV2d/form"
             className="w-full"
             style={{
-              height: "1500px",
+              height: "1300px",
               border: "none",
             }}
-            title="Gardening Service Form"
+            title="Partnership Form"
           ></iframe>
         </div>
       </div>

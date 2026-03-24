@@ -13,8 +13,8 @@ import { Suspense } from 'react';
 import ExitPopup from '@/components/ExitPopup';
 
 export const metadata = {
-  title: "Cleaning Sewa | Professional cleaning services in Kathmandu",
-  description: "Welcome to Cleaning Sewa, your trusted partner in professional cleaning services.",
+  title: "Cleaning Sewa | Professional cleaning Services in Kathmandu, Nepa",
+  description: "Welcome to Cleaning Sewa, your trusted partner in professional cleaning services in Kathmandu, Nepal.",
   keywords: "Cleaning Sewa, Professional Cleaning, Kathmandu, Nepal",
   authors: [{ name: "Cleaning Sewa" }],
   openGraph: {

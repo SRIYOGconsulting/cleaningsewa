@@ -99,7 +99,7 @@ const HomeCleaning = () => {
       {/* Services Section */}
       <div className="mx-auto px-5 py-10 max-w-6xl">
         <h2 className="text-3xl font-bold text-center text-blue-800 mb-10">
-          Our Top Services
+          Top Services
         </h2>
         <div className="grid md:grid-cols-3 gap-6">
           {/* Service 1 */}

@@ -55,7 +55,7 @@ const Home = () => {
       {/* SERVICES */}
       <section className="py-16 max-w-[1200px] mx-auto px-6">
       <h2 className="text-3xl font-bold text-center mb-12">
-        Our Top Services
+        Top Services
       </h2>
 
       <div className="grid md:grid-cols-3 gap-6">
@@ -162,7 +162,7 @@ const Home = () => {
       <div className="grid md:grid-cols-3 gap-8">
 
         {/* Blog 1 */}
-        <div className="border rounded-lg overflow-hidden hover:shadow-md transition">
+        <div className="border border-gray-200 rounded-lg overflow-hidden hover:shadow-md transition">
           <img src="/blog/ac-cleaning.jpg" alt="AC Cleaning Tips" className="w-full h-48 object-cover"/>
           <div className="p-5">
             <h3 className="font-semibold text-lg mb-2">AC Cleaning Tips</h3>
@@ -173,7 +173,7 @@ const Home = () => {
         </div>
 
         {/* Blog 2 */}
-        <div className="border rounded-lg overflow-hidden hover:shadow-md transition">
+        <div className="border border-gray-200 rounded-lg overflow-hidden hover:shadow-md transition">
           <img src="/blog/bathroom-cleaning.jpg" alt="Bathroom Cleaning Tips" className="w-full h-48 object-cover"/>
           <div className="p-5">
             <h3 className="font-semibold text-lg mb-2">Bathroom Cleaning Tips</h3>
@@ -184,7 +184,7 @@ const Home = () => {
         </div>
 
         {/* Blog 3 */}
-        <div className="border rounded-lg overflow-hidden hover:shadow-md transition">
+        <div className="border border-gray-200 rounded-lg overflow-hidden hover:shadow-md transition">
           <img src="/blog/garden-cleaning.jpg" alt="Garden Cleaning Tips" className="w-full h-48 object-cover"/>
           <div className="p-5">
             <h3 className="font-semibold text-lg mb-2">Garden Cleaning Tips</h3>

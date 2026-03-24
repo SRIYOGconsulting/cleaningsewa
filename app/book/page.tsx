@@ -32,15 +32,15 @@ export default function App() {
         </div>
 
         <h1 className="text-xl sm:text-2xl font-bold text-gray-900">
-          Vacancy in Gardening Service
+          Book Cleaning Service in Nepal
         </h1>
       </div>
 
       {/* Airtable */}
       <div className="w-full flex justify-center py-6">
-        <div className="w-full max-w-4xl">
+        <div className="w-full max-w-4xl rounded-lg overflow-hidden shadow-md">
           <iframe
-            src="https://airtable.com/embed/appleRo8p3WECYrSW/pagsQUmriTA6BL8PB/form"
+            src="https://airtable.com/appleRo8p3WECYrSW/pag3G6i7wWYeFJSlu/form"
             className="w-full"
             style={{
               height: "1500px",
