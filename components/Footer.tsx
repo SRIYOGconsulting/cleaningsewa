@@ -136,7 +136,7 @@ const Footer = () => {
             <a  href="#" className="flex items-center hover:opacity-60 transition hover:scale-110">
               <img src={`/icons/x.svg`} className="h-5 w-5 sm:h-6 sm:w-6 cursor-pointer" />
             </a>
-            <a  href="https://biratinfo.com/author/cleaningsewa" className="flex items-center hover:opacity-60 transition hover:scale-110">
+            <a  href="https://biratinfo.com/author/cleaningsewa" target="_blank" className="flex items-center hover:opacity-60 transition hover:scale-110">
               <img src={`/icons/biratinfo.svg`}  className="h-5 w-5 sm:h-6 sm:w-6 cursor-pointer" />
             </a>
             <a  href="#" className="flex items-center hover:opacity-60 transition hover:scale-110 ">
@@ -189,7 +189,7 @@ const Footer = () => {
         <p className="flex flex-col md:flex-row gap-4 md:gap-1 items-center">
           <span>All Rights Reserved. © 2018-{currentYear}</span>
           <span>Cleaning Sewa</span>
-          <span>Built with : <a href="https://broadpress.org" target="_blank" className="hover:border-b hover:border-black text-gray-500">BroadPress</a></span>
+          <span>Built With : <a href="https://broadpress.org" target="_blank" className="hover:border-b hover:border-black text-gray-500">BroadPress</a></span>
         </p>
             
 

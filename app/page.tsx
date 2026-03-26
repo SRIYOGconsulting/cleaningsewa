@@ -63,39 +63,39 @@ const Home = () => {
         {/* Service 1 */}
         <div className="p-6 bg-white rounded-lg shadow-sm flex flex-col items-center text-center">
           <img
-            src="/services/home-cleaning.jpg"
+            src="/services/car-interior-cleaning.jpg"
             alt="Home Cleaning"
             className="w-full h-48 object-cover rounded-md mb-4"
           />
-          <h3 className="text-xl font-semibold mb-2">Home Cleaning</h3>
+          <h3 className="text-xl font-semibold mb-2">Car Interior Cleaning</h3>
           <p className="text-gray-600">
-            Deep cleaning for apartments and houses, making every corner spotless.
+            Deep & detailed cleaning for luxury & precious vehicles, making every corner spotless.
           </p>
         </div>
 
         {/* Service 2 */}
         <div className="p-6 bg-white rounded-lg shadow-sm flex flex-col items-center text-center">
           <img
-            src="/services/facade-cleaning.jpg"
-            alt="Facade Cleaning"
+            src="/services/garden-cleaning.jpg"
+            alt="Garden Cleaning"
             className="w-full h-48 object-cover rounded-md mb-4"
           />
-          <h3 className="text-xl font-semibold mb-2">Facade Cleaning</h3>
+          <h3 className="text-xl font-semibold mb-2">Garden Cleaning</h3>
           <p className="text-gray-600">
-            Professional workspace cleaning solutions to keep your building.
+            Professional garden maintenance & deep cleaning services to keep your outdoor spaces beautiful.
           </p>
         </div>
 
         {/* Service 3 */}
         <div className="p-6 bg-white rounded-lg shadow-sm flex flex-col items-center text-center">
           <img
-            src="/services/post-construction-cleaning.jpg"
-            alt="Post Construction Cleaning"
+            src="/services/kitchen-cleaning.jpg"
+            alt="Kitchen Cleaning"
             className="w-full h-48 object-cover rounded-md mb-4"
           />
-          <h3 className="text-xl font-semibold mb-2">Post Construction</h3>
+          <h3 className="text-xl font-semibold mb-2">Kitchen Cleaning</h3>
           <p className="text-gray-600">
-            Complete cleanup after renovation or construction projects.
+            We provide best kitchen cleaning service using international standard chemicals and equipments.
           </p>
         </div>
 
@@ -106,7 +106,7 @@ const Home = () => {
       <section className="bg-gray-50 py-16">
   
   <div className="max-w-[1000px] mx-auto px-6 text-center">
-    <h2 className="text-3xl font-bold mb-10">What Our Clients Say</h2>
+    <h2 className="text-3xl font-bold mb-10">Happy Stories</h2>
 
     <div className="grid md:grid-cols-3 gap-6 items-center">
 

@@ -25,9 +25,9 @@ const Navbar = () => {
                 Grab a limited time offer. Free inspection or 10% discount in every services. 6 months service warranty. Hurry up.
               </p>
 
-              <button className='text-sm italic hover:bg-[#ebebeb] hover:text-[#074842] border border-[#ebebeb] px-2 py-1 rounded-md'>
+              {/* <button className='text-sm italic hover:bg-[#ebebeb] hover:text-[#074842] border border-[#ebebeb] px-2 py-1 rounded-md'>
                 Apply Now
-              </button>
+              </button> */}
             </div>
 
           </div>
