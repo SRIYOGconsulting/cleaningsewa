@@ -52,7 +52,7 @@ const FacadeCleaning = () => {
           content="Professional facade cleaning services in Nepal. Cleaning building exteriors, windows, glass panels, walls, and high-rise buildings for a spotless appearance."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon/favicon.svg" />
       </Head>
 
       {/* Hero Section */}

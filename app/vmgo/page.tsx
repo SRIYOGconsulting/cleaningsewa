@@ -15,19 +15,19 @@ export default function Vmgo() {
         <section className='max-w-7xl mx-auto py-8'>
             <div className='grid grid-cols-2 md:grid-cols-4 gap-12 place-content-center place-items-center'>
                 <div className='flex flex-col justify-center items-center gap-3'>
-                  <Image height={24} width={24} src="/images/vmgo/vision.webp" alt="" className="w-24 h-24 " />
+                  <Image height={24} width={24} src="/vmgo/vision.webp" alt="" className="w-24 h-24 " />
                   <p>Vision</p>
                 </div>
                 <div className='flex flex-col justify-center items-center gap-3'>
-                  <Image height={24} width={24} src="/images/vmgo/mission.webp" alt="" className="w-24 h-24 " />
+                  <Image height={24} width={24} src="/vmgo/mission.webp" alt="" className="w-24 h-24 " />
                   <p>Mission</p>
                 </div>
                 <div className='flex flex-col justify-center items-center gap-3'>
-                  <Image height={24} width={24} src="/images/vmgo/goals.webp" alt="" className="w-24 h-24 " />
+                  <Image height={24} width={24} src="/vmgo/goals.webp" alt="" className="w-24 h-24 " />
                   <p>Goals</p> 
                 </div>
                 <div className='flex flex-col justify-center items-center gap-3'>
-                  <Image height={24} width={24} src="/images/vmgo/Objectives.webp" alt="" className="w-24 h-24" /> 
+                  <Image height={24} width={24} src="/vmgo/Objectives.webp" alt="" className="w-24 h-24" /> 
                   <p>Objectives</p>    
                 </div> 
             </div>
@@ -38,7 +38,7 @@ export default function Vmgo() {
         {/* Vision Section */}
         <section id="vision" className="flex justify-between gap-24 mb-12 py-8 max-w-5xl mx-auto">
           <div className="hidden md:flex items-center mb-6 ">
-              <Image height={600} width={800} src="/images/vmgo/vision.webp" alt="" className="w-auto h-40 text-teal-700 " />
+              <Image height={600} width={800} src="/vmgo/vision.webp" alt="" className="w-auto h-40 text-teal-700 " />
           </div>
           <div className="p-8 md:p-16 card space-y-4 max-w-3xl rounded-xl">
             <h2 className="text-3xl font-bold text">Vision</h2>
@@ -61,14 +61,14 @@ export default function Vmgo() {
               At Cleaning Sewa, our mission is to revolutionize the way work is connected with workers. We strive to provide a seamless platform that empowers individuals and businesses to find the perfect match for their needs, fostering opportunities for growth, collaboration, and success.            </p>
           </div>
           <div className="hidden md:flex items-center mb-6">
-              <Image height={600} width={800} src="/images/vmgo/mission.webp" alt="" className="w-auto h-40 " />
+              <Image height={600} width={800} src="/vmgo/mission.webp" alt="" className="w-auto h-40 " />
           </div>
         </section>
 
         {/* Goals Section */}
         <section id="goals" className="flex justify-between gap-24 py-8 max-w-5xl mx-auto">
           <div className="hidden md:flex items-center  mb-6">   
-              <Image height={600} width={800} src="/images/vmgo/goals.webp" alt="" className="w-60 h-40 " />
+              <Image height={600} width={800} src="/vmgo/goals.webp" alt="" className="w-60 h-40 " />
           </div>
           <div className="p-8 md:p-16 space-y-4 card rounded-xl">
             <h2 className="text-3xl font-bold text">Our Goals</h2>
@@ -101,7 +101,7 @@ export default function Vmgo() {
             ))}
           </div>
           <div className="hidden md:flex items-center mb-6">
-              <Image height={600} width={800} src="/images/vmgo/Objectives.webp" alt="" className="w-auto h-44 text-teal-700" />
+              <Image height={600} width={800} src="/vmgo/Objectives.webp" alt="" className="w-auto h-44 text-teal-700" />
           </div>
         </section>
     </div>

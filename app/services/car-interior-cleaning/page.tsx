@@ -52,7 +52,7 @@ const CarInteriorCleaning = () => {
           content="Professional car interior cleaning services in Nepal. Deep cleaning, stain removal, and sanitization for a fresh and hygienic vehicle interior."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon/favicon.svg" />
       </Head>
 
       {/* Hero Section */}

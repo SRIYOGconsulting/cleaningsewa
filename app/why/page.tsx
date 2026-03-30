@@ -24,7 +24,7 @@ export default function WhyUs () {
                     </div>
 
                     <Image height={600} width={800}
-                    src="/images/home/1.jpg" 
+                    src="/why/1.jpg" 
                     alt="" 
                     className="w-full max-w-sm md:max-w-[450px] rounded-md object-cover"
                     />
@@ -42,7 +42,7 @@ export default function WhyUs () {
                     </div>
 
                     <Image height={600} width={800}
-                    src="/images/home/1.jpg" 
+                    src="/why/2.jpg" 
                     alt="" 
                     className="w-full max-w-sm md:max-w-[450px] rounded-md object-cover"
                     />
@@ -60,7 +60,7 @@ export default function WhyUs () {
                     </div>
 
                     <Image height={600} width={800}
-                    src="/images/home/1.jpg" 
+                    src="/why/3.jpg" 
                     alt="" 
                     className="w-full max-w-sm md:max-w-[450px] rounded-md object-cover"
                     />
@@ -73,12 +73,12 @@ export default function WhyUs () {
                         Growing, Reliable, Evolving Platform
                     </h1>
                     <p className=" ">
-                        Since 2016, Cleaning Sewa has steadily grown and improved based on user needs. We continuously refine our platform to offer secure, reliable service — giving you peace of mind with every booking.
+                        Since 2018, Cleaning Sewa has steadily grown and improved based on user needs. We continuously refine our platform to offer secure, reliable service — giving you peace of mind with every booking.
                     </p>
                     </div>
 
                     <Image height={600} width={800}
-                    src="/images/home/1.jpg" 
+                    src="/why/4.jpg" 
                     alt="" 
                     className="w-full max-w-sm md:max-w-[450px] rounded-md object-cover"
                     />

@@ -52,7 +52,7 @@ const CarpetCleaning = () => {
           content="Professional carpet cleaning services in Nepal. Remove stains, dust, and allergens with deep cleaning and sanitization for fresh carpets."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon/favicon.svg" />
       </Head>
 
       {/* Hero Section */}

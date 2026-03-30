@@ -52,7 +52,7 @@ const KitchenCleaning = () => {
           content="Professional kitchen cleaning services in Nepal including deep cleaning of countertops, sinks, cabinets, appliances, tiles, and floors for a hygienic kitchen."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon/favicon.svg" />
       </Head>
 
       {/* Hero Section */}

@@ -16,7 +16,7 @@ const Disclaimer = () => {
           </p>
 
           <p className="about leading-relaxed">
-            Cleaning Sewa Pvt. Ltd. (also referred to as “us”, “we” or “our”) operates the 
+            Cleaning Sewa . (also referred to as “us”, “we” or “our”) operates the 
             www.cleaningsewa.com website and mobile application (the “Service”). This Privacy Policy 
             describes our policies regarding the collection, use, and disclosure of personal data 
             while using the Service.

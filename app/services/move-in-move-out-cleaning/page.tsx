@@ -52,7 +52,7 @@ const MoveInOutCleaning = () => {
           content="Professional move in/move out cleaning services in Nepal. Deep cleaning for floors, kitchens, bathrooms, carpets, and appliances to ensure a spotless property for moving in or out."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon/favicon.svg" />
       </Head>
 
       {/* Hero Section */}

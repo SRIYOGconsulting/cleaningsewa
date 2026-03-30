@@ -52,7 +52,7 @@ const ACCleaning = () => {
           content="Professional AC cleaning services in Nepal. Improve cooling efficiency, air quality, and extend the life of your air conditioner with expert cleaning."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon/favicon.svg" />
       </Head>
 
       {/* Hero Section */}

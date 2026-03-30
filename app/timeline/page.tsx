@@ -7,27 +7,47 @@ export default function Timeline() {
         {
             year: "2018",
             title: "Company Founded",
-            description: "Cleaning Sewa Pvt. Ltd. was established to provide smart digital solutions.",
+            description: "Cleaning Sewa was established in Kathmandu with a mission to provide reliable and professional cleaning services for homes and businesses.",
         },
         {
             year: "2019",
+            title: "Initial Service Launch",
+            description: "Started core services including home cleaning, office cleaning, and basic sanitation services, building trust among early customers.",
+        },
+        {
+            year: "2020",
             title: "Service Expansion",
-            description: "Added data processing, digital marketing and automation services.",
+            description: "Expanded into deep cleaning, post-construction cleaning, and move-in/move-out services to meet growing market demand.",
         },
         {
             year: "2021",
-            title: "Platform Launch",
-            description: "Launched digital platforms for employment and healthcare sectors.",
+            title: "Commercial Projects",
+            description: "Successfully handled large-scale commercial cleaning projects for offices, apartments, and business complexes across Kathmandu.",
+        },
+        {
+            year: "2022",
+            title: "Team Growth",
+            description: "Expanded the workforce with trained professionals and introduced structured training programs to improve service quality and consistency.",
         },
         {
             year: "2023",
-            title: "Team Growth",
-            description: "Company expanded with skilled developers, marketers, and support teams.",
+            title: "Equipment Upgrade",
+            description: "Invested in modern cleaning tools, machinery, and eco-friendly products to enhance efficiency and safety standards.",
         },
         {
             year: "2024",
-            title: "Tech Modernization",
-            description: "Adopted cloud-native, AI-driven, and scalable microservice architecture.",
+            title: "Digital Transformation",
+            description: "Launched online booking, customer management systems, and improved service tracking for a better client experience.",
+        },
+        {
+            year: "2025",
+            title: "Brand Strengthening",
+            description: "Strengthened brand presence across Kathmandu through digital marketing, partnerships, and consistent service excellence.",
+        },
+        {
+            year: "2026",
+            title: "Innovation & Future Growth",
+            description: "Focused on smart cleaning solutions, eco-friendly practices, and expanding services to new cities across Nepal.",
         },
     ];
 
@@ -41,30 +61,30 @@ export default function Timeline() {
             <div className="max-w-5xl mx-auto px-4 md:px-8 relative">
 
                 {/* Vertical Center Line */}
-                <div className="absolute left-1/2 top-18 bottom-18 transform -translate-x-1/2  w-1 bg-teal-600 rounded-full"></div>
+                <div className="absolute left-1/2 top-18 bottom-18 transform -translate-x-1/2 w-1 bg-teal-600 rounded-full"></div>
 
                 <div className="space-y-16 mt-24">
                     {events.map((event, index) => {
-                        const isLeft = index % 2 === 0;  // alternate
+                        const isLeft = index % 2 === 0;
                         
                         return (
                             <div key={index} className="relative flex items-center">
 
                                 {/* Timeline dot */}
-                                <div className="absolute left-1/2 transform -translate-x-1/2 w-5 h-5  border-2 header rounded-full shadow-md"></div>
+                                <div className="absolute left-1/2 transform -translate-x-1/2 w-5 h-5 border-2 header rounded-full shadow-md"></div>
 
                                 {/* Card */}
                                 <div className={`w-full md:w-1/2 px-6 md:px-0 
                                     ${isLeft ? "md:pr-12 md:mr-auto" : "md:pl-12 md:ml-auto"}`}
                                 >
-                                    <div className=" rounded-xl shadow-lg p-6 border card  hover:shadow-xl transition-all">
-                                        <span className="text-sm font-semibold ">
+                                    <div className="rounded-xl shadow-lg p-6 border card hover:shadow-xl transition-all">
+                                        <span className="text-sm font-semibold">
                                             {event.year}
                                         </span>
-                                        <h3 className="text-xl font-bold mt-1 ">
+                                        <h3 className="text-xl font-bold mt-1">
                                             {event.title}
                                         </h3>
-                                        <p className="mt-2  leading-relaxed">
+                                        <p className="mt-2 leading-relaxed">
                                             {event.description}
                                         </p>
                                     </div>

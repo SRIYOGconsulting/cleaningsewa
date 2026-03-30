@@ -52,7 +52,7 @@ const HomeCleaning = () => {
           content="Professional home cleaning services in Nepal including deep cleaning, carpet cleaning, AC cleaning, sofa cleaning, and post-construction cleaning for houses and apartments."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon/favicon.svg" />
       </Head>
 
       {/* Hero Section */}

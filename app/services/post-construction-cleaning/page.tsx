@@ -52,7 +52,7 @@ const PostConstructionCleaning = () => {
           content="Professional post-construction cleaning services in Nepal. Remove dust, debris, paint residue, and leftover materials to make your home or office move-in ready."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon/favicon.svg" />
       </Head>
 
       {/* Hero Section */}

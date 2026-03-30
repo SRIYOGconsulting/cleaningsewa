@@ -4,44 +4,44 @@ import Ribbon from "../../components/Ribbon";
 const cardData = [
   {
     id: 1,
-    title: "Payment QR",
-    image: "/images/qr/payment.jpg",
-    link: "#payment",
+    title: "Website",
+    image: "/qr/website.jpg",
+  
     description: "Scan this QR code to make secure payments for services.",
   },
   {
     id: 2,
-    title: "Facebook",
-    image: "/images/qr/facebook.jpg",
-    link: "https://www.facebook.com/cleaningsewaconsulting",
+    title: "WhatsApp",
+    image: "/qr/whatsapp.jpg",
+   
     description: "Follow our latest updates and technology solutions.",
   },
   {
     id: 3,
     title: "Google Reviews",
-    image: "/images/qr/google.jpg",
-    link: "tel:+9779852024365",
+    image: "/qr/google.jpg",
+  
     description: "Get in touch with our team for consultations and support.",
   },
   {
     id: 4,
-    title: "Appointment",
-    image: "/images/qr/appointment.jpg",
-    link: "mailto:info@cleaningsewaconsulting.com",
+    title: "Career",
+    image: "/qr/career.jpg",
+   
     description: "Reach out via email for inquiries and project discussions.",
   },
   {
     id: 5,
-    title: "Instagram",
-    image: "/images/qr/instagram.jpg",
-    link: "https://dashboard.cleaningsewaconsulting.com",
+    title: "Book a Services",
+    image: "/qr/book.jpg",
+
     description: "Access your personalized dashboard for project updates.",
   },
   {
     id: 6,
-    title: "Location",
-    image: "/images/qr/location.jpg",
-    link: "https://www.google.com/maps/place/Cleaning Sewa+Consulting/",
+    title: "Location Map",
+    image: "/qr/location.jpg",
+    
     description: "Find our office location on Google Maps for visits.",
   },
 ];
@@ -59,7 +59,7 @@ function Qr() {
           {cardData.map((card) => (
             <a
               key={card.id}
-              href={card.link}
+              
               target="_blank"
               rel="noopener noreferrer"
               className="card rounded-lg border border-gray-200 overflow-hidden w-full max-w-xs hover:shadow-lg transition-shadow duration-300 flex flex-col"

@@ -1,4 +1,5 @@
 'use client'
+import Link from "next/link";
 import React from "react";
 
 const NewsLetter = () => {
@@ -15,7 +16,7 @@ const NewsLetter = () => {
         <div className="flex flex-col sm:flex-row items-center gap-4 w-full md:w-auto">
 
           
-
+          <Link href="/career">
           <button
             className="
               bg-[#FFC700]
@@ -31,6 +32,7 @@ const NewsLetter = () => {
           >
             Apply Now
           </button>
+          </Link>
         </div>
 
       </div>

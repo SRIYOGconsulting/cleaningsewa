@@ -52,7 +52,7 @@ const AirDuctCleaning = () => {
           content="Professional air duct and vent cleaning services in Nepal. Improve indoor air quality, airflow, and remove dust, allergens, and mold from your ventilation system."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon/favicon.svg" />
       </Head>
 
       {/* Hero Section */}

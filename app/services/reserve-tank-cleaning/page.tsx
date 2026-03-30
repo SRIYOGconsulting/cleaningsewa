@@ -52,7 +52,7 @@ const ReserveTankCleaning = () => {
           content="Professional reserve tank cleaning services in Nepal. We clean, disinfect, and maintain water storage tanks for homes, apartments, and commercial properties."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon/favicon.svg" />
       </Head>
 
       {/* Hero Section */}

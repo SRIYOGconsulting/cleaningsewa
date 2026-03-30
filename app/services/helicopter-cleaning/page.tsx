@@ -52,7 +52,7 @@ const HelicopterCleaning = () => {
           content="Professional helicopter cleaning services in Nepal including exterior washing, interior cabin cleaning, rotor and landing gear cleaning, and aviation-approved sanitation for private and commercial helicopters."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon/favicon.svg" />
       </Head>
 
       {/* Hero Section */}

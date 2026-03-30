@@ -52,7 +52,7 @@ const CorporateHouseCleaning = () => {
           content="Professional corporate house cleaning services in Nepal. Deep cleaning, sanitization, dusting, and maintenance for offices and corporate spaces."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon/favicon.svg" />
       </Head>
 
       {/* Hero Section */}

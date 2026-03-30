@@ -5,25 +5,46 @@ import Ribbon from "../../components/Ribbon";
 
 const videos = [
   {
-    title: "4 Types of Team Members You Can Hire",
-    embedUrl: "https://www.youtube.com/embed/O9_EHU5BKnQ?rel=0",
+    title: "Uncover Expert Cleaning Secrets",
+    embedUrl: "https://www.youtube.com/embed/tbXpYAApZok?rel=0",
   },
   {
-    title: "The Power Of Teamwork",
-    embedUrl: "https://www.youtube.com/embed/4duPBWzf46E?rel=0" ,
+    title: "Unlock Your Cleaning Motivation",
+    embedUrl: "https://www.youtube.com/embed/lDiqkZEu1rs?rel=0" ,
   },
   {
-    title: "Teamwork and Leadership",
-    embedUrl: "https://www.youtube.com/embed/I1J2Z_Fgado?rel=0",
+    title: "My Full Home Cleaning Routune",
+    embedUrl: "https://www.youtube.com/embed/osFxHW-iAf8?rel=0",
   },
   {
-    title: "Employee engagement ",
-    embedUrl: "https://www.youtube.com/embed/bXji0yjYObo?rel=0",
+    title: "Home Cleaning Guide",
+    embedUrl: "https://www.youtube.com/embed/aFnXFXJWjgc?rel=0",
+  },
+  {
+    title: "Deep Cleaning Hacks",
+    embedUrl: "https://www.youtube.com/embed/gLNbjA0x5qQ?rel=0",
+  },
+  {
+    title: "Whole House Clean",
+    embedUrl: "https://www.youtube.com/embed/uQMWOc8Z2eM?rel=0",
+  },
+  {
+    title: "How to Clean Everything",
+    embedUrl: "https://www.youtube.com/embed/wHBQNIkwWYQ?rel=0",
+  },
+  {
+    title: "How to do laundry when you're depressed",
+    embedUrl: "https://www.youtube.com/embed/M1O_MjMRkPg?rel=0",
+    
+  },
+  {
+    title: "21 Whays to make your Home Sparkle",
+    embedUrl: "https://www.youtube.com/embed/f_jxPhnH-hk?rel=0",
   },
 ];
 
 function VideoPage() {
-const featuredVideo = "https://www.youtube.com/embed/en3z928rwus?rel=0";
+const featuredVideo = "https://www.youtube.com/embed/DBCGoFwTy4E?rel=0";
   const breadcrumbItems = [
     { label: "Home", path: "/" },
     { label: "Videos", path: "/videos" },

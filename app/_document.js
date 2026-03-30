@@ -5,7 +5,7 @@ export default function Document() {
     <Html lang="en">
       <Head>
         {/* Favicon and manifest */}
-        <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+        <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
         <link rel="manifest" href="/manifest.json" />
 
         {/* Primary Meta Tags */}

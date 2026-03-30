@@ -18,7 +18,7 @@ const PrivacyPolicy = () => {
           </p>
 
           <p className="about leading-relaxed">
-            Cleaning Sewa Pvt. Ltd. (also referred to as "Cleaning Sewa", 
+            Cleaning Sewa . (also referred to as "Cleaning Sewa", 
             "Cleaning Sewa", "us", "we" or "our") operates the 
             www.Cleaning Sewa.com website and mobile application (the “Service”). 
             This Privacy Policy explains how we collect, use, and disclose 
@@ -195,7 +195,7 @@ const PrivacyPolicy = () => {
               Email: privacy@cleaningsewa.com
             </p>
             <p className="about leading-relaxed">
-              Address: Cleaning Sewa Pvt. Ltd., Kathmandu, Nepal
+              Address: Cleaning Sewa ., Kathmandu, Nepal
             </p>
           </div>
 

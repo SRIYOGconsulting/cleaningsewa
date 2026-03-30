@@ -52,7 +52,7 @@ const ParquetCleaning = () => {
           content="Professional parquet cleaning services in Nepal. Deep cleaning, polishing, and maintenance for wooden floors to restore shine and remove dust, stains, and scratches."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon/favicon.svg" />
       </Head>
 
       {/* Hero Section */}

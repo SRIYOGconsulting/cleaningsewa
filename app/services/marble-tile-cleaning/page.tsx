@@ -52,7 +52,7 @@ const MarbleTileCleaning = () => {
           content="Professional marble and tile cleaning services in Nepal including deep cleaning, stain removal, polishing, and maintenance for residential and commercial spaces."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon/favicon.svg" />
       </Head>
 
       {/* Hero Section */}

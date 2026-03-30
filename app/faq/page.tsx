@@ -1,155 +1,41 @@
-'use client'
+'use client';
 import React, { useState } from 'react';
 import Ribbon from '../../components/Ribbon';
 
 export default function Faq() {
+  const faqs = [
+    { id: 1, question: "When was Cleaning Sewa established?", answer: "Cleaning Sewa was founded on June 14, 2018, in Kathmandu, Nepal." },
+    { id: 2, question: "Where is Cleaning Sewa located?", answer: "Headquartered at Kamalpokhari, Kathmandu, Nepal." },
+    { id: 3, question: "Does Cleaning Sewa have a mobile app?", answer: "Yes, Cleaning Sewa has a dedicated mobile app for service booking and management." },
+    { id: 4, question: "Which industries does Cleaning Sewa serve?", answer: "We serve residential, commercial, healthcare, hospitality, and tourism sectors in Kathmandu and nearby regions." },
+    { id: 5, question: "Who leads the technology team?", answer: "Prakash Upreti (PRACAS) is the Chief Technology Officer of Cleaning Sewa." },
+    { id: 6, question: "What makes Cleaning Sewa unique?", answer: "We offer professional, customized, and eco-friendly cleaning solutions with modern technology support." },
+    { id: 7, question: "Difference between deep cleaning and regular cleaning?", answer: "Regular cleaning maintains cleanliness, while deep cleaning involves thorough sanitization of hard-to-reach areas." },
+    { id: 8, question: "What services are included in commercial cleaning?", answer: "Office cleaning, floor maintenance, window washing, restroom sanitation, and facility upkeep." },
+    { id: 9, question: "Does Cleaning Sewa provide residential cleaning?", answer: "Yes, including full house cleaning, kitchen, bathroom, living areas, and carpet/floor treatment." },
+    { id: 10, question: "Is eco-friendly cleaning available?", answer: "Absolutely, we use environmentally safe products for both residential and commercial spaces." },
+    { id: 11, question: "Does Cleaning Sewa handle events and post-event cleaning?", answer: "Yes, we manage pre-event setup cleaning and post-event deep cleaning services." },
+    { id: 12, question: "How can I book a cleaning service?", answer: "You can book via our website, mobile app, or by contacting our office in Kathmandu." },
+    { id: 13, question: "Does Cleaning Sewa offer emergency cleaning services?", answer: "Yes, urgent cleaning requests can be accommodated on the same day depending on availability." },
+    { id: 14, question: "Are the cleaning staff trained?", answer: "All cleaning personnel undergo professional training and background verification." },
+    { id: 15, question: "Do you provide specialized healthcare facility cleaning?", answer: "Yes, we follow strict hygiene protocols for hospitals, clinics, and labs." },
+    { id: 16, question: "Does Cleaning Sewa offer ongoing maintenance contracts?", answer: "Yes, businesses can opt for weekly, bi-weekly, or monthly maintenance packages." },
+    { id: 17, question: "What are the charges for cleaning services?", answer: "Pricing depends on service type, area, and frequency. Contact us for a detailed quote." },
+    { id: 18, question: "Who are some of Cleaning Sewa’s notable clients?", answer: "Clients include hospitals, hotels, offices, schools, and residential societies across Kathmandu." },
+    { id: 19, question: "Does Cleaning Sewa offer training or internships?", answer: "Yes, internships are available for students and professionals from June-May with guided training." },
+    { id: 20, question: "How do I apply for an internship?", answer: "Fill the online application form in the Internship section of our website." },
+    { id: 21, question: "Are cleaning products provided by Cleaning Sewa?", answer: "Yes, we supply all necessary eco-friendly cleaning products and equipment." },
+    { id: 22, question: "Is Cleaning Sewa insured?", answer: "Yes, we maintain comprehensive insurance coverage for staff and property during service." },
+    { id: 23, question: "Can Cleaning Sewa handle large commercial projects?", answer: "Yes, our team is equipped for large-scale office complexes, hotels, and event venues." },
+    { id: 24, question: "How do I provide feedback after a service?", answer: "Feedback can be submitted via our website, app, or directly to cleaningsewa@sriyog.com." },
+  ];
 
- const faqs = [
-  {
-    id: 1,
-    question: "When was Cleaning Sewa Pvt. Ltd. established?",
-    answer: "The company was established on June 14, 2018.",
-  },
-  {
-    id: 2,
-    question: "Where is Cleaning Sewa based?",
-    answer: "It is headquartered in Kamalpokhari, Kathmandu, Nepal.",
-  },
-  {
-    id: 3,
-    question: "Is Cleaning Sewa App have a new homepage?",
-    answer: "Yes, Cleaning Sewa App is now an independent company.",
-  },
-  {
-    id: 4,
-    question: "What industries does Cleaning Sewa serve?",
-    answer:
-      "Cleaning Sewa serves a broad range of industries, including healthcare, employment and tourism.",
-  },
-  {
-    id: 5,
-    question: "Who is the CTO of Cleaning Sewa?",
-    answer:
-      "Prakash Upreti, also known as PRACAS, is the Chief Technology Officer of Cleaning Sewa.",
-  },
-  {
-    id: 6,
-    question: "What makes Cleaning Sewa unique?",
-    answer:
-      "The company offers custom-tailored, secure, and scalable IT solutions with end-to-end digital transformation services.",
-  },
-  {
-    id: 7,
-    question: "Difference between website development & maintenance.",
-    answer:
-      "Website development involves creating a website from scratch, while website maintenance focuses on regularly updating, securing, and optimizing it after launch.",
-  },
-  {
-    id: 8,
-    question: "What is covered under social media management?",
-    answer:
-      "It involves monthly strategy, content creation, engagement, and analytics to enhance digital branding.",
-  },
-  {
-    id: 9,
-    question: "What does the database/ web server rental service offer?",
-    answer:
-      "It provides secure server space for hosting websites, databases, and applications.",
-  },
-  {
-    id: 10,
-    question: "What does the mobile app development service entail?",
-    answer:
-      "Development of professional mobile apps tailored to client needs, compatible with Android and iOS.",
-  },
-  {
-    id: 11,
-    question: "What kind of websites does Cleaning Sewa develop?",
-    answer:
-      "We build custom, user-friendly websites including e-commerce, CMS, and SaaS applications.",
-  },
-  {
-    id: 12,
-    question: "What technologies does Cleaning Sewa use?",
-    answer:
-      "Cleaning Sewa uses a mix of modern web and data technologies, including web and software development tools, UI/UX design with Figma, databases with SQL, data analytics tools etc.",
-  },
-  {
-    id: 13,
-    question: "Does Cleaning Sewa provides cloud hosting services?",
-    answer: "Yes, we provide secured cloud hosting services.",
-  },
-  {
-    id: 14,
-    question: "Is security included in the services?",
-    answer:
-      "Yes, SSL certification, security audits, and cyber protection are part of our cloud services.",
-  },
-  {
-    id: 15,
-    question: "What analytics services are offered?",
-    answer:
-      "Data analysis, survey form development, and insights to improve business decision-making.",
-  },
-  {
-    id: 16,
-    question: "How many clients has the CTO served so far?",
-    answer: "Over 500 clients across 15 countries.",
-  },
-  {
-    id: 17,
-    question: "What are some of Cleaning Sewa's notable clients?",
-    answer:
-      "Clients include Magic Footwear, Trans Nepal, PUSOM, Neuro Hospital, CVDS Nepal, and more.",
-  },
-  {
-    id: 18,
-    question: "What is the mission of Cleaning Sewa?",
-    answer:
-      "To empower businesses with reliable IT solutions that streamline operations and drive growth.",
-  },
-  {
-    id: 19,
-    question: "What is the vision of Cleaning Sewa?",
-    answer:
-      "To be a leading IT consulting firm in Nepal and globally through innovation and strategic partnerships.",
-  },
-  {
-    id: 20,
-    question: "Why should businesses choose Cleaning Sewa?",
-    answer:
-      "For their industry expertise, customized solutions, scalability, security, and full-spectrum digital services.",
-  },
-  {
-    id: 21,
-    question: "Is Cleaning Sewa offering Internship opportunity?",
-    answer:
-      "Yes, we do. The intakes are on June-August, September-November, December-February, March-May.",
-  },
-  {
-    id: 22,
-    question: "How can I apply for an Internship?",
-    answer: "You need to fill our online form in Internship section.",
-  },
-  {
-    id: 23,
-    question: "Do I need to pay for an Internship Opportunity?",
-    answer:
-      "A fee of USD 100 per month is applicable for enrollment in the internship program, along with a refundable security deposit of USD 500. However, this fee may be offered as a scholarship to selected talented and expert candidates.",
-  },
-  {
-    id: 24,
-    question: "Can I join a Training?",
-    answer: "Yes, we offer various IT training courses.",
-  },
-];
+  const faq1 = faqs.slice(0, Math.ceil(faqs.length / 2));
+  const faq2 = faqs.slice(Math.ceil(faqs.length / 2));
 
-
-  const faq1 = faqs.slice(0,faqs.length/2);
-  const faq2 = faqs.slice(faqs.length/2)
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
-  const toggleFaq = (index:number) => {
+  const toggleFaq = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
@@ -159,59 +45,56 @@ export default function Faq() {
       <Ribbon name="Frequently Asked Questions" showfont={false}/>
 
       <div className="px-5 py-10 max-w-7xl mx-auto">
-        {/* FAQ List */}
-        <div className="flex flex-col lg:flex-row items-start justify-center gap-4 ">
-          <div className='w-full lg:w-1/2 space-y-3 '>
-             {faq1.map((faq) => (
-            <div key={faq.id} className="rounded-md overflow-hidden group border-none">
-              <button
-                onClick={() => toggleFaq(faq.id)}
-                className="w-full flex justify-between card text2 items-center py-5 px-6   transition"
-              >
-                <h2 className="text-md font-semibold ">{faq.question}</h2>
-                <span className="text-2xl font-bold">
-                  {openIndex === faq.id ? 
-                      <div className='w-[15px] cursor-pointer h-0.5 rounded-full bg-black'></div>
-                      :
-                      <img src='/icons/plus.svg' className='w-[19px] cursor-pointer h-[19px]' alt=''/>}
-                </span>
-              </button>
+        <div className="flex flex-col lg:flex-row gap-6">
+          
+          {/* Left Column */}
+          <div className='w-full lg:w-1/2 space-y-3'>
+            {faq1.map((faq) => (
+              <div key={faq.id} className="rounded-md overflow-hidden group border-none">
+                <button
+                  onClick={() => toggleFaq(faq.id)}
+                  className="w-full flex justify-between items-center py-5 px-6 transition card text2"
+                >
+                  <h2 className="text-md font-semibold">{faq.question}</h2>
+                  <span className="text-2xl font-bold">
+                    {openIndex === faq.id ? 
+                      <div className='w-[15px] h-0.5 rounded-full bg-black'></div> 
+                      : <img src='/icons/plus.svg' alt='' className='w-[19px] h-[19px]' />
+                    }
+                  </span>
+                </button>
 
-              <div
-                className={` transition-all card2 duration-300 cursor-pointer ease-in-out ${
-                  openIndex === faq.id ? 'max-h-96 opacity-100 translate-y-0 p-6' : 'max-h-0 opacity-0'
-                } overflow-hidden`}
-              >
-                {faq.answer}
+                <div className={`transition-all duration-300 ease-in-out overflow-hidden card2 ${openIndex === faq.id ? 'max-h-96 opacity-100 translate-y-0 p-6' : 'max-h-0 opacity-0'}`}>
+                  {faq.answer}
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
           </div>
+
+          {/* Right Column */}
           <div className='w-full lg:w-1/2 space-y-3'>
             {faq2.map((faq) => (
-            <div key={faq.id} className="rounded-md  overflow-hidden group border-none">
-              <button
-                onClick={() => toggleFaq(faq.id)}
-                className="w-full card text2 flex justify-between faqsQuestions items-center py-5 px-6   transition"
-              >
-                <h2 className="text-md font-semibold">{faq.question}</h2>
-                <span className="text-2xl font-bold">
-                  {openIndex === faq.id ? 
-                      <div className='w-[15px] cursor-pointer h-0.5 rounded-full bg-black'></div>
-                      :
-                      <img src='/icons/plus.svg' className='w-[19px] cursor-pointer h-[19px]' alt=''/>}
-                </span>
-              </button>
+              <div key={faq.id} className="rounded-md overflow-hidden group border-none">
+                <button
+                  onClick={() => toggleFaq(faq.id)}
+                  className="w-full flex justify-between items-center py-5 px-6 transition card text2"
+                >
+                  <h2 className="text-md font-semibold">{faq.question}</h2>
+                  <span className="text-2xl font-bold">
+                    {openIndex === faq.id ? 
+                      <div className='w-[15px] h-0.5 rounded-full bg-black'></div> 
+                      : <img src='/icons/plus.svg' alt='' className='w-[19px] h-[19px]' />
+                    }
+                  </span>
+                </button>
 
-              <div
-                className={`   card2 transition-all duration-300 ease-in-out ${
-                  openIndex === faq.id ? 'max-h-96 opacity-100 translate-y-0 p-6' : 'max-h-0 opacity-0'
-                } overflow-hidden`}
-              >
-                {faq.answer}
+                <div className={`transition-all duration-300 ease-in-out overflow-hidden card2 ${openIndex === faq.id ? 'max-h-96 opacity-100 translate-y-0 p-6' : 'max-h-0 opacity-0'}`}>
+                  {faq.answer}
+                </div>
               </div>
-            </div>))}
+            ))}
           </div>
+
         </div>
       </div>
     </div>

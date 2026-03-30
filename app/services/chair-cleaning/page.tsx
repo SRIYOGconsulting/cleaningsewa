@@ -52,7 +52,7 @@ const ExecutiveChairCleaning = () => {
           content="Professional executive chair cleaning services in Nepal. Deep cleaning, stain removal, deodorization, and sanitization for fabric and leather chairs."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon/favicon.svg" />
       </Head>
 
       {/* Hero Section */}

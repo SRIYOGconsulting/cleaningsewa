@@ -17,7 +17,7 @@ export default function History() {
                 <section>
                     <h2 className="text-2xl font-bold  mb-4">Our Beginning</h2>
                     <p className=" leading-relaxed">
-                        Cleaning Sewa Pvt. Ltd. began its journey with a mission to bring advanced digital
+                        Cleaning Sewa . began its journey with a mission to bring advanced digital
                         transformation to industries that needed it the most. What started as a small initiative
                         has now grown into a trusted technology partner for organizations across healthcare,
                         employment, and tourism.
@@ -25,7 +25,7 @@ export default function History() {
 
                     <div className="mt-6 rounded-lg overflow-hidden shadow-md">
                         <Image height={600} width={800}
-                            src="/images/history/2.jpg"
+                            src="/history/2.jpg"
                             alt="History Beginning"
                             className="w-full h-full object-cover"
                         />
@@ -48,7 +48,7 @@ export default function History() {
                         {/* Card 1 */}
                         <div className="card p-6 shadow-sm rounded-xl hover:shadow-md transition ">
                             <Image height={600} width={800}
-                                src="/images/history/1.png"  // Male placeholder
+                                src="/history/1.png"  // Male placeholder
                                 alt="Male Placeholder"
                                 className="w-40 h-40 mx-auto rounded-full object-cover mb-4"
                             />
@@ -60,17 +60,16 @@ export default function History() {
                                 Designation
                             </p>
                             <p className="mt-3  text-center leading-relaxed">
-                                    This individual contributed to key projects and supported the growth
-                                    of multiple teams. Their leadership helped guide important initiatives
-                                    and strengthened overall performance. Through consistent effort, they
-                                    played a meaningful role in the company’s development and long-term progress.
+                                    Our journey has been shaped by individuals who have contributed to key projects and supported the growth of multiple teams. Their leadership has guided important initiatives, strengthened operational performance, and helped us maintain consistent service standards in a competitive environment. 
+
+
                             </p>
                         </div>
 
                         {/* Card 2 */}
                         <div className="card p-6 shadow-sm rounded-xl hover:shadow-md transition h-full">
                             <Image height={600} width={800}
-                                src="/images/history/2.png"  // Female placeholder
+                                src="/history/2.png"  // Female placeholder
                                 alt="Female Placeholder"
                                 className="w-40 h-40 mx-auto rounded-full object-cover mb-4"
                             />
@@ -82,10 +81,7 @@ export default function History() {
                                 Designation
                             </p>
                             <p className="mt-3  text-center leading-relaxed">
-                                    This individual contributed to key projects and supported the growth
-                                    of multiple teams. Their leadership helped guide important initiatives
-                                    and strengthened overall performance. Through consistent effort, they
-                                    played a meaningful role in the company’s development and long-term progress.
+                                    Through continuous effort, innovation, and a strong focus on customer satisfaction, we have played a meaningful role in improving hygiene standards and creating cleaner, healthier spaces for homes and businesses. As we move forward, we remain committed to expanding our services.
                             </p>
                         </div>
 
@@ -101,28 +97,29 @@ export default function History() {
                         <div className="p-6 card   rounded-xl shadow-sm hover:shadow-md transition-all">
                             <h3 className="text-xl font-semibold ">2018 – Company Established</h3>
                             <p className=" mt-2 ">
-                                Official registration and initial establishment of the company.
+                                Cleaning Sewa was officially founded in Kathmandu, marking the beginning of its journey in delivering professional cleaning services with a commitment to quality and reliability.
                             </p>
                         </div>
 
                         <div className="p-6 card  rounded-xl shadow-sm hover:shadow-md transition-all">
                             <h3 className="text-xl font-semibold ">2020 – Service Expansion</h3>
                             <p className=" mt-2">
-                                Introduced more services including IT consulting, digital marketing, and automation.
+                                Expanded service offerings to include residential, commercial, and specialized cleaning solutions, catering to a growing customer base across the city.
                             </p>
                         </div>
 
                         <div className="p-6 card  rounded-xl shadow-sm hover:shadow-md transition-all">
                             <h3 className="text-xl font-semibold ">2022 – Major Platform Launch</h3>
                             <p className="mt-2">
-                                Developed and deployed large-scale platforms for employment and agriculture sectors.
+                                Strengthened team capacity, improved service processes, and successfully handled large-scale cleaning projects for offices, apartments, and institutions.
+
                             </p>
                         </div>
 
                         <div className="p-6 card  rounded-xl shadow-sm hover:shadow-md transition-all">
                             <h3 className="text-xl font-semibold ">2024 – Modernization & Innovation</h3>
                             <p className="mt-2">
-                                Adopted cloud infrastructure, smart automation, AI integration, and modern UI/UX design.
+                                Introduced advanced cleaning equipment, eco-friendly practices, and digital service management systems to enhance efficiency and customer experience.
                             </p>
                         </div>
 

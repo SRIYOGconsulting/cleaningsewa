@@ -52,7 +52,7 @@ const DrainageCleaning = () => {
           content="Professional drainage cleaning services in Nepal for homes and commercial spaces. Unclog drains, sinks, toilets, and sewer lines for smooth water flow."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon/favicon.svg" />
       </Head>
 
       {/* Hero Section */}

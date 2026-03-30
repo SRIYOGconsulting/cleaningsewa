@@ -1,61 +1,60 @@
-// app/components/Testimonials.tsx
-"use client";
+'use client';
 
 import React from "react";
 
 const testimonials = [
   {
-    name: "Afreen Sharma",
+    name: "Yogendra Bikram",
     feedback:
-      "Cleaning Sewa provided an exceptional home cleaning service. From the living room to the bathrooms, every corner was spotless. The team was punctual, professional, and thorough, ensuring every surface was sanitized and fresh. I truly feel comfortable inviting guests over now, and my home has never looked better.",
+      "Cleaning Sewa provided excellent home cleaning. Every corner was spotless. The team was punctual and professional, making my home fresh and inviting.",
     image: "/testimonials/1.png",
   },
   {
-    name: "Ramesh Thapa",
+    name: "Sunita Karki",
     feedback:
-      "I hired Cleaning Sewa for our office cleaning, and I am extremely impressed. The staff were professional, reliable, and worked efficiently without disrupting our daily operations. They cleaned desks, floors, windows, and even common areas meticulously. Our office environment is now hygienic and welcoming for both employees and clients.",
+      "I hired Cleaning Sewa for our office. Staff were professional and efficient, cleaning desks, floors, and windows meticulously. The office is now hygienic and welcoming.",
     image: "/testimonials/2.png",
   },
   {
     name: "Anita Koirala",
     feedback:
-      "After a major renovation, our apartment was left dusty and messy. Cleaning Sewa handled post-construction cleaning perfectly. They removed dust from all surfaces, cleaned the floors, and sanitized every corner. The team’s attention to detail was excellent, and I am extremely satisfied with their service. Highly recommend for any deep cleaning needs.",
+      "After renovation, Cleaning Sewa handled post-construction cleaning perfectly, removing dust and sanitizing every corner. Highly satisfied and recommendable.",
     image: "/testimonials/3.png",
   },
   {
-    name: "Sanjay Gurung",
+    name: "Sanjay Poudel",
     feedback:
-      "Cleaning Sewa’s team exceeded my expectations. They provided a detailed cleaning of my home, ensuring that even hard-to-reach corners were spotless. Their use of eco-friendly products was impressive, and I appreciated their professionalism and timeliness. My house looks and feels fresh, and I will definitely hire them again for regular maintenance.",
+      "Cleaning Sewa exceeded expectations. They cleaned every corner with eco-friendly products. My house looks fresh, and I will hire them for regular maintenance.",
     image: "/testimonials/4.png",
   },
   {
-    name: "Priya Shrestha",
+    name: "Pritesh Shrestha",
     feedback:
-      "I am thoroughly impressed with Cleaning Sewa. The staff were courteous, attentive, and worked diligently to clean every part of my home. From the kitchen to bedrooms, every space was left sparkling. Their attention to hygiene and detail is exceptional, making them the best choice for anyone seeking reliable home cleaning services.",
+      "Impressed with Cleaning Sewa. Staff were attentive and diligent, leaving every space sparkling. Highly recommended for reliable home cleaning.",
     image: "/testimonials/5.png",
   },
   {
-    name: "Bikram Lama",
+    name: "Bikram Poddar",
     feedback:
-      "Cleaning Sewa provided a highly professional and efficient cleaning service. Their team cleaned my office and common areas with precision, ensuring no dust or dirt was left behind. I was particularly impressed with their thoroughness and dedication to maintaining a clean and hygienic workspace. Highly recommended for both homes and offices.",
+      "Cleaning Sewa provided professional office cleaning. Their team was thorough and precise, leaving the workspace spotless and hygienic.",
     image: "/testimonials/6.png",
   },
   {
-    name: "Manisha Koirala",
+    name: "Manshi Koirala",
     feedback:
-      "Affordable, thorough, and professional – Cleaning Sewa truly stands out. Their cleaning staff paid attention to every detail, from floors to furniture, ensuring my home was immaculate. The service was flexible and convenient, making the process hassle-free. I highly recommend their services for anyone seeking a deep, reliable cleaning experience.",
+      "Affordable and professional. Every detail was attended to, making my home immaculate. Flexible service and hassle-free experience. Highly recommended.",
     image: "/testimonials/7.png",
   },
   {
     name: "Rajan Shahi",
     feedback:
-      "The cleaning team from Cleaning Sewa did an outstanding job at our office. They worked efficiently, cleaned every workstation, and maintained hygiene throughout. Their professionalism and attention to detail were impressive, and our office now looks pristine. I highly recommend their services to businesses looking for dependable and thorough cleaning.",
+      "The Cleaning Sewa team did an outstanding office cleaning job. Efficient, thorough, and professional. Our office now looks pristine.",
     image: "/testimonials/8.png",
   },
   {
-    name: "Sita Basnet",
+    name: "Sameer Basnet",
     feedback:
-      "Cleaning Sewa exceeded all my expectations with their home cleaning services. They arrived on time, used safe and eco-friendly products, and cleaned every area meticulously. The attention to detail and professionalism was remarkable. My home now feels fresh, organized, and hygienic. I am extremely satisfied and will continue to use their services.",
+      "Cleaning Sewa exceeded expectations. Arrived on time, used eco-friendly products, and cleaned every area meticulously. Home feels fresh and organized.",
     image: "/testimonials/9.png",
   },
 ];

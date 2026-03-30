@@ -52,7 +52,7 @@ const DeadAnimalRemoval = () => {
           content="Professional dead animal removal services in Nepal. Safe, hygienic, and eco-friendly removal from homes, offices, and commercial spaces."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon/favicon.svg" />
       </Head>
 
       {/* Hero Section */}

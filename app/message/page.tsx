@@ -8,40 +8,31 @@ const Message = () => {
   return (
     <div className="message-page">
       {/* Full-width Teal Ribbon Header */}
-      <Ribbon name="Message" showfont={false}/>
+      <Ribbon name="Message from Director" showfont={false} />
 
       {/* Main Content */}
-      <main className=" py-14 px-4 md:px-10 lg:px-16">
+      <main className="py-14 px-4 md:px-10 lg:px-16">
         <div className="card rounded-2xl p-10 md:p-14 max-w-5xl mx-auto">
          
           {/* Message Paragraphs */}
           <section className="space-y-6 text-justify leading-relaxed mb-10">
             <p>
-              Technology has been connecting everyone from one corner of the
-              globe to another in the fastest way. Businesses and organizations
-              need a strong digital presence and must adopt technology
-              effectively to stay ahead in competition.
+              At Cleaning Sewa, our mission has always been to provide top-quality cleaning services with integrity, professionalism, and care. 
+              Since our establishment in 2018, we have focused on building strong teams, efficient processes, and adopting modern cleaning techniques to deliver excellent results for our clients.
             </p>
 
             <p>
-              My journey into technology began over a decade ago when I founded
-              <strong> PRACAS Infosys</strong> in 2007 A.D. in Biratnagar. I
-              aimed to leverage digital solutions to address local challenges
-              and foster economic development.
+              Our teams have been dedicated to ensuring every home, office, and facility we serve receives exceptional attention and service. 
+              Each project contributes to our continuous growth and commitment to raising industry standards in Kathmandu and across Nepal.
             </p>
 
             <p>
-              My vision has always been to create meaningful impact. I have
-              worked with over 500 clients across 15 countries, helping them
-              with websites, mobile apps, SEO, social media, corporate emails,
-              and IT consulting.
+              We take pride in fostering a culture of reliability, innovation, and excellence. 
+              Our goal is not just cleaning, but transforming spaces into safe, hygienic, and welcoming environments for everyone.
             </p>
 
             <p>
-              Good IT practices help businesses grow faster, enhance digital
-              presence, optimize workforce, protect data, and safeguard
-              reputation against digital threats like hacking, ransomware, or
-              identity theft.
+              Through consistent effort and dedication, Cleaning Sewa has grown into a trusted partner for both residential and commercial clients, strengthening our reputation and long-term success in the cleaning industry.
             </p>
           </section>
 
@@ -50,36 +41,25 @@ const Message = () => {
             {/* Left Text */}
             <div className="w-full md:w-3/5 space-y-6 text-justify leading-relaxed">
               <p>
-                Technology is transforming industries globally, creating
-                opportunities for innovation and growth. At Cleaning Sewa, we harness
-                these advancements to support businesses and individuals in
-                achieving their highest potential.
+                Our commitment extends beyond cleaning; we strive to create environments that inspire comfort, health, and productivity. 
+                At Cleaning Sewa, every client and every space matters, and every team member contributes to our shared mission of excellence.
               </p>
 
               <p>
-                We believe in smart digital transformation solutions that solve
-                today's problems and prepare organizations for the future. Our
-                commitment is to deliver excellence and measurable value through
-                every service.
+                We continue to adopt modern tools, eco-friendly products, and smart cleaning methods to ensure our services are effective, safe, and environmentally responsible.
+                Your trust is our greatest achievement, and we are proud to serve you with the highest standards.
               </p>
+
               {/* Contact Info */}
               <footer className="mt-10 text-left">
-                <p className="text-xl font-bold">Prakash Upreti [ PRACAS ]</p>
-                <p className=" text-sm mb-2">
-                  Chief Technology Officer
-                </p>
-                <p className=" font-medium mb-4">p@cleaningsewa.com</p>
+                <p className="text-xl font-bold">Ramesh Koirala</p>
+                <p className="text-sm mb-2">Director</p>
+                <p className="font-medium mb-4">cleaningsewa@sriyog.com</p>
 
                 {/* Social Icons */}
                 <div className="flex gap-4 mt-3">
                   <Image height={600} width={800} src="/icons/x.svg" alt="Twitter" className="w-5 h-5" />
-                  <Image
-                    height={600}
-                    width={800}
-                    src="/icons/linkedin.svg"
-                    alt="LinkedIn"
-                    className="w-5 h-5"
-                  />
+                  <Image height={600} width={800} src="/icons/linkedin.svg" alt="LinkedIn" className="w-5 h-5" />
                 </div>
               </footer>
             </div>
@@ -90,8 +70,8 @@ const Message = () => {
                 <Image
                   height={600}
                   width={800}
-                  src="/images/message/1.png"
-                  alt="CTO"
+                  src="/message/1.png"
+                  alt="Director Ramesh Koirala"
                   className="w-auto md:w-full max-h-[400px] md:h-full object-cover"
                 />
               </div>

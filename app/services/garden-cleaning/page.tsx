@@ -52,7 +52,7 @@ const GardenCleaning = () => {
           content="Professional garden cleaning services in Nepal including lawn mowing, hedge trimming, leaf removal, weed control, and flowerbed maintenance for residential and commercial gardens."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon/favicon.svg" />
       </Head>
 
       {/* Hero Section */}

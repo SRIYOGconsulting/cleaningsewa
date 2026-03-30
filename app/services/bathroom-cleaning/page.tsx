@@ -52,7 +52,7 @@ const BathroomCleaning = () => {
           content="Professional bathroom cleaning services in Nepal. Remove stains, mold, and bacteria for a spotless and hygienic bathroom."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon/favicon.svg" />
       </Head>
 
       {/* Hero Section */}

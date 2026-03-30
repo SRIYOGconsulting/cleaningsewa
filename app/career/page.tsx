@@ -32,7 +32,7 @@ export default function App() {
         </div>
 
         <h1 className="text-xl sm:text-2xl font-bold text-gray-900">
-          Vacancy in Gardening Service
+          Vacancy in Cleaning Service
         </h1>
       </div>
 
@@ -46,7 +46,7 @@ export default function App() {
               height: "1500px",
               border: "none",
             }}
-            title="Gardening Service Form"
+            title="Cleaning Service Career Form"
           ></iframe>
         </div>
       </div>

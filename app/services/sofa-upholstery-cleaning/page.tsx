@@ -52,7 +52,7 @@ const SofaCleaning = () => {
           content="Professional sofa and upholstery cleaning services in Nepal. Remove dust, allergens, stains, and odors from sofas, chairs, and cushions using safe and effective cleaning techniques."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon/favicon.svg" />
       </Head>
 
       {/* Hero Section */}

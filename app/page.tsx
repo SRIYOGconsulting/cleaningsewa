@@ -1,4 +1,5 @@
 'use client';
+import Link from "next/link";
 import React from "react";
 
 const Home = () => {
@@ -21,19 +22,22 @@ const Home = () => {
             </div>
 
             <p className="text-[18px] max-w-[600px] leading-relaxed opacity-95">
-              Professional, reliable and affordable cleaning services for homes
-              and businesses. We make your space shine.
+              <h1>Professional cleaning services in Kathmandu, Nepal. </h1>
             </p>
 
             <div className="mt-8 flex gap-4">
-              <button className="border-2 border-[#0D5D59] py-2 px-6 rounded-md text-[#0D5D59] font-semibold hover:bg-[#0D5D59] hover:text-white transition">
-                About
-              </button>
+          <Link href="/about">
+            <button className="border-2 border-[#0D5D59] py-2 px-6 rounded-md text-[#0D5D59] font-semibold hover:bg-[#0D5D59] hover:text-white transition duration-300">
+              About
+            </button>
+          </Link>
 
-              <button className="bg-[#0D5D59] text-white px-6 py-2 rounded-md font-semibold hover:bg-opacity-90 transition">
-                Book Service
-              </button>
-            </div>
+          <Link href="/book">
+            <button className="bg-[#0D5D59] text-white px-6 py-2 rounded-md font-semibold hover:bg-opacity-90 hover:scale-105 transition duration-300">
+              Book Service
+            </button>
+          </Link>
+        </div>
           </div>
         </div>
       </section>
@@ -63,7 +67,7 @@ const Home = () => {
         {/* Service 1 */}
         <div className="p-6 bg-white rounded-lg shadow-sm flex flex-col items-center text-center">
           <img
-            src="/services/car-interior-cleaning.jpg"
+            src="/home/topservices/1.jpg"
             alt="Home Cleaning"
             className="w-full h-48 object-cover rounded-md mb-4"
           />
@@ -76,7 +80,7 @@ const Home = () => {
         {/* Service 2 */}
         <div className="p-6 bg-white rounded-lg shadow-sm flex flex-col items-center text-center">
           <img
-            src="/services/garden-cleaning.jpg"
+            src="/home/topservices/2.jpg"
             alt="Garden Cleaning"
             className="w-full h-48 object-cover rounded-md mb-4"
           />
@@ -89,7 +93,7 @@ const Home = () => {
         {/* Service 3 */}
         <div className="p-6 bg-white rounded-lg shadow-sm flex flex-col items-center text-center">
           <img
-            src="/services/kitchen-cleaning.jpg"
+            src="/home/topservices/3.jpg"
             alt="Kitchen Cleaning"
             className="w-full h-48 object-cover rounded-md mb-4"
           />
@@ -113,20 +117,20 @@ const Home = () => {
       {/* Testimonial 1 */}
       <div className="p-6 bg-white rounded-lg shadow-sm flex flex-col items-center text-left">
         <img
-          src="/testimonials/1.png"
+          src="/home/testimonials/1.png"
           alt="Customer 1"
           className="w-[100px] h-[100px] rounded-full mb-4 object-cover"
         />
         <p className="text-gray-600 mb-2">
           "Amazing service! The team is punctual, professional, and pays attention to every detail. Highly recommend."
         </p>
-        <div className="font-semibold mt-auto">Rajesh Gurung</div>
+        <div className="font-semibold mt-auto">Rajesh Thapa</div>
       </div>
 
       {/* Testimonial 2 */}
       <div className="p-6 bg-white rounded-lg shadow-sm flex flex-col items-center text-left">
         <img
-          src="/testimonials/2.png"
+          src="/home/testimonials/2.png"
           alt="Customer 2"
           className="w-[100px] h-[100px] rounded-full mb-4 object-cover"
         />
@@ -139,14 +143,14 @@ const Home = () => {
       {/* Testimonial 3 */}
       <div className="p-6 bg-white rounded-lg shadow-sm flex flex-col items-center text-left">
         <img
-          src="/testimonials/3.png"
+          src="/home/testimonials/3.png"
           alt="Customer 3"
           className="w-[100px] h-[100px] rounded-full mb-4 object-cover"
         />
         <p className="text-gray-600 mb-2">
           "Post-renovation cleanup was perfect. Efficient and detail-oriented team. Definitely recommend!"
         </p>
-        <div className="font-semibold mt-auto">Vikas Adhikari</div>
+        <div className="font-semibold mt-auto">Vikas Pandey</div>
       </div>
 
     </div>
@@ -163,7 +167,7 @@ const Home = () => {
 
         {/* Blog 1 */}
         <div className="border border-gray-200 rounded-lg overflow-hidden hover:shadow-md transition">
-          <img src="/blog/ac-cleaning.jpg" alt="AC Cleaning Tips" className="w-full h-48 object-cover"/>
+          <img src="/home/blog/1.jpg" alt="AC Cleaning Tips" className="w-full h-48 object-cover"/>
           <div className="p-5">
             <h3 className="font-semibold text-lg mb-2">AC Cleaning Tips</h3>
             <p className="text-gray-600 text-sm">
@@ -174,7 +178,7 @@ const Home = () => {
 
         {/* Blog 2 */}
         <div className="border border-gray-200 rounded-lg overflow-hidden hover:shadow-md transition">
-          <img src="/blog/bathroom-cleaning.jpg" alt="Bathroom Cleaning Tips" className="w-full h-48 object-cover"/>
+          <img src="/home/blog/2.jpg" alt="Bathroom Cleaning Tips" className="w-full h-48 object-cover"/>
           <div className="p-5">
             <h3 className="font-semibold text-lg mb-2">Bathroom Cleaning Tips</h3>
             <p className="text-gray-600 text-sm">
@@ -185,7 +189,7 @@ const Home = () => {
 
         {/* Blog 3 */}
         <div className="border border-gray-200 rounded-lg overflow-hidden hover:shadow-md transition">
-          <img src="/blog/garden-cleaning.jpg" alt="Garden Cleaning Tips" className="w-full h-48 object-cover"/>
+          <img src="/home/blog/3.jpg" alt="Garden Cleaning Tips" className="w-full h-48 object-cover"/>
           <div className="p-5">
             <h3 className="font-semibold text-lg mb-2">Garden Cleaning Tips</h3>
             <p className="text-gray-600 text-sm">

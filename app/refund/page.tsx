@@ -5,56 +5,56 @@ import Ribbon from "../../components/Ribbon";
 
 export default function RefundPolicy() {
   return (
-    <div className=" h-full">
+    <div className="h-full">
       {/* Header / Ribbon */}
-      <Ribbon name="Refund Policy" showfont={false}/>
+      <Ribbon name="Refund Policy" showfont={false} />
 
       {/* Content Section */}
       <div className="max-w-7xl mx-auto px-4 md:px-8 mb-12 space-y-6">
         <section className="footer p-6 rounded-xl shadow-md space-y-6">
           <p className="about leading-relaxed">
-            At <span className="font-medium">Cleaning Sewa Pvt. Ltd.</span>, we are committed to delivering high-quality products and services. This Refund Policy describes the situations in which refunds may be granted and the process to request them.
+            At <span className="font-medium">Cleaning Sewa</span>, we are committed to providing top-quality cleaning services in Kathmandu. This Refund Policy explains when refunds may be issued and how you can request them.
           </p>
 
           <div>
             <h2 className="text-2xl font-semibold text-teal-800 mb-2">Eligibility for Refunds</h2>
             <p className="about leading-relaxed mb-2">
-              Refunds may be provided under the following conditions:
+              Refunds may be granted in the following cases:
             </p>
             <ul className="list-disc list-inside about space-y-1">
-              <li>Products or services received are defective or not as described.</li>
-              <li>Orders are not delivered within the expected timeframe.</li>
-              <li>Duplicate charges or payment errors occur.</li>
+              <li>Scheduled cleaning service was not performed as agreed.</li>
+              <li>Service quality did not meet the standards promised.</li>
+              <li>Double charges or payment errors occurred during booking.</li>
             </ul>
           </div>
 
           <div>
             <h2 className="text-2xl font-semibold text-teal-800 mb-2">Non-Refundable Cases</h2>
             <p className="about leading-relaxed mb-2">
-              Refunds will not be issued in the following cases:
+              Refunds will not be issued in the following situations:
             </p>
             <ul className="list-disc list-inside about space-y-1">
-              <li>Change of mind after purchase.</li>
-              <li>Services or digital products that have already been fully delivered.</li>
-              <li>Unauthorized use or distribution of digital content.</li>
+              <li>Customer changes their mind after the service has been completed.</li>
+              <li>Services fully delivered and accepted by the customer.</li>
+              <li>Damage caused by improper use or negligence on the customer’s part.</li>
             </ul>
           </div>
 
           <div>
             <h2 className="text-2xl font-semibold text-teal-800 mb-2">Refund Process</h2>
             <p className="about leading-relaxed mb-2">
-              To request a refund, please contact our support team at <span className="font-medium">support@cleaningsewa.com</span> within 7 days of purchase. Include your order details, reason for the refund, and any supporting documentation.
+              To request a refund, contact our support team at <span className="font-medium">support@cleaningsewa.com</span> within 3 days of the service date. Provide your booking details, reason for the refund, and any supporting photos or documentation.
             </p>
             <p className="about leading-relaxed">
-              Once your request is reviewed, we will respond within 5 business days. Approved refunds will be processed back to the original payment method within 7–10 business days.
+              Once reviewed, our team will respond within 3–5 business days. Approved refunds will be issued to the original payment method within 5–7 business days.
             </p>
           </div>
 
           <div>
             <h2 className="text-2xl font-semibold text-teal-800 mb-2">Contact Us</h2>
-            <p className="about leading-relaxed mb-1">Email: support@cleaningsewa.com</p>
-            <p className="about leading-relaxed mb-1">Phone: +977-XXXXXXXXXX</p>
-            <p className="about leading-relaxed">Address: [Cleaning Sewa Address], Kathmandu, Nepal</p>
+            <p className="about leading-relaxed mb-1">Email: cleaningsewa@sriyog.com</p>
+            <p className="about leading-relaxed mb-1">Phone: +977-9852024365</p>
+            <p className="about leading-relaxed">Address: Kamalpokhari, Kathmandu, Nepal</p>
           </div>
         </section>
       </div>

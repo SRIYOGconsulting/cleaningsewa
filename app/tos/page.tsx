@@ -20,7 +20,7 @@ const TermsofServices = () => {
           <p className="about leading-relaxed">
             Welcome to Cleaning Sewa. Please read these Terms and Conditions (“Terms”, 
             “Terms and Conditions”) carefully before using the website, mobile application, 
-            or social media platforms (the “Service”) operated by Cleaning Sewa Pvt. Ltd. 
+            or social media platforms (the “Service”) operated by Cleaning Sewa . 
             (“us”, “we”, or “our”).
           </p>
 
@@ -54,7 +54,7 @@ const TermsofServices = () => {
           <div>
             <h2 className="text-2xl font-semibold text-teal-800 mb-2">Understanding of Our Platform</h2>
             <p className="about leading-relaxed">
-              Established on June 14, 2018, Cleaning Sewa Pvt. Ltd. is a premier Managed IT Services provider 
+              Established on June 14, 2018, Cleaning Sewa . is a premier Managed IT Services provider 
               based in Kathmandu, Nepal. We specialize in innovative IT solutions but do not endorse or guarantee 
               the services provided by users.
             </p>

@@ -52,7 +52,7 @@ const PostEventCleaning = () => {
           content="Professional post event cleaning services in Nepal. Fast and efficient cleanup for parties, weddings, and corporate events. Keep your venue spotless."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon/favicon.svg" />
       </Head>
 
       {/* Hero Section */}

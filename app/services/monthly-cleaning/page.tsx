@@ -52,7 +52,7 @@ const MonthlyCleaning = () => {
           content="Professional monthly cleaning services in Nepal including deep cleaning, dusting, carpet and furniture cleaning, and regular home sanitation for a hygienic living environment."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon/favicon.svg" />
       </Head>
 
       {/* Hero Section */}

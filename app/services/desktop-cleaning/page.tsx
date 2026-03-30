@@ -52,7 +52,7 @@ const DesktopCleaning = () => {
           content="Professional desktop computer cleaning services in Nepal. Dust removal, keyboard and screen cleaning, internal component sanitization, and maintenance for optimal performance."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon/favicon.svg" />
       </Head>
 
       {/* Hero Section */}

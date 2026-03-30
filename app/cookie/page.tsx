@@ -11,8 +11,8 @@ const cookiePolicy = () => {
       <div className="max-w-7xl mx-auto px-4 md:px-8 mb-12 space-y-6">
         <section className="footer p-6 rounded-xl shadow-md space-y-6">
           <p className="about leading-relaxed">
-            At <span className="font-medium">Cleaning Sewa Pvt. Ltd.</span>, 
-            At Cleaning Sewa Pvt. Ltd., we value your privacy and are committed
+            At <span className="font-medium">Cleaning Sewa .</span>, 
+            At Cleaning Sewa ., we value your privacy and are committed
             to ensuring a transparent and secure browsing experience. This Cookie
             Policy explains how and why cookies are used on our website, what types
             of cookies we employ, and the choices you have to manage or disable them.

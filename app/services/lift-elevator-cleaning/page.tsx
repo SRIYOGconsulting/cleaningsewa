@@ -52,7 +52,7 @@ const LiftCleaning = () => {
           content="Professional lift and elevator cleaning services in Nepal including floors, walls, panels, mirrors, buttons, and handrails to ensure hygiene and safety in residential and commercial buildings."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon/favicon.svg" />
       </Head>
 
       {/* Hero Section */}
