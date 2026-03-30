@@ -14,8 +14,8 @@ const RoadBlock = () => {
   // --- STATES ---
   const [showRoadBlock, setShowRoadBlock] = useState(false);
   const [imageLoaded, setImageLoaded] = useState(false);
-  const [timeLeft, setTimeLeft] = useState(40);      // total display time
-  const [displayTimeLeft, setDisplayTimeLeft] = useState(10); // X button timer
+  const [timeLeft, setTimeLeft] = useState(40); // total display time
+  const [displayTimeLeft, setDisplayTimeLeft] = useState(20); // X button timer
 
   // --- Close Function ---
   const onClose = useCallback(() => {
@@ -24,35 +24,30 @@ const RoadBlock = () => {
     setShowRoadBlock(false);
   }, []);
 
-  // --- Show roadblock once per session ---
+  // --- Preload image and show roadblock after it's loaded ---
   useEffect(() => {
     const hasSeen = sessionStorage.getItem("roadblock_seen");
-    if (!hasSeen) {
-      setShowRoadBlock(true);
-      sessionStorage.setItem("roadblock_seen", "true");
-    }
-  }, []);
+    if (hasSeen) return; // already seen in session
 
-  // --- Hide scroll when roadblock is visible ---
-  useEffect(() => {
-    if (showRoadBlock) {
-      document.body.classList.add('hideScroll');
-    } else {
-      document.body.classList.remove('hideScroll');
-    }
-  }, [showRoadBlock]);
-
-  // --- Preload Roadblock Image ---
-  useEffect(() => {
     const img = new Image();
     img.src = `/roadblock/${month}/${day}.jpg`;
-    img.onload = () => setImageLoaded(true);
+    img.onload = () => {
+      setImageLoaded(true);
+      setShowRoadBlock(true);
+      sessionStorage.setItem("roadblock_seen", "true");
+      document.body.classList.add('hideScroll'); // hide scroll immediately
+    };
     img.onerror = () => {
       // fallback to default image
       const defaultImg = new Image();
-      defaultImg.src = `/roadblock/default.jpg`;
-      defaultImg.onload = () => setImageLoaded(true);
-      defaultImg.onerror = onClose;
+      defaultImg.src = "/roadblock/default.jpg";
+      defaultImg.onload = () => {
+        setImageLoaded(true);
+        setShowRoadBlock(true);
+        sessionStorage.setItem("roadblock_seen", "true");
+        document.body.classList.add('hideScroll');
+      };
+      defaultImg.onerror = onClose; // if default image fails, just close
     };
   }, [month, day, onClose]);
 
@@ -85,7 +80,7 @@ const RoadBlock = () => {
 
   return (
     <>
-      {showRoadBlock && (
+      {showRoadBlock && imageLoaded && (
         <div className="fixed inset-0 bg-[#D0D0D0] z-9999 flex items-center justify-center">
           <div className="relative">
             {/* Close Button */}
@@ -109,38 +104,29 @@ const RoadBlock = () => {
               {displayTimeLeft <= 0 ? "X" : displayTimeLeft}
             </button>
 
-            {/* Loader */}
-            {!imageLoaded && (
-              <div className="flex items-center justify-center w-[550px] h-[550px] bg-white rounded">
-                <span className="text-gray-700">Loading...</span>
-              </div>
-            )}
-
             {/* Roadblock Image */}
-            {imageLoaded && (
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <img
-                  src={`/roadblock/${month}/${day}.jpg`}
-                  onError={(e) => {
-                    const originalSrc = e.currentTarget.src;
-                    e.currentTarget.onerror = null;
-                    if (!originalSrc.includes("default.jpg")) {
-                      e.currentTarget.src = "/roadblock/default.jpg";
-                    } else {
-                      handleImageError();
-                    }
-                  }}
-                  className="img-fluid rounded"
-                  style={{
-                    borderRadius: "3%",
-                    objectFit: "contain",
-                    height: "550px",
-                    width: "550px",
-                  }}
-                  alt="Advertisement"
-                />
-              </a>
-            )}
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <img
+                src={`/roadblock/${month}/${day}.jpg`}
+                onError={(e) => {
+                  const originalSrc = e.currentTarget.src;
+                  e.currentTarget.onerror = null;
+                  if (!originalSrc.includes("default.jpg")) {
+                    e.currentTarget.src = "/roadblock/default.jpg";
+                  } else {
+                    handleImageError();
+                  }
+                }}
+                className="img-fluid rounded"
+                style={{
+                  borderRadius: "3%",
+                  objectFit: "contain",
+                  height: "550px",
+                  width: "550px",
+                }}
+                alt="Advertisement"
+              />
+            </a>
           </div>
         </div>
       )}
