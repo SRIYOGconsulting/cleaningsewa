@@ -59,7 +59,7 @@ const RoadBlock = () => {
     return () => clearInterval(timer);
   }, [onClose, showRoadBlock]);
 
-  // Close button display timer (5s)
+  // Close button display timer (12s)
   useEffect(() => {
     if (!showRoadBlock) return;
 
