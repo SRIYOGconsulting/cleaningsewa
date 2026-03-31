@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Head from "next/head";
+import Link from "next/link";
 
 const FacadeCleaning = () => {
   const [openFAQ, setOpenFAQ] = useState<number | null>(null);
@@ -76,9 +77,14 @@ const FacadeCleaning = () => {
             <p className="max-w-[858px] mb-8 text-base leading-relaxed md:text-lg text-white">
               Professional facade cleaning services for residential and commercial buildings. We clean windows, glass panels, walls, and high-rise exteriors to restore their shine and appearance.
             </p>
-            <button className="bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition">
-              Book Facade Cleaning
-            </button>
+            
+            <Link href="/book">
+              <button className="bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition">
+                Book Facade Cleaning Service
+              </button>
+            </Link>
+            
+
           </div>
         </div>
       </div>

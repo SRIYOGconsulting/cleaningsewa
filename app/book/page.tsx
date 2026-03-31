@@ -38,18 +38,16 @@ export default function App() {
 
       {/* Airtable */}
       <div className="w-full flex justify-center py-6">
-        <div className="w-full max-w-4xl rounded-lg overflow-hidden shadow-md">
-          <iframe
-            src="https://airtable.com/appleRo8p3WECYrSW/pag3G6i7wWYeFJSlu/form"
-            className="w-full"
-            style={{
-              height: "1500px",
-              border: "none",
-            }}
-            title="Gardening Service Form"
-          ></iframe>
-        </div>
+      <div className="w-full max-w-4xl rounded-lg overflow-hidden shadow-md">
+        <iframe
+          src="https://airtable.com/embed/appleRo8p3WECYrSW/pag3G6i7wWYeFJSlu/form"
+          className="w-full airtable-embed"
+          height="1333"
+          style={{ border: "0px solid #F8F9FB", background: "#F8F9FB" }}
+          frameBorder="0"
+        />
       </div>
+    </div>
     </div>
   );
 }

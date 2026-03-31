@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Head from "next/head";
+import Link from "next/link";
 
 const LaptopCleaning = () => {
   const [openFAQ, setOpenFAQ] = useState<number | null>(null);
@@ -75,9 +76,13 @@ const LaptopCleaning = () => {
             <p className="max-w-[858px] mb-8 text-base leading-relaxed md:text-lg text-white">
               Professional laptop cleaning services to remove dust, dirt, and grime from keyboards, screens, vents, and internal components. Keep your laptop running smoothly and hygienic.
             </p>
-            <button className="bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition">
-              Book Laptop Cleaning
-            </button>
+            
+            <Link href="/book">
+              <button className="bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition">
+                Book Laptop Cleaning Service
+              </button>
+            </Link>
+
           </div>
         </div>
       </div>

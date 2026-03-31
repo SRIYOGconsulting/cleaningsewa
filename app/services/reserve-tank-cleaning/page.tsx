@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Head from "next/head";
+import Link from "next/link";
 
 const ReserveTankCleaning = () => {
   const [openFAQ, setOpenFAQ] = useState<number | null>(null);
@@ -76,9 +77,13 @@ const ReserveTankCleaning = () => {
             <p className="max-w-[858px] mb-8 text-base leading-relaxed md:text-lg text-white">
               Professional cleaning and disinfection of water storage tanks for homes, apartments, and commercial properties to ensure safe and hygienic water.
             </p>
-            <button className="bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition">
-              Book Reserve Tank Cleaning
-            </button>
+            
+            <Link href="/book">
+              <button className="bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition">
+                Book Reserve Tank Cleaning Service
+              </button>
+            </Link>
+
           </div>
         </div>
       </div>

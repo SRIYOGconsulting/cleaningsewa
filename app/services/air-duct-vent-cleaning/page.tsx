@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Head from "next/head";
+import Link from "next/link";
 
 const AirDuctCleaning = () => {
   const [openFAQ, setOpenFAQ] = useState<number | null>(null);
@@ -81,9 +82,11 @@ const AirDuctCleaning = () => {
               Professional air duct and vent cleaning services to improve airflow, remove dust and allergens, and ensure clean and healthy indoor air.
             </p>
 
-            <button className="bg-blue-700 px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition">
-              Book Air Duct Cleaning
-            </button>
+            <Link href="/book">
+              <button className="bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition">
+                Book Air Duct & Vent Cleaning Service
+              </button>
+            </Link>
           </div>
         </div>
       </div>

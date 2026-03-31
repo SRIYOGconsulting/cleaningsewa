@@ -15,19 +15,19 @@ export default function Vmgo() {
         <section className='max-w-7xl mx-auto py-8'>
             <div className='grid grid-cols-2 md:grid-cols-4 gap-12 place-content-center place-items-center'>
                 <div className='flex flex-col justify-center items-center gap-3'>
-                  <Image height={24} width={24} src="/vmgo/vision.webp" alt="" className="w-24 h-24 " />
+                  <Image height={24} width={24} src="/vmgo/vision.svg" alt="" className="w-24 h-24 " />
                   <p>Vision</p>
                 </div>
                 <div className='flex flex-col justify-center items-center gap-3'>
-                  <Image height={24} width={24} src="/vmgo/mission.webp" alt="" className="w-24 h-24 " />
+                  <Image height={24} width={24} src="/vmgo/mission.svg" alt="" className="w-24 h-24 " />
                   <p>Mission</p>
                 </div>
                 <div className='flex flex-col justify-center items-center gap-3'>
-                  <Image height={24} width={24} src="/vmgo/goals.webp" alt="" className="w-24 h-24 " />
+                  <Image height={24} width={24} src="/vmgo/goals.svg" alt="" className="w-24 h-24 " />
                   <p>Goals</p> 
                 </div>
                 <div className='flex flex-col justify-center items-center gap-3'>
-                  <Image height={24} width={24} src="/vmgo/Objectives.webp" alt="" className="w-24 h-24" /> 
+                  <Image height={24} width={24} src="/vmgo/Objectives.svg" alt="" className="w-24 h-24" /> 
                   <p>Objectives</p>    
                 </div> 
             </div>

@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Head from "next/head";
+import Link from "next/link";
 
 const MarbleTileCleaning = () => {
   const [openFAQ, setOpenFAQ] = useState<number | null>(null);
@@ -76,9 +77,13 @@ const MarbleTileCleaning = () => {
             <p className="max-w-[858px] mb-8 text-base leading-relaxed md:text-lg text-white">
               Restore the shine and hygiene of your marble and tile surfaces with professional cleaning, stain removal, and polishing services.
             </p>
-            <button className="bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition">
-              Book Marble/Tile Cleaning
-            </button>
+            
+            <Link href="/book">
+              <button className="bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition">
+                Book Marble/Tile Cleaning Service
+              </button>
+            </Link>
+
           </div>
         </div>
       </div>

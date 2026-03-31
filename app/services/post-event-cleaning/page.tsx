@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Head from "next/head";
+import Link from "next/link";
 
 const PostEventCleaning = () => {
   const [openFAQ, setOpenFAQ] = useState<number | null>(null);
@@ -82,9 +83,13 @@ const PostEventCleaning = () => {
               organized, and spotless condition.
             </p>
 
-            <button className="bg-blue-700 px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition">
-              Book Post Event Cleaning
-            </button>
+            
+            <Link href="/book">
+              <button className="bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition">
+                Book Post Event Cleaning Service
+              </button>
+            </Link>
+
           </div>
         </div>
       </div>

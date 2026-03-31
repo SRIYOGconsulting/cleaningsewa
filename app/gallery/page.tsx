@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 
 // Gallery item type
 interface GalleryItem {
@@ -10,45 +11,19 @@ interface GalleryItem {
   altText: string;
 }
 
-// Top services images
-const topServices: GalleryItem[] = [
-  { id: 1, imageUrl: "/gallery/1.jpg", altText: "Home cleaning service" },
-  { id: 2, imageUrl: "/gallery/2.jpg", altText: "Office cleaning service" },
-  { id: 3, imageUrl: "/gallery/3.jpg", altText: "Window cleaning" },
-  { id: 4, imageUrl: "/gallery/4.jpg", altText: "Carpet cleaning" },
-  { id: 5, imageUrl: "/gallery/5.jpg", altText: "Deep cleaning service" },
-  { id: 6, imageUrl: "/gallery/6.jpg", altText: "Sanitization service" },
-];
-
-// Cleaning projects (limited to 30 images)
+// Cleaning projects (30 images)
 const cleaningProjects: GalleryItem[] = Array.from({ length: 30 }, (_, i) => ({
   id: i + 1,
   imageUrl: `/gallery/${i + 1}.jpg`,
   altText: `Cleaning project ${i + 1}`,
 }));
 
-// Reusable Gallery Grid
-const GalleryGrid = ({ items }: { items: GalleryItem[] }) => (
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-    {items.map((item) => (
-      <div
-        key={item.id}
-        className="relative w-full h-72 rounded-xl overflow-hidden shadow-md"
-      >
-        <Image
-          src={item.imageUrl}
-          alt={item.altText}
-          fill
-          className="object-cover hover:scale-105 transition duration-300"
-        />
-      </div>
-    ))}
-  </div>
-);
-
 export default function GalleryPage() {
+  const [selectedImage, setSelectedImage] = useState<GalleryItem | null>(null);
+
   return (
     <div className="mb-40">
+
       {/* Page Header */}
       <div className="h-[200px] bg-gray-100 flex flex-col items-center justify-center text-center">
         <span className="text-gray-500">
@@ -57,18 +32,51 @@ export default function GalleryPage() {
         <h1 className="text-4xl font-bold text-teal-800 mt-2">Cleaning Projects</h1>
       </div>
 
-      {/* Gallery Sections */}
+      {/* Gallery Grid */}
       <div className="max-w-7xl mx-auto px-6 py-12 space-y-16">
         <section>
-          <h2 className="text-2xl font-bold mb-6">Top Services</h2>
-          <GalleryGrid items={topServices} />
-        </section>
-
-        <section>
-          <h2 className="text-2xl font-bold mb-6">Our Cleaning Projects</h2>
-          <GalleryGrid items={cleaningProjects} />
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {cleaningProjects.map((item) => (
+              <div
+                key={item.id}
+                className="relative w-full h-72 rounded-xl overflow-hidden shadow-md cursor-pointer"
+                onClick={() => setSelectedImage(item)}
+              >
+                <Image
+                  src={item.imageUrl}
+                  alt={item.altText}
+                  fill
+                  className="object-cover hover:scale-105 transition duration-300"
+                />
+              </div>
+            ))}
+          </div>
         </section>
       </div>
+
+      {/* Modal */}
+      {selectedImage && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/70"
+          onClick={() => setSelectedImage(null)}
+        >
+          <div className="relative max-w-4xl w-full p-4">
+            <Image
+              src={selectedImage.imageUrl}
+              alt={selectedImage.altText}
+              width={1000}
+              height={700}
+              className="rounded-lg object-contain"
+            />
+            <button
+              className="absolute top-2 right-2 text-white text-2xl font-bold"
+              onClick={() => setSelectedImage(null)}
+            >
+              &times;
+            </button>
+          </div>
+        </div>
+      )}
 
       {/* CTA Section */}
       <div className="relative h-[300px] flex items-center justify-center text-white">

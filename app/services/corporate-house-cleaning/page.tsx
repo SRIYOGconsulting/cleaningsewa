@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Head from "next/head";
+import Link from "next/link";
 
 const CorporateHouseCleaning = () => {
   const [openFAQ, setOpenFAQ] = useState<number | null>(null);
@@ -81,9 +82,11 @@ const CorporateHouseCleaning = () => {
               Professional cleaning services for corporate houses and office spaces, ensuring a hygienic, fresh, and productive environment.
             </p>
 
-            <button className="bg-blue-700 px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition">
-              Book Corporate Cleaning
-            </button>
+            <Link href="/book">
+              <button className="bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition">
+                Book Corporate House Cleaning Service
+              </button>
+            </Link>
           </div>
         </div>
       </div>

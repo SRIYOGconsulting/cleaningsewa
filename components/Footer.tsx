@@ -148,9 +148,9 @@ const Footer = () => {
           {/* CONTACT BOXES */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
 
-            <a href="mailto:info@cleaningsewa.com" className="flex items-center gap-2 border-2 rounded-lg px-7 py-3 w-full sm:w-auto">
+            <a href="mailto:cleaningsewa@sriyog.com" className="flex items-center gap-2 border-2 rounded-lg px-7 py-3 w-full sm:w-auto">
               <img src="/icons/email.svg" alt="email" className="h-6 w-6" />
-              <span className="text-sm">info@cleaningsewa.com</span>
+              <span className="text-sm">cleaningsewa@sriyog.com</span>
             </a>
 
             <a href="tel:+977014548068" className="flex items-center gap-2 border-2 rounded-lg px-7 py-3 w-full sm:w-auto">

@@ -8,7 +8,7 @@ export default function About() {
       {/* Hero Section */}
       <section className="bg-blue-700 text-white py-24 px-6 text-center">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">
-          About Cleaning Sewa
+          About Cleaning Services in Nepal
         </h1>
         <p className="text-lg md:text-xl max-w-2xl mx-auto">
           Providing professional, eco-friendly, and reliable home cleaning services across Nepal.

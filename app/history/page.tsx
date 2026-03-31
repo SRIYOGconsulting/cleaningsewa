@@ -17,7 +17,7 @@ export default function History() {
                 <section>
                     <h2 className="text-2xl font-bold  mb-4">Our Beginning</h2>
                     <p className=" leading-relaxed">
-                        Cleaning Sewa . began its journey with a mission to bring advanced digital
+                        Cleaning Sewa began its journey with a mission to bring advanced digital
                         transformation to industries that needed it the most. What started as a small initiative
                         has now grown into a trusted technology partner for organizations across healthcare,
                         employment, and tourism.
@@ -25,7 +25,7 @@ export default function History() {
 
                     <div className="mt-6 rounded-lg overflow-hidden shadow-md">
                         <Image height={600} width={800}
-                            src="/history/2.jpg"
+                            src="/history/1.jpg"
                             alt="History Beginning"
                             className="w-full h-full object-cover"
                         />
@@ -35,11 +35,16 @@ export default function History() {
                 {/* Evolution Section */}
                 <section>
                     <h2 className="text-2xl font-bold  mb-4">Evolution Over the Years</h2>
-                    <p className=" leading-relaxed">
-                        Over the years, our company evolved by adopting modern technologies, expanding our 
-                        team, and building systems that support thousands of users. Continuous learning,
-                        innovation, and adaptability have shaped our growth and helped us stay ahead of
-                        technological advancements.
+                    <p className="leading-relaxed mb-4">
+                    Our story began in the early 1980s when two best friends shared an unusual obsession—they loved cleaning. What started as a passion soon became a craft. From meticulously polishing antiques and restoring delicate items to detailing luxury cars and tidying posh homes, their dedication to perfection earned them a reputation for excellence between 1980 and 1995.
+                    </p>
+
+                    <p className="leading-relaxed mb-4">
+                    As time passed, this legacy of care and precision was carried forward by the next generation. The son of one of the founders took the inspiration, vision, and expertise of his parents and transformed it into a professional cleaning enterprise. He introduced structured services, trained teams, and implemented methods to deliver consistent quality to a wider clientele.
+                    </p>
+
+                    <p className="leading-relaxed">
+                    Over the years, our company has evolved by adopting modern technologies, expanding our team, and building systems that support thousands of satisfied clients. Continuous learning, innovation, and adaptability have shaped our growth and helped us stay ahead of industry advancements.
                     </p>
 
                     {/* Two Card Format */}
@@ -54,13 +59,13 @@ export default function History() {
                             />
 
                             <h3 className="text-[24px] font-semibold text-center">
-                                Full Name
+                                Basudev Koirala
                             </h3>
                             <p className="text-center text-sm">
-                                Designation
+                                Founder
                             </p>
                             <p className="mt-3  text-center leading-relaxed">
-                                    Our journey has been shaped by individuals who have contributed to key projects and supported the growth of multiple teams. Their leadership has guided important initiatives, strengthened operational performance, and helped us maintain consistent service standards in a competitive environment. 
+                                    Our journey has been guided by individuals whose expertise and leadership have driven key projects, strengthened operational performance, and maintained high service standards in a competitive environment.
 
 
                             </p>
@@ -75,13 +80,13 @@ export default function History() {
                             />
 
                             <h3 className="text-[24px] font-semibold text-center ">
-                                Full Name
+                                Bhumika Devi Dahal
                             </h3>
                             <p className="text-center  text-sm">
-                                Designation
+                                Co-Founder
                             </p>
                             <p className="mt-3  text-center leading-relaxed">
-                                    Through continuous effort, innovation, and a strong focus on customer satisfaction, we have played a meaningful role in improving hygiene standards and creating cleaner, healthier spaces for homes and businesses. As we move forward, we remain committed to expanding our services.
+                                    Through persistent effort, innovation, and a strong focus on customer satisfaction, we have played a meaningful role in improving hygiene standards and creating cleaner, healthier spaces for homes and businesses.
                             </p>
                         </div>
 

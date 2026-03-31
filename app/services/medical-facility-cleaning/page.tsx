@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Head from "next/head";
+import Link from "next/link";
 
 const MedicalCleaning = () => {
   const [openFAQ, setOpenFAQ] = useState<number | null>(null);
@@ -76,9 +77,13 @@ const MedicalCleaning = () => {
             <p className="max-w-[858px] mb-8 text-base leading-relaxed md:text-lg text-white">
               Professional cleaning and sterilization services for hospitals, clinics, labs, and medical offices to ensure safe and hygienic environments for patients and staff.
             </p>
-            <button className="bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition">
-              Book Medical Cleaning
-            </button>
+            
+            <Link href="/book">
+              <button className="bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition">
+                Book Medical Facility Cleaning Service
+              </button>
+            </Link>
+            
           </div>
         </div>
       </div>

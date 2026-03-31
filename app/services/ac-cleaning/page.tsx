@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Head from "next/head";
+import Link from "next/link";
 
 const ACCleaning = () => {
   const [openFAQ, setOpenFAQ] = useState<number | null>(null);
@@ -80,9 +81,12 @@ const ACCleaning = () => {
               Professional AC cleaning services to improve cooling performance, remove dust and bacteria, and ensure healthy indoor air quality for your home or office.
             </p>
 
-            <button className="bg-blue-700 px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition">
-              Book AC Cleaning
-            </button>
+            <Link href="/book">
+              <button className="bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition">
+                Book AC Cleaning Service
+              </button>
+            </Link>
+            
           </div>
         </div>
       </div>

@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Head from "next/head";
+import Link from "next/link";
 
 const CarInteriorCleaning = () => {
   const [openFAQ, setOpenFAQ] = useState<number | null>(null);
@@ -81,9 +82,11 @@ const CarInteriorCleaning = () => {
               Professional car interior cleaning services to remove dust, stains, and bacteria, ensuring a fresh, clean, and hygienic driving experience.
             </p>
 
-            <button className="bg-blue-700 px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition">
-              Book Car Interior Cleaning
-            </button>
+            <Link href="/book">
+              <button className="bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition">
+                Book Car Interior Cleaning Service
+              </button>
+            </Link>
           </div>
         </div>
       </div>

@@ -72,7 +72,7 @@ export default function Testimonials() {
             <img
               src={t.image}
               alt={t.name}
-              className="w-20 h-20 rounded-full object-cover mb-4"
+              className="w-40 h-40 rounded-full object-cover mb-4"
             />
             <p className="text-gray-700 mb-3">{t.feedback}</p>
             <h4 className="font-semibold">{t.name}</h4>

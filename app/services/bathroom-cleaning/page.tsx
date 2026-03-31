@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Head from "next/head";
+import Link from "next/link";
 
 const BathroomCleaning = () => {
   const [openFAQ, setOpenFAQ] = useState<number | null>(null);
@@ -81,9 +82,11 @@ const BathroomCleaning = () => {
               Professional bathroom cleaning services to remove stains, mold, and bacteria, ensuring a fresh, hygienic, and spotless bathroom.
             </p>
 
-            <button className="bg-blue-700 px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition">
-              Book Bathroom Cleaning
-            </button>
+            <Link href="/book">
+              <button className="bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition">
+                Book Bathroom Cleaning Service
+              </button>
+            </Link>
           </div>
         </div>
       </div>

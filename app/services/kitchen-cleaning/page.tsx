@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Head from "next/head";
+import Link from "next/link";
 
 const KitchenCleaning = () => {
   const [openFAQ, setOpenFAQ] = useState<number | null>(null);
@@ -75,9 +76,13 @@ const KitchenCleaning = () => {
             <p className="max-w-[858px] mb-8 text-base leading-relaxed md:text-lg text-white">
               Professional kitchen cleaning services for homes and apartments. Deep cleaning of countertops, cabinets, sinks, appliances, and floors to ensure a spotless and hygienic kitchen.
             </p>
-            <button className="bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition">
-              Book Kitchen Cleaning
-            </button>
+            
+            <Link href="/book">
+              <button className="bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition">
+                Book Kitchen Cleaning Service
+              </button>
+            </Link>
+
           </div>
         </div>
       </div>

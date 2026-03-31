@@ -16,10 +16,10 @@ export default function WhyUs () {
                 <div className=" grid md:grid-cols-2 gap-10 place-items-center">
                     <div className="space-y-6 max-w-md ">
                     <h1 className="text-3xl md:text-4xl font-semibold leading-snug">
-                        We Make Finding Skilled Professionals Simple
+                        100% Skilled & Certified Professionals
                     </h1>
                     <p className="">
-                        At Cleaning Sewa, we’ve built a platform that connects clients with real, trusted professionals — from plumbers, electricians and carpenters to tutors, beauticians, and more. No more calling around or searching through unreliable ads — everything you need is in one place.
+                        At Cleaning Sewa, we connect you with fully skilled and certified cleaning professionals you can trust. From home cleaning, office cleaning, carpet and sofa cleaning to deep sanitization and specialized services, every cleaner on our platform is carefully vetted to ensure expertise and reliability — no more wasted time searching for trustworthy help.
                     </p>
                     </div>
 
@@ -34,10 +34,10 @@ export default function WhyUs () {
                 <div className="  grid md:grid-cols-2 gap-10 place-items-center md:[direction:rtl]">
                     <div className="space-y-6 max-w-md text-left ">
                     <h1 className="text-3xl md:text-4xl font-semibold leading-snug">
-                        Verified Experts, Diverse Services
+                        Genuine Chemicals to save your precious items
                     </h1>
                     <p className="  ">
-                        We vet and verify service providers so you get dependable, high-quality help. With dozens of service categories and thousands of skilled professionals, you have flexibility and choice — for quick repairs, tutoring, beauty services, and more.
+                        We use genuine, high-quality cleaning chemicals and equipment to protect your valuable items and ensure spotless results. With a wide range of cleaning services and thousands of certified professionals, you have the flexibility to choose exactly what you need, whether it’s daily cleaning, deep cleaning, or specialized maintenance.
                     </p>
                     </div>
 
@@ -52,10 +52,10 @@ export default function WhyUs () {
                 <div className="  grid md:grid-cols-2 gap-10 place-items-center">
                     <div className="space-y-6 max-w-md ">
                     <h1 className="text-3xl md:text-4xl font-semibold leading-snug">
-                        Easy to Use — Anytime, Anywhere
+                        Safely organised and managed services
                     </h1>
                     <p className=" ">
-                        Cleaning Sewa is built to be user-friendly and accessible. With our web platform and mobile app, you can find, contact, and hire professionals from the comfort of your home — saving time and effort.
+                        Our platform is designed to be safe, organized, and easy to use. Through our website or mobile app, you can quickly find, contact, and hire professionals from the comfort of your home — saving both time and effort.
                     </p>
                     </div>
 
@@ -70,10 +70,10 @@ export default function WhyUs () {
                 <div className=" grid md:grid-cols-2 gap-10 place-items-center md:[direction:rtl]">
                     <div className="space-y-6 max-w-md text-left ">
                     <h1 className="text-3xl md:text-4xl font-semibold leading-snug">
-                        Growing, Reliable, Evolving Platform
+                        Fully insured professionals 
                     </h1>
                     <p className=" ">
-                        Since 2018, Cleaning Sewa has steadily grown and improved based on user needs. We continuously refine our platform to offer secure, reliable service — giving you peace of mind with every booking.
+                        Since 2018, Cleaning Sewa has grown steadily by listening to customer feedback and refining our services. Every professional you book through us is fully insured, giving you peace of mind and confidence with every cleaning appointment.
                     </p>
                     </div>
 

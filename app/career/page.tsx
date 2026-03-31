@@ -27,7 +27,7 @@ export default function App() {
             <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
           </svg>
           <span className="font-semibold text-gray-800">
-            Book a Service
+            Career
           </span>
         </div>
 

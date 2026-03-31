@@ -1,7 +1,7 @@
 "use client";
-
 import React, { useState } from "react";
 import Head from "next/head";
+import Link from "next/link";
 
 const ParquetCleaning = () => {
   const [openFAQ, setOpenFAQ] = useState<number | null>(null);
@@ -76,9 +76,11 @@ const ParquetCleaning = () => {
             <p className="max-w-[858px] mb-8 text-base leading-relaxed md:text-lg text-white">
               Professional parquet floor cleaning, polishing, and maintenance services. Keep your wooden floors spotless, shiny, and long-lasting.
             </p>
-            <button className="bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition">
-              Book Parquet Cleaning
-            </button>
+            <Link href="/book">
+              <button className="bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition">
+                Book Parquet Cleaning Service
+              </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -86,7 +88,7 @@ const ParquetCleaning = () => {
       {/* Description Section */}
       <div className="mx-auto px-5 py-10 max-w-7xl text-center">
         <h2 className="text-3xl font-bold text-blue-800 mb-5">
-          Scope of Works
+          Key Parquet Cleaning Services
         </h2>
         <p className="text-gray-700 leading-relaxed mb-6">
           Our parquet cleaning services in Nepal ensure that your wooden floors are deep cleaned, polished, and protected. We use professional techniques and eco-friendly products for spotless and durable parquet floors.
@@ -99,7 +101,7 @@ const ParquetCleaning = () => {
       {/* Services Section */}
       <div className="mx-auto px-5 py-10 max-w-6xl">
         <h2 className="text-3xl font-bold text-center text-blue-800 mb-10">
-          Key Parquet Cleaning Services
+          Scope of Works
         </h2>
         <div className="grid md:grid-cols-3 gap-6">
           <div className="bg-white rounded-xl shadow-md p-5 flex flex-col items-center text-center">

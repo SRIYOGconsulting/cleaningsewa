@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Head from "next/head";
+import Link from "next/link";
 
 const AeroplaneCleaning = () => {
   const [openFAQ, setOpenFAQ] = useState<number | null>(null);
@@ -81,9 +82,11 @@ const AeroplaneCleaning = () => {
               Professional aircraft cleaning services for interior and exterior surfaces. Ensure hygiene, safety, and premium presentation for your aircraft.
             </p>
 
-            <button className="bg-blue-700 px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition">
-              Book Aeroplane Cleaning
-            </button>
+            <Link href="/book">
+              <button className="bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition">
+                Book Aeroplane Cleaning Service
+              </button>
+            </Link>
           </div>
         </div>
       </div>

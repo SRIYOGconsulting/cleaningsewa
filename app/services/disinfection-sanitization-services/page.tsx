@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Head from "next/head";
+import Link from "next/link";
 
 const HomeCleaning = () => {
   const [openFAQ, setOpenFAQ] = useState<number | null>(null);
@@ -11,45 +12,45 @@ const HomeCleaning = () => {
   };
 
   const faqs = [
-    {
-      id: 1,
-      question: "What does the home cleaning service include?",
-      answer:
-        "Our home cleaning service includes deep cleaning of floors, bathrooms, kitchen, living areas, carpet cleaning, sofa cleaning, and AC cleaning. We ensure a hygienic and spotless home.",
-    },
-    {
-      id: 2,
-      question: "Do you provide eco-friendly cleaning products?",
-      answer:
-        "Yes, we use eco-friendly and safe cleaning products to ensure the safety of your family, pets, and the environment.",
-    },
-    {
-      id: 3,
-      question: "Can I book a one-time or recurring cleaning?",
-      answer:
-        "We offer flexible options. You can book a one-time cleaning or schedule recurring services weekly, bi-weekly, or monthly as per your needs.",
-    },
-    {
-      id: 4,
-      question: "Do you cover post-construction cleaning?",
-      answer:
-        "Absolutely! We specialize in post-construction cleaning to remove dust, debris, and ensure your home is ready to move in.",
-    },
-    {
-      id: 5,
-      question: "How can I schedule a home cleaning service?",
-      answer:
-        "You can easily schedule a cleaning by clicking the 'Book Home Cleaning' or 'Get Free Quote' button on our website. Our team will get in touch to confirm your booking.",
-    },
-  ];
+  {
+    id: 1,
+    question: "What is included in your disinfection and sanitization service?",
+    answer:
+      "Our service includes deep disinfection of high-touch surfaces such as door handles, switches, furniture, floors, kitchens, and bathrooms. We use professional-grade disinfectants to eliminate bacteria, viruses, and harmful germs, ensuring a safe and hygienic environment.",
+  },
+  {
+    id: 2,
+    question: "Are the disinfectants safe for children and pets?",
+    answer:
+      "Yes, we use eco-friendly and government-approved disinfectants that are safe for children, pets, and the environment while still being highly effective against germs and viruses.",
+  },
+  {
+    id: 3,
+    question: "Do you offer one-time and regular sanitization services?",
+    answer:
+      "Yes, we provide both one-time disinfection services and recurring plans such as weekly, bi-weekly, or monthly sanitization based on your needs.",
+  },
+  {
+    id: 4,
+    question: "Do you provide sanitization for offices and commercial spaces?",
+    answer:
+      "Absolutely! We offer disinfection and sanitization services for homes, offices, shops, hospitals, and other commercial spaces to maintain a clean and safe environment.",
+  },
+  {
+    id: 5,
+    question: "How can I book a disinfection and sanitization service?",
+    answer:
+      "You can easily book our service through our website by clicking on 'Book Now' or 'Get a Free Quote'. Our team will contact you shortly to confirm your appointment.",
+  },
+];
 
   return (
     <div className="flex flex-col gap-0 mb-40">
       <Head>
-        <title>Home Cleaning Services in Nepal</title>
+        <title>Disinfection and Sanitization Services in Nepal</title>
         <meta
           name="description"
-          content="Professional home cleaning services in Nepal including deep cleaning, carpet cleaning, AC cleaning, sofa cleaning, and post-construction cleaning for houses and apartments."
+          content="Professional disinfection and sanitization services in Nepal to eliminate germs, bacteria, and viruses, providing a healthy and hygienic environment."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon/favicon.svg" />
@@ -58,8 +59,8 @@ const HomeCleaning = () => {
       {/* Hero Section */}
       <div className="relative w-full h-[560px] flex items-center justify-center text-white mb-20">
         <img
-          src="/services/home-cleaning.jpg"
-          alt="Home Cleaning Services in Nepal"
+          src="/services/disinfection-sanitization-services.jpg"
+          alt="Disinfection and Sanitization Services in Nepal"
           className="absolute inset-0 z-0 object-cover h-full w-full"
         />
         <div className="absolute inset-0 bg-black opacity-60 z-10"></div>
@@ -67,18 +68,22 @@ const HomeCleaning = () => {
           <div className="flex flex-col items-center justify-center h-[277px] px-4 py-8 text-center">
             {/* Breadcrumb */}
             <div className="mb-4 text-sm w-full flex justify-center items-center text-white opacity-90">
-              Home &gt; Services &gt; <span className="font-semibold">Home Cleaning</span>
+              Home &gt; Services &gt; <span className="font-semibold">Disinfection and Sanitization Services in Nepal</span>
             </div>
 
             <h1 className="mb-4 text-5xl font-bold text-white md:text-[52px]">
-              Home Cleaning Services in Nepal
+              Disinfection and Sanitization Services in Nepal
             </h1>
             <p className="max-w-[858px] mb-8 text-base leading-relaxed md:text-lg text-white">
-              Professional home cleaning services for apartments and houses. Deep cleaning, carpet cleaning, AC cleaning, and sofa cleaning to ensure a spotless and hygienic home.
+              Professional disinfection and sanitization services in Nepal to eliminate germs, bacteria, and viruses, providing a healthy and hygienic environment.
             </p>
-            <button className="bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition">
-              Book Home Cleaning
-            </button>
+            
+            <Link href="/book">
+              <button className="bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition">
+                Book Disinfection and Sanitization Service
+              </button>
+            </Link>
+
           </div>
         </div>
       </div>
@@ -86,13 +91,13 @@ const HomeCleaning = () => {
       {/* Description Section */}
       <div className="mx-auto px-5 py-10 max-w-7xl text-center">
         <h2 className="text-3xl font-bold text-blue-800 mb-5">
-          Comprehensive Home Cleaning Services
+          Comprehensive Disinfection and Sanitization Services
         </h2>
         <p className="text-gray-700 leading-relaxed mb-6">
-          Our home cleaning services in Nepal ensure every corner of your house is spotless. We use trained professionals, modern equipment, and eco-friendly products for deep cleaning, carpet cleaning, sofa cleaning, AC cleaning, and post-construction cleanup.
+          Our disinfection and sanitization services in Nepal ensure every corner of your space is free from germs, bacteria, and viruses. We use trained professionals, modern equipment, and eco-friendly products for thorough cleaning and sanitization.
         </p>
         <p className="text-gray-700 leading-relaxed mb-6">
-          We take pride in delivering reliable and thorough cleaning, creating a healthy and hygienic living space for you and your family.
+          We take pride in delivering reliable and comprehensive services, creating a healthy and hygienic environment for you and your family.
         </p>
       </div>
 

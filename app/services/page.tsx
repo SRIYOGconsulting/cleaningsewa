@@ -4,10 +4,20 @@ import Link from "next/link";
 
 export default function ServicesPage() {
   return (
-    <main className="min-h-screen bg-gray-50 px-6 py-16">
-      <h1 className="text-3xl font-bold text-center mb-12">
-        Professional Cleaning Services in Nepal
-      </h1>
+    
+      <main className="min-h-screen bg-gray-50 text-gray-800">
+      {/* Hero Section */}
+      <section className="bg-blue-700 text-white py-24 px-6 text-center">
+        <h1 className="text-4xl md:text-5xl font-bold mb-4">
+          Professional Cleaning Services in Nepal
+        </h1>
+        <p className="text-lg md:text-xl max-w-2xl mx-auto">
+          Providing professional, eco-friendly, and reliable home cleaning services across Nepal.
+        </p>
+      </section>
+      <h3 className="text-3xl font-bold text-center mb-12">
+        
+      </h3>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-7xl mx-auto">
 

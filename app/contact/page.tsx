@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import React from "react";
 
 export default function Contact() {
@@ -7,20 +8,20 @@ export default function Contact() {
     {
       name: "Ramesh Koirala",
       role: "Director",
-      phone: "+977123456789",
-      image: "staff/ramesh.jpg",
+      phone: "+9779852024365",
+      image: "/contact/1.png",
     },
     {
-      name: "Sita Sharma",
-      role: "Customer Support",
-      phone: "+977987654321",
-      image: "staff/sita.jpg",
-    },
-    {
-      name: "Binod Thapa",
+      name: "Sanjana Lama",
       role: "Operations Manager",
-      phone: "+977912345678",
-      image: "staff/binod.jpg",
+      phone: "+9779852024365",
+      image: "/contact/2.png",
+    },
+    {
+      name: "Sudeep Basnet",
+      role: "Customer Support Lead",
+      phone: "+9779852024365",
+      image: "/contact/3.png",
     },
   ];
 
@@ -36,35 +37,12 @@ export default function Contact() {
 
       {/* Contact Form Section */}
       <section className="py-16 px-6 max-w-4xl mx-auto">
-        <h2 className="text-3xl font-bold mb-10 text-center">Send Us a Message</h2>
-        <form className="bg-white shadow-md rounded-xl p-8 flex flex-col gap-6">
-          <input
-            type="text"
-            placeholder="Your Name"
-            className="border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-700"
-          />
-          <input
-            type="email"
-            placeholder="Your Email"
-            className="border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-700"
-          />
-          <input
-            type="text"
-            placeholder="Subject"
-            className="border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-700"
-          />
-          <textarea
-            placeholder="Your Message"
-            rows={6}
-            className="border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-700 resize-none"
-          ></textarea>
-          <button
-            type="submit"
-            className="bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition"
-          >
-            Send Message
-          </button>
-        </form>
+        <h2 className="text-3xl font-bold mb-10 text-center">Visit Our Office</h2>
+        <img
+        src="/contact/remwork.jpg" // your image path
+        alt="Location Map"
+        className="w-full h-[450px] object-cover rounded-xl"
+      />
       </section>
 
       {/* Quick Contact Section */}
@@ -84,11 +62,11 @@ export default function Contact() {
               <h3 className="text-xl font-semibold mb-1">{person.name}</h3>
               <p className="text-gray-600 mb-4">{person.role}</p>
               <a
-                href={`https://wa.me/${person.phone.replace(/\D/g, "")}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-green-500 text-white px-4 py-2 rounded-lg font-medium hover:bg-green-600 transition"
-              >
+                  href="https://b.broadpress.org/cleaningsewa"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-green-500 text-white px-4 py-2 rounded-lg font-medium hover:bg-green-600 transition"
+                >
                 WhatsApp
               </a>
             </div>
@@ -102,15 +80,15 @@ export default function Contact() {
         <div className="grid md:grid-cols-3 gap-8 text-center">
           <div>
             <h3 className="font-semibold mb-2">Address</h3>
-            <p className="text-gray-700">123 Clean Street, Kathmandu, Nepal</p>
+            <p className="text-gray-700">Pashupati Marg, Kamalpokhari, Kathmandu, Nepal</p>
           </div>
           <div>
             <h3 className="font-semibold mb-2">Phone</h3>
-            <p className="text-gray-700">+977 123 456 789</p>
+            <p className="text-gray-700">+977 98520 24365</p>
           </div>
           <div>
             <h3 className="font-semibold mb-2">Email</h3>
-            <p className="text-gray-700">info@cleaningsewa.com</p>
+            <p className="text-gray-700">cleaningsewa@sriyog.com</p>
           </div>
         </div>
       </section>
@@ -124,12 +102,7 @@ export default function Contact() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-6 text-center">
-        <p>
-          © {new Date().getFullYear()} Cleaning Sewa. All rights reserved.  
-          Visit us at <a href="https://cleaningsewa.com" className="underline">cleaningsewa.com</a>
-        </p>
-      </footer>
+      
     </main>
   );
 }
