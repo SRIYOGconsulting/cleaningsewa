@@ -78,7 +78,7 @@ const ExecutiveChairCleaning = () => {
               Professional cleaning for executive chairs including stain removal, deodorization, sanitization, and fabric or leather care to maintain hygiene and appearance.
             </p>
             <Link href="/book">
-              <button className="bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition">
+              <button className="bg-[#0E4541] text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition">
                 Book Executive Chair Cleaning Service
               </button>
             </Link>

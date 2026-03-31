@@ -28,7 +28,7 @@ export default function Contact() {
   return (
     <main className="min-h-screen bg-gray-50 text-gray-800">
       {/* Hero Section */}
-      <section className="bg-blue-700 text-white py-24 px-6 text-center">
+      <section className="bg-[#0E4541] text-white py-24 px-6 text-center">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">Contact Cleaning Sewa</h1>
         <p className="text-lg md:text-xl max-w-2xl mx-auto">
           Get in touch with Cleaning Sewa for inquiries, bookings, or support.
@@ -65,7 +65,7 @@ export default function Contact() {
                   href="https://b.broadpress.org/cleaningsewa"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-green-500 text-white px-4 py-2 rounded-lg font-medium hover:bg-green-600 transition"
+                  className="bg-[#0E4541] text-white px-4 py-2 rounded-lg font-medium hover:bg-green-600 transition"
                 >
                 WhatsApp
               </a>

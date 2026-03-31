@@ -6,7 +6,7 @@ export default function About() {
   return (
     <main className="min-h-screen bg-gray-50 text-gray-800">
       {/* Hero Section */}
-      <section className="bg-blue-700 text-white py-24 px-6 text-center">
+      <section className="bg-[#0E4541] text-white py-24 px-6 text-center">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">
           About Cleaning Services in Nepal
         </h1>

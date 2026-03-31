@@ -51,7 +51,7 @@ export default function ProjectsPage() {
   return (
     <main className="min-h-screen bg-gray-50 text-gray-800">
       {/* Hero Banner */}
-      <section className="bg-green-700 text-white py-20 px-6 text-center">
+      <section className="bg-[#0E4541] text-white py-20 px-6 text-center">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">
           Our Projects
         </h1>

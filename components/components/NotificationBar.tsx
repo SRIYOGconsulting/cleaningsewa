@@ -9,7 +9,7 @@ export default function NotificationBar() {
   if (!visible) return null;
 
   return (
-    <div className="bg-blue-700 text-white px-6 py-3 flex items-center justify-between">
+    <div className="bg-[#0E4541] text-white px-6 py-3 flex items-center justify-between">
       <p className="text-sm md:text-base">
      Announcement: Cleaning Sewa is offering 20% off on all services this month!
       </p>

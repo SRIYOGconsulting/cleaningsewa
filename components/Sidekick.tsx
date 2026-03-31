@@ -15,7 +15,7 @@ const Floating: React.FC = () => {
 
           <a
             href="tel:+9779852024365"
-            className="relative bg-blue-500 p-3 rounded-full shadow-lg hover:bg-blue-600 transition duration-200"
+            className="relative bg-[#fff] p-3 rounded-full shadow-lg hover:bg-white-600 transition duration-200"
             aria-label="Call Us"
           >
             <img
@@ -37,7 +37,7 @@ const Floating: React.FC = () => {
             href="https://b.broadpress.org/cleaningsewa"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-green-500 p-3 rounded-full shadow-lg hover:bg-green-600 transition duration-200 animate-bounce"
+            className="bg-[#fff] p-3 rounded-full shadow-lg hover:bg-white-200 transition duration-200 animate-bounce"
             aria-label="Chat on WhatsApp"
           >
             <img

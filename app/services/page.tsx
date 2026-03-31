@@ -7,7 +7,7 @@ export default function ServicesPage() {
     
       <main className="min-h-screen bg-gray-50 text-gray-800">
       {/* Hero Section */}
-      <section className="bg-blue-700 text-white py-24 px-6 text-center">
+      <section className="bg-[#0E4541] text-white py-24 px-6 text-center">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">
           Professional Cleaning Services in Nepal
         </h1>
@@ -290,7 +290,7 @@ function Card({
         <p className="text-sm text-gray-600 mb-4">{desc}</p>
 
         <Link href={`/services/${link}`}>
-          <button className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700">
+          <button className="px-4 py-2 [#0E4541] text-white rounded-md hover:bg-[#0E4541]">
             Browse More
           </button>
         </Link>

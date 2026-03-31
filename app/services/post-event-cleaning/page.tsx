@@ -85,7 +85,7 @@ const PostEventCleaning = () => {
 
             
             <Link href="/book">
-              <button className="bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition">
+              <button className="bg-[#0E4541] text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition">
                 Book Post Event Cleaning Service
               </button>
             </Link>
