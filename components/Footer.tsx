@@ -153,14 +153,14 @@ const Footer = () => {
               <span className="text-sm">cleaningsewa@sriyog.com</span>
             </a>
 
-            <a href="tel:+977014548068" className="flex items-center gap-2 border-2 rounded-lg px-7 py-3 w-full sm:w-auto">
+            <a href="tel:+9779851152774" className="flex items-center gap-2 border-2 rounded-lg px-7 py-3 w-full sm:w-auto">
               <img src="/icons/phone.svg" alt="phone" className="h-6 w-6" />
-              <span className="text-sm">+977-01-4548068</span>
+              <span className="text-sm">+977-98511 52774</span>
             </a>
 
-            <a href="https://wa.me/9779852024365" target="_blank" className="flex items-center gap-2 border-2 rounded-lg px-6 py-3 w-full sm:w-auto">
+            <a href="https://wa.me/9779851152774" target="_blank" className="flex items-center gap-2 border-2 rounded-lg px-6 py-3 w-full sm:w-auto">
               <img src="/icons/whatsapp.svg" alt="whatsapp" className="h-6 w-6" />
-              <span className="text-sm">+977 98520-24-365</span>
+              <span className="text-sm">+977 98511 52774</span>
             </a>
           </div>
         </div>

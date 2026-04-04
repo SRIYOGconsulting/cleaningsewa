@@ -7,7 +7,7 @@ import Sidekick from '../components/Sidekick';
 import BacktoTop from '../components/BacktoTop';
 import Navbar from '../components/Navbar';
 import RoadBlock from '../components/Roadblock';
-import BrowserCompatibilityWarning from '../components/BrowserCompatibilityWarning';
+// import BrowserCompatibilityWarning from '../components/BrowserCompatibilityWarning';
 import CookieConsent from '../components/CookieConsent';
 import { Suspense } from 'react';
 import ExitPopup from '@/components/ExitPopup';
@@ -110,7 +110,7 @@ export default function RootLayout({ children }:Readonly<{
         </noscript>
         <ExitPopup/>
         <CookieConsent />
-        <BrowserCompatibilityWarning />
+        {/* <BrowserCompatibilityWarning /> */}
         <RoadBlock />
         <Navbar />
         <Header />

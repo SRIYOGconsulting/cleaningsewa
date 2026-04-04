@@ -8,9 +8,9 @@ const teamMembers = [
   { id: 3, name: "Bikash Gurung", role: "Client Relations", image: "/team/3.png" },
   { id: 4, name: "Pramit Shrestha", role: "Senior Cleaning Supervisor", image: "/team/4.png" },
   { id: 5, name: "Dipesh Thapa", role: "Training & Quality", image: "/team/5.png" },
-  { id: 6, name: "Anuj Karki", role: "Logistics Coordinator", image: "/team/6.png" },
+  { id: 6, name: "Anju Karki", role: "Logistics Coordinator", image: "/team/6.png" },
   { id: 7, name: "Sudeep Basnet", role: "Customer Support Lead", image: "/team/7.png" },
-  { id: 8, name: "Mina Rai", role: "Field Supervisor", image: "/team/8.png" },
+  { id: 8, name: "Mina Sharma", role: "Field Supervisor", image: "/team/8.png" },
   { id: 9, name: "Niranjan Bhattarai", role: "Field Supervisor", image: "/team/9.png" },
   { id: 10, name: "Rakesh Thapa", role: "Driver", image: "/team/10.png" },
 ];

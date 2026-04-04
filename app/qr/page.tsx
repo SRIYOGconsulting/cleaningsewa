@@ -7,42 +7,42 @@ const cardData = [
     title: "Website",
     image: "/qr/website.jpg",
   
-    description: "Scan this QR code to make secure payments for services.",
+    description: "Scan to visit our website and explore services.",
   },
   {
     id: 2,
     title: "WhatsApp",
     image: "/qr/whatsapp.jpg",
    
-    description: "Follow our latest updates and technology solutions.",
+    description: "Connect with us on WhatsApp for updates and support.",
   },
   {
     id: 3,
     title: "Google Reviews",
     image: "/qr/google.jpg",
   
-    description: "Get in touch with our team for consultations and support.",
+    description: "Check reviews and feedback from our satisfied clients.",
   },
   {
     id: 4,
     title: "Career",
     image: "/qr/career.jpg",
    
-    description: "Reach out via email for inquiries and project discussions.",
+    description: "Apply or inquire about career opportunities with us.",
   },
   {
     id: 5,
-    title: "Book a Services",
+    title: "Book a Service",
     image: "/qr/book.jpg",
 
-    description: "Access your personalized dashboard for project updates.",
+    description: "Schedule and manage your service bookings online.",
   },
   {
     id: 6,
     title: "Location Map",
     image: "/qr/location.jpg",
     
-    description: "Find our office location on Google Maps for visits.",
+    description: "Locate our office easily via Google Maps.",
   },
 ];
 

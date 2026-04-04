@@ -79,7 +79,7 @@ const MoveInOutCleaning = () => {
             </p>
             
             <Link href="/book">
-              <button className="bg-[#0E4541] text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition">
+              <button className="bg-[#0E4541] text-white px-6 py-3 rounded-lg font-semibold hover:bg-teal-900 transition">
                 Book Move In/Out Cleaning Service
               </button>
             </Link>
@@ -90,8 +90,8 @@ const MoveInOutCleaning = () => {
 
       {/* Description Section */}
       <div className="mx-auto px-5 py-10 max-w-7xl text-center">
-        <h2 className="text-3xl font-bold text-blue-800 mb-5">
-          Scope of Works
+        <h2 className="text-3xl font-bold text-teal-900 mb-5">
+          Key Move In / Move Out Services
         </h2>
         <p className="text-gray-700 leading-relaxed mb-6">
           Our move in/move out cleaning ensures that every corner of your property is clean and hygienic. We use modern equipment, professional cleaners, and eco-friendly products to prepare your home for new occupants or ensure a spotless handover.
@@ -103,8 +103,8 @@ const MoveInOutCleaning = () => {
 
       {/* Services Section */}
       <div className="mx-auto px-5 py-10 max-w-6xl">
-        <h2 className="text-3xl font-bold text-center text-blue-800 mb-10">
-          Key Move In / Move Out Services
+        <h2 className="text-3xl font-bold text-center text-teal-900 mb-10">
+          Scope of Works
         </h2>
         <div className="grid md:grid-cols-3 gap-6">
           <div className="bg-white rounded-xl shadow-md p-5 flex flex-col items-center text-center">

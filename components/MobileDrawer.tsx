@@ -140,7 +140,7 @@ const MobileDrawer:React.FC<MobileDrawerProps> = ({isOpen,setIsOpen}) => {
               <img
                 src="/logo/cleaningsewa.svg"
                 alt="Cleaning Sewa Logo"
-                className="w-36 h-auto"
+                className="w-30 h-auto"
               />
             </Link>
             <button

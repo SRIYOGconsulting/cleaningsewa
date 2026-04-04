@@ -2,25 +2,27 @@
 
 import Image from "next/image";
 import React from "react";
+import GoogleMap from "../../components/GoogleMap";
+import MapEmbed from "../../components/GoogleMap";
 
 export default function Contact() {
   const quickContacts = [
     {
       name: "Ramesh Koirala",
       role: "Director",
-      phone: "+9779852024365",
+      phone: "+977981152774",
       image: "/contact/1.png",
     },
     {
       name: "Sanjana Lama",
       role: "Operations Manager",
-      phone: "+9779852024365",
+      phone: "+977981152774",
       image: "/contact/2.png",
     },
     {
       name: "Sudeep Basnet",
       role: "Customer Support Lead",
-      phone: "+9779852024365",
+      phone: "+977981152774",
       image: "/contact/3.png",
     },
   ];
@@ -57,7 +59,7 @@ export default function Contact() {
               <img
                 src={person.image}
                 alt={person.name}
-                className="w-32 h-32 rounded-full object-cover mb-4 border-2 border-blue-700"
+                className="w-32 h-32 rounded-full object-cover mb-4 border-0 border-blue-700"
               />
               <h3 className="text-xl font-semibold mb-1">{person.name}</h3>
               <p className="text-gray-600 mb-4">{person.role}</p>
@@ -84,7 +86,7 @@ export default function Contact() {
           </div>
           <div>
             <h3 className="font-semibold mb-2">Phone</h3>
-            <p className="text-gray-700">+977 98520 24365</p>
+            <p className="text-gray-700">+977 9811 52774</p>
           </div>
           <div>
             <h3 className="font-semibold mb-2">Email</h3>
@@ -93,11 +95,14 @@ export default function Contact() {
         </div>
       </section>
 
+      
+
       {/* Map Placeholder */}
-      <section className="py-16 px-6 max-w-6xl mx-auto">
+      {/* Map Section */}
+      <section className="mt-16 py-16 px-6 max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold mb-6 text-center">Our Location</h2>
-        <div className="w-full h-64 bg-gray-300 flex items-center justify-center rounded-xl">
-          <span className="text-gray-600">Map Placeholder (Google Maps Embed Here)</span>
+        <div className="w-full h-64 md:h-96 rounded-xl overflow-hidden shadow-md">
+          <MapEmbed />
         </div>
       </section>
 

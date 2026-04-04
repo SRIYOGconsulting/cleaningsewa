@@ -53,7 +53,7 @@ export default function RefundPolicy() {
           <div>
             <h2 className="text-2xl font-semibold text-teal-800 mb-2">Contact Us</h2>
             <p className="about leading-relaxed mb-1">Email: cleaningsewa@sriyog.com</p>
-            <p className="about leading-relaxed mb-1">Phone: +977-9852024365</p>
+            <p className="about leading-relaxed mb-1">Phone: +977-98511 52774</p>
             <p className="about leading-relaxed">Address: Kamalpokhari, Kathmandu, Nepal</p>
           </div>
         </section>

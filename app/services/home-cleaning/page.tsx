@@ -79,7 +79,7 @@ const HomeCleaning = () => {
             </p>
             
             <Link href="/book">
-              <button className="bg-[#0E4541] text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition">
+              <button className="bg-[#0E4541] text-white px-6 py-3 rounded-lg font-semibold hover:bg-teal-900 transition">
                 Book Home Cleaning Service
               </button>
             </Link>
@@ -90,8 +90,8 @@ const HomeCleaning = () => {
 
       {/* Description Section */}
       <div className="mx-auto px-5 py-10 max-w-7xl text-center">
-        <h2 className="text-3xl font-bold text-blue-800 mb-5">
-          Scope of Works
+        <h2 className="text-3xl font-bold text-teal-900 mb-5">
+          Comprehensive Home Cleaning Services
         </h2>
         <p className="text-gray-700 leading-relaxed mb-6">
           Our home cleaning services in Nepal ensure every corner of your house is spotless. We use trained professionals, modern equipment, and eco-friendly products for deep cleaning, carpet cleaning, sofa cleaning, AC cleaning, and post-construction cleanup.
@@ -103,8 +103,8 @@ const HomeCleaning = () => {
 
       {/* Services Section */}
       <div className="mx-auto px-5 py-10 max-w-6xl">
-        <h2 className="bg-[#0E4541] text-3xl font-bold text-center text-blue-800 mb-10">
-          Top Services
+        <h2 className="text-3xl font-bold text-center text-teal-900 mb-10">
+          Scope of Works
         </h2>
         <div className="grid md:grid-cols-3 gap-6">
           {/* Service 1 */}

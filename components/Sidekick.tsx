@@ -14,7 +14,7 @@ const Floating: React.FC = () => {
           <span className="absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75 animate-ping"></span>
 
           <a
-            href="tel:+9779852024365"
+            href="tel:+9779851152774"
             className="relative bg-[#fff] p-3 rounded-full shadow-lg hover:bg-white-600 transition duration-200"
             aria-label="Call Us"
           >

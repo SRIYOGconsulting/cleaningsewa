@@ -5,7 +5,8 @@ import Link from "next/link";
 export default function ServicesPage() {
   return (
     
-      <main className="min-h-screen bg-gray-50 text-gray-800">
+      <main className="min-h-screen bg-gray-50 text-gray-800 pb-24">
+        
       {/* Hero Section */}
       <section className="bg-[#0E4541] text-white py-24 px-6 text-center">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">
@@ -261,6 +262,29 @@ export default function ServicesPage() {
           desc="Safe dead animal removal service in Nepal. We dispose of deceased animals hygienically, preventing odors, contamination, and health hazards."
         />
 
+        {/* Swimming Pool Cleaning */}
+        <Card
+          title="Swimming Pool Cleaning"
+          img="swimming-pool-cleaning"
+          link="swimming-pool-cleaning"
+          desc="Professional swimming pool cleaning and maintenance in Nepal. We ensure crystal clear water, proper chemical balance, and a safe environment for swimmers."
+        />
+
+        {/* School Cleaning */}
+        <Card
+          title="School Cleaning"
+          img="school-cleaning"
+          link="school-cleaning"
+          desc="Comprehensive school cleaning services in Nepal. We maintain hygienic learning environments, sanitizing classrooms, common areas, and restrooms for the well-being of students and staff."
+        />
+      {/* Dog Cleaning */}
+        <Card
+          title="Dog Cleaning"
+          img="dog-cleaning"
+          link="dog-cleaning"
+          desc="Professional dog cleaning services in Nepal. We provide thorough grooming and hygiene services to keep your pets clean and healthy."
+        />
+
       </div>
     </main>
   );
@@ -290,9 +314,9 @@ function Card({
         <p className="text-sm text-gray-600 mb-4">{desc}</p>
 
         <Link href={`/services/${link}`}>
-          <button className="px-4 py-2 [#0E4541] text-white rounded-md hover:bg-[#0E4541]">
-            Browse More
-          </button>
+          <button className="px-4 py-2 bg-[#0E4541] text-white rounded-md hover:bg-teal-800">
+          Browse More
+        </button>
         </Link>
       </div>
     </div>

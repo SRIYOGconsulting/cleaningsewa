@@ -85,7 +85,7 @@ const PostEventCleaning = () => {
 
             
             <Link href="/book">
-              <button className="bg-[#0E4541] text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition">
+              <button className="bg-[#0E4541] text-white px-6 py-3 rounded-lg font-semibold hover:bg-teal-900 transition">
                 Book Post Event Cleaning Service
               </button>
             </Link>
@@ -96,7 +96,7 @@ const PostEventCleaning = () => {
 
       {/* Description Section */}
       <div className="mx-auto px-5 py-10 max-w-7xl text-center">
-        <h2 className="text-3xl font-bold text-blue-800 mb-5">
+        <h2 className="text-3xl font-bold text-teal-900 mb-5">
           Professional Post Event Cleaning Services
         </h2>
 
@@ -118,7 +118,7 @@ const PostEventCleaning = () => {
 
       {/* Services Section */}
       <div className="mx-auto px-5 py-10 max-w-6xl">
-        <h2 className="text-3xl font-bold text-center text-blue-800 mb-10">
+        <h2 className="text-3xl font-bold text-center text-teal-900 mb-10">
           Scope of Works
         </h2>
 

@@ -1,6 +1,7 @@
 'use client'
 import Image from 'next/image';
 import Ribbon from '../../components/Ribbon';
+import { title } from 'process';
 
 
 export default function Vmgo() {
@@ -15,19 +16,35 @@ export default function Vmgo() {
         <section className='max-w-7xl mx-auto py-8'>
             <div className='grid grid-cols-2 md:grid-cols-4 gap-12 place-content-center place-items-center'>
                 <div className='flex flex-col justify-center items-center gap-3'>
-                  <Image height={24} width={24} src="/vmgo/vision.svg" alt="" className="w-24 h-24 " />
+                  <img
+                    src="/vmgo/vision.svg"
+                    alt="Vision"
+                    className="w-24 h-24"
+                  />
                   <p>Vision</p>
                 </div>
                 <div className='flex flex-col justify-center items-center gap-3'>
-                  <Image height={24} width={24} src="/vmgo/mission.svg" alt="" className="w-24 h-24 " />
+                  <img
+                    src="/vmgo/mission.svg"
+                    alt="Mission"
+                    className="w-24 h-24"
+                  />
                   <p>Mission</p>
                 </div>
                 <div className='flex flex-col justify-center items-center gap-3'>
-                  <Image height={24} width={24} src="/vmgo/goals.svg" alt="" className="w-24 h-24 " />
+                  <img
+                    src="/vmgo/goals.svg"
+                    alt="Goals"
+                    className="w-24 h-24"
+                  />
                   <p>Goals</p> 
                 </div>
                 <div className='flex flex-col justify-center items-center gap-3'>
-                  <Image height={24} width={24} src="/vmgo/Objectives.svg" alt="" className="w-24 h-24" /> 
+                  <img
+                    src="/vmgo/objectives.svg"
+                    alt="Objectives"
+                    className="w-24 h-24"
+                  /> 
                   <p>Objectives</p>    
                 </div> 
             </div>

@@ -44,7 +44,7 @@ export default function About() {
           <img
             src="/about/director.png"
             alt="Director"
-            className="w-40 h-40 rounded-full object-cover border-2 border-blue-700"
+            className="w-40 h-40 rounded-full object-cover border-0 border-blue-700"
           />
           <div className="flex-1">
             <p className="text-gray-700 mb-4">
